@@ -1,0 +1,5 @@
+<!DOCTYPE codename-mod-credits>
+<menu name="Desirable Update" desc="Credits for any level of assistance that had been provided to this mode">
+	<credit name="TechyHarcvuk" desc="Literally did all the visual and music stuff, plus some code for State of Mind" icon="Harcvuk" size="100" url="https://www.youtube.com/watch?v=dQw4w9WgXcQ" color="#19ECA8"/>
+	<credit name="Codename Engine Discord" desc="Had some scripts and stuff I needed to do certain things. Mainly State of Mind's ending, Game Over stuff, and the events used in the songs." icon="Codename" size="100" url="https://www.youtube.com/watch?v=dQw4w9WgXcQ" color="#19ECA8"/>
+</menu>

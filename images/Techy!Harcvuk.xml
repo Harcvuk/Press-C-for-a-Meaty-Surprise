@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Techy!Harcvuk.png">
+<SubTexture name="Techy!Harcvuk idle0000" x="1235" y="0" width="288" height="411" frameX="-119" frameY="-67" frameWidth="640" frameHeight="480" />
+<SubTexture name="Techy!Harcvuk idle0001" x="546" y="453" width="279" height="416" frameX="-128" frameY="-62" frameWidth="640" frameHeight="480" />
+<SubTexture name="Techy!Harcvuk idle0002" x="0" y="453" width="273" height="424" frameX="-134" frameY="-54" frameWidth="640" frameHeight="480" />
+<SubTexture name="Techy!Harcvuk idle0003" x="692" y="0" width="253" height="431" frameX="-154" frameY="-47" frameWidth="640" frameHeight="480" />
+<SubTexture name="Techy!Harcvuk idle0004" x="450" y="0" width="242" height="432" frameX="-166" frameY="-46" frameWidth="640" frameHeight="480" />
+<SubTexture name="Techy!Harcvuk singLEFT0000" x="0" y="877" width="320" height="408" frameX="-135" frameY="-53" frameWidth="640" frameHeight="480" />
+<SubTexture name="Techy!Harcvuk singLEFT0001" x="1235" y="411" width="286" height="404" frameX="-153" frameY="-58" frameWidth="640" frameHeight="480" />
+<SubTexture name="Techy!Harcvuk singLEFT0002" x="450" y="0" width="242" height="432" frameX="-166" frameY="-46" frameWidth="640" frameHeight="480" />
+<SubTexture name="Techy!Harcvuk singRIGHT0000" x="945" y="0" width="290" height="416" frameX="-217" frameY="-62" frameWidth="640" frameHeight="480" />
+<SubTexture name="Techy!Harcvuk singRIGHT0001" x="273" y="453" width="273" height="423" frameX="-201" frameY="-55" frameWidth="640" frameHeight="480" />
+<SubTexture name="Techy!Harcvuk singRIGHT0002" x="450" y="0" width="242" height="432" frameX="-166" frameY="-46" frameWidth="640" frameHeight="480" />
+<SubTexture name="Techy!Harcvuk singUP0000" x="0" y="0" width="231" height="453" frameX="-217" frameY="-27" frameWidth="640" frameHeight="480" />
+<SubTexture name="Techy!Harcvuk singUP0001" x="231" y="0" width="219" height="438" frameX="-209" frameY="-38" frameWidth="640" frameHeight="480" />
+<SubTexture name="Techy!Harcvuk singUP0002" x="450" y="0" width="242" height="432" frameX="-166" frameY="-46" frameWidth="640" frameHeight="480" />
+<SubTexture name="Techy!Harcvuk singDOWN0000" x="320" y="877" width="256" height="396" frameX="-150" frameY="-82" frameWidth="640" frameHeight="480" />
+<SubTexture name="Techy!Harcvuk singDOWN0001" x="945" y="416" width="267" height="415" frameX="-165" frameY="-63" frameWidth="640" frameHeight="480" />
+<SubTexture name="Techy!Harcvuk singDOWN0002" x="450" y="0" width="242" height="432" frameX="-166" frameY="-46" frameWidth="640" frameHeight="480" />
+</TextureAtlas>
