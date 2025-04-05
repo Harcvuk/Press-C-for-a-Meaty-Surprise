@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="Techy!Harcvuk" scale="1.2" flipX="true" isPlayer="true" icon="Jagger" color="#FF6300">
+	<anim name="idle" anim="Techy!Harcvuk idle" x="0" y="0" fps="10" loop="false"/>
+	<anim name="singUP" anim="Techy!Harcvuk singUP" x="0" y="0" fps="10" loop="false"/>
+	<anim name="singLEFT" anim="Techy!Harcvuk singLEFT" x="0" y="0" fps="10" loop="false"/>
+	<anim name="singRIGHT" anim="Techy!Harcvuk singRIGHT" x="0" y="0" fps="10" loop="false"/>
+	<anim name="singDOWN" anim="Techy!Harcvuk singDOWN" x="0" y="0" fps="10" loop="false"/>
+</character>

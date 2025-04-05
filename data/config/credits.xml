@@ -1,5 +1,7 @@
 <!DOCTYPE codename-mod-credits>
-<menu name="Desirable Update" desc="Credits for any level of assistance that had been provided to this mode">
-	<credit name="TechyHarcvuk" desc="Literally did all the visual and music stuff, plus some code for State of Mind" icon="Harcvuk" size="100" url="https://www.youtube.com/watch?v=dQw4w9WgXcQ" color="#19ECA8"/>
-	<credit name="Codename Engine Discord" desc="Had some scripts and stuff I needed to do certain things. Mainly State of Mind's ending, Game Over stuff, and the events used in the songs." icon="Codename" size="100" url="https://www.youtube.com/watch?v=dQw4w9WgXcQ" color="#19ECA8"/>
+<menu name="The Seezee Surprise" desc="The people who were involved in this other surprise for Seezee's Birthday!">
+	<credit name="TechyHarcvuk" desc="Trial's Song and Art, along with some menu related things." icon="Techy!Harcvuk" size="100" url="https://github.com/Harcvuk" color="#19ECA8"/>
+	<credit name="circuitella" desc="Score Text Lerping script I used" icon="NoIcon" size="100" url="" color="#19ECA8"/>
+	<credit name="Terios" desc="Some coding involved in the mod (This desc is a placeholder atm)" icon="Terios" size="100" url="" color="#19ECA8"/>
+	<credit name="Verwex" desc="Some coding involved in the mod (Placeholder desc lmao)." icon="Verwex" size="100" url="" color="#19ECA8"/>
 </menu>
