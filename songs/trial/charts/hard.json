@@ -1,5 +1,34 @@
 {
-	"events": [],
+	"events": [
+		{
+			"params": [
+				1
+			],
+			"name": "Camera Movement",
+			"time": 3200
+		},
+		{
+			"params": [
+				0
+			],
+			"name": "Camera Movement",
+			"time": 6400
+		},
+		{
+			"params": [
+				1
+			],
+			"name": "Camera Movement",
+			"time": 9600
+		},
+		{
+			"params": [
+				0
+			],
+			"name": "Camera Movement",
+			"time": 12800
+		}
+	],
 	"scrollSpeed": 2,
 	"strumLines": [
 		{
@@ -512,7 +541,7 @@
 				}
 			],
 			"characters": [
-				"Techy!Harcvuk"
+				"Jagger"
 			],
 			"type": 0,
 			"visible": true,
@@ -1046,6 +1075,6 @@
 		}
 	],
 	"codenameChart": true,
-	"stage": "stage",
+	"stage": "The Desert",
 	"noteTypes": []
 }
