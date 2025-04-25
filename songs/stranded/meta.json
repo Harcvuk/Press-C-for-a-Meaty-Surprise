@@ -1,0 +1,19 @@
+{
+	"beatsPerMeasure": 4,
+	"opponentModeAllowed": true,
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"bpm": 200,
+	"difficulties": [
+		"Hard",
+		"Erect",
+		"placeholder"
+	],
+	"needsVoices": true,
+	"parsedColor": -32256,
+	"displayName": "Stranded",
+	"icon": "Jagger",
+	"name": "stranded",
+	"color": "#FF8200",
+	"customValues": {}
+}
