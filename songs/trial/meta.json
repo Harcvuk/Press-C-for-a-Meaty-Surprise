@@ -1,16 +1,16 @@
 {
 	"opponentModeAllowed": true,
-	"icon": "Jagger",
 	"difficulties": [
 		"hard"
 	],
+	"icon": "Jagger",
 	"parsedColor": -15011072,
-	"color": "#1AF300",
-	"name": "trial",
 	"coopAllowed": true,
+	"name": "trial",
+	"color": "#1AF300",
 	"stepsPerBeat": 4,
 	"displayName": "Trial",
-	"beatsPerMeasure": 4,
 	"needsVoices": false,
+	"beatsPerMeasure": 4,
 	"bpm": 150
 }
