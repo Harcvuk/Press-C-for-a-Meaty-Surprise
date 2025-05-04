@@ -126,40 +126,10 @@
 				0,
 				0,
 				16,
-				"Elastic",
+				"Smooth Step",
 				"Out"
 			],
 			"name": "VSlice Camera Movement",
-			"time": 64000
-		},
-		{
-			"params": [
-				6,
-				1.3
-			],
-			"name": "Camera Modulo Change",
-			"time": 64000
-		},
-		{
-			"params": [
-				1.2,
-				true,
-				16,
-				"Expo",
-				"Out"
-			],
-			"name": "VSlice Camera Zoom",
-			"time": 64000
-		},
-		{
-			"params": [
-				true,
-				3.2,
-				10,
-				"sine",
-				"In"
-			],
-			"name": "Scroll Speed Change",
 			"time": 64000
 		},
 		{
@@ -169,7 +139,7 @@
 				0,
 				0,
 				16,
-				"Elastic",
+				"Smooth Step",
 				"Out"
 			],
 			"name": "VSlice Camera Movement",
@@ -182,7 +152,7 @@
 				0,
 				0,
 				16,
-				"Elastic",
+				"Smooth Step",
 				"Out"
 			],
 			"name": "VSlice Camera Movement",
@@ -195,55 +165,11 @@
 				0,
 				0,
 				16,
-				"Elastic",
+				"Smooth Step",
 				"Out"
 			],
 			"name": "VSlice Camera Movement",
 			"time": 83200
-		},
-		{
-			"params": [
-				1.4,
-				true,
-				16,
-				"Elastic",
-				"Out"
-			],
-			"name": "VSlice Camera Zoom",
-			"time": 88000
-		},
-		{
-			"params": [
-				1.6,
-				true,
-				16,
-				"Elastic",
-				"Out"
-			],
-			"time": 88400,
-			"name": "VSlice Camera Zoom"
-		},
-		{
-			"params": [
-				1.8,
-				true,
-				16,
-				"Elastic",
-				"Out"
-			],
-			"name": "VSlice Camera Zoom",
-			"time": 88800
-		},
-		{
-			"params": [
-				2,
-				true,
-				16,
-				"Elastic",
-				"Out"
-			],
-			"time": 89200,
-			"name": "VSlice Camera Zoom"
 		},
 		{
 			"params": [
@@ -260,51 +186,10 @@
 				0,
 				0,
 				16,
-				"Instant (Ignores Duration and Direction)",
+				"Smooth Step",
 				"Out"
 			],
 			"name": "VSlice Camera Movement",
-			"time": 89600
-		},
-		{
-			"params": [
-				0.5,
-				true,
-				16,
-				"Quart",
-				"Out"
-			],
-			"name": "VSlice Camera Zoom",
-			"time": 89600
-		},
-		{
-			"params": [
-				false,
-				-1,
-				4,
-				"camGame"
-			],
-			"name": "Camera Flash",
-			"time": 89600
-		},
-		{
-			"params": [
-				true,
-				true,
-				0
-			],
-			"name": "Alt Animation Toggle",
-			"time": 89600
-		},
-		{
-			"params": [
-				true,
-				3.6,
-				2,
-				"elastic",
-				"In"
-			],
-			"name": "Scroll Speed Change",
 			"time": 89600
 		},
 		{
@@ -396,26 +281,13 @@
 		},
 		{
 			"params": [
-				0.47,
+				0.7,
 				true,
 				16,
 				"Sine",
 				"Out"
 			],
 			"name": "VSlice Camera Zoom",
-			"time": 121600
-		},
-		{
-			"params": [
-				0,
-				false,
-				900,
-				-170,
-				50,
-				"Elastic",
-				"Out"
-			],
-			"name": "VSlice Camera Movement",
 			"time": 121600
 		}
 	],
@@ -1440,7 +1312,7 @@
 				},
 				{
 					"id": 3,
-					"sLen": 200,
+					"sLen": 0,
 					"time": 106200,
 					"type": 0
 				},
@@ -1451,21 +1323,9 @@
 					"type": 0
 				},
 				{
-					"id": 1,
-					"sLen": 200,
-					"time": 106600,
-					"type": 0
-				},
-				{
 					"id": 2,
 					"sLen": 0,
 					"time": 106800,
-					"type": 0
-				},
-				{
-					"id": 3,
-					"sLen": 200,
-					"time": 107000,
 					"type": 0
 				},
 				{
@@ -1489,12 +1349,6 @@
 				{
 					"id": 2,
 					"sLen": 0,
-					"time": 107400,
-					"type": 0
-				},
-				{
-					"id": 3,
-					"sLen": 200,
 					"time": 107400,
 					"type": 0
 				},
@@ -2491,132 +2345,6 @@
 					"id": 0,
 					"sLen": 0,
 					"time": 102200,
-					"type": 0
-				},
-				{
-					"id": 0,
-					"sLen": 0,
-					"time": 108800,
-					"type": 0
-				},
-				{
-					"id": 1,
-					"sLen": 0,
-					"time": 109000,
-					"type": 0
-				},
-				{
-					"id": 2,
-					"sLen": 0,
-					"time": 109200,
-					"type": 0
-				},
-				{
-					"id": 3,
-					"sLen": 0,
-					"time": 109400,
-					"type": 0
-				},
-				{
-					"id": 2,
-					"sLen": 200,
-					"time": 109600,
-					"type": 0
-				},
-				{
-					"id": 1,
-					"sLen": 200,
-					"time": 110000,
-					"type": 0
-				},
-				{
-					"id": 3,
-					"sLen": 600,
-					"time": 110400,
-					"type": 0
-				},
-				{
-					"id": 1,
-					"sLen": 200,
-					"time": 111200,
-					"type": 0
-				},
-				{
-					"id": 0,
-					"sLen": 200,
-					"time": 111600,
-					"type": 0
-				},
-				{
-					"id": 1,
-					"sLen": 200,
-					"time": 112000,
-					"type": 0
-				},
-				{
-					"id": 3,
-					"sLen": 200,
-					"time": 112600,
-					"type": 0
-				},
-				{
-					"id": 0,
-					"sLen": 0,
-					"time": 113000,
-					"type": 0
-				},
-				{
-					"id": 2,
-					"sLen": 0,
-					"time": 113200,
-					"type": 0
-				},
-				{
-					"id": 3,
-					"sLen": 0,
-					"time": 113400,
-					"type": 0
-				},
-				{
-					"id": 1,
-					"sLen": 0,
-					"time": 113600,
-					"type": 0
-				},
-				{
-					"id": 0,
-					"sLen": 0,
-					"time": 113700,
-					"type": 0
-				},
-				{
-					"id": 2,
-					"sLen": 0,
-					"time": 113800,
-					"type": 0
-				},
-				{
-					"id": 3,
-					"sLen": 0,
-					"time": 113900,
-					"type": 0
-				},
-				{
-					"id": 1,
-					"sLen": 0,
-					"time": 114100,
-					"type": 0
-				},
-				{
-					"id": 0,
-					"sLen": 200,
-					"time": 114400,
-					"type": 0
-				},
-				{
-					"id": 2,
-					"sLen": 200,
-					"time": 114800,
 					"type": 0
 				}
 			],
