@@ -1,0 +1,29 @@
+force extra camera offset.hx________PACKSEP________//starts at 25 but you can add more or remove here
+function onEvent(e) if (e.event.name == "force extra camera offset") {
+	if (e.event.params[0]) extraCamOffset.x = e.event.params[1];
+	if (e.event.params[2]) extraCamOffset.y = e.event.params[3];
+}
+________PACKSEP________{
+	"params": [
+		{
+			"name": "change X?",
+			"type": "Bool",
+			"defaultValue": true
+		},
+		{
+			"name": "X",
+			"type": "Float(-100, 100, 0.1, 2)",
+			"defaultValue": 0
+		},
+		{
+			"name": "change Y?",
+			"type": "Bool",
+			"defaultValue": true
+		},
+		{
+			"name": "Y",
+			"type": "Float(-100, 100, 0.1, 2)",
+			"defaultValue": 0
+		}
+	]
+}________PACKSEP________

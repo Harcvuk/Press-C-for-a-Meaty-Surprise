@@ -1,0 +1,21 @@
+get snappy.hx________PACKSEP________//snappies
+var itSnaps = false;
+function onEvent(e) if (e.event.name == "get snappy") {
+	itSnaps = e.event.params[1]; //get snappy
+	camGame.followLerp = itSnaps ? 1 : 0.04 * e.event.params[0];
+}
+function onCameraMove() if (itSnaps) camGame.snapToTarget();
+________PACKSEP________{
+	"params": [
+		{
+			"name": "Camera Speed (Multiplicative)",
+			"type": "Float(0, 100, 0.1, 2)",
+			"defaultValue": 1
+		},
+		{
+			"name": "Make it snappy? (instant movement)",
+			"type": "Bool",
+			"defaultValue": false
+		}
+	]
+}________PACKSEP________iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKXSURBVDhPdZJJTBNhFMfft8xMp0xZWlqLErcG0YhoNRET0IMHIB6NxIskxuWCIXpBTTSo8SQHTTwaL5rGE26gqUtiEE5GkS0QWQJCbGGkUDotnZnO8jkUTwb/eaf33i9vBfYf5bLp7MTr1W93Iq175enhv17GMGyknCJHO07wwphQUX3yfKMcbVbHnq6HNgCYZcx3nSnfUQyeXWpKefCp5MtqBZEf6jPvnegawJjt1FLTy/l80EceLSEyUHZ1bOjHYkJru3xDqj6LgzVs6Ipt6muAbZqphRk1tZgnbfYrovgbTtUe9vmrAt7SoRE5uKkyo0uUixuTL9aAlDxDeZHZtiLPGguDnETdrgIeo7e9c4xp76KRqd+rvBoH7GaxN1iNfQZTkXxlxZtDtmXC0gBYSwKnRV71IWOBZcZ1rsoLMUQygDVQBsnN02nK4lyg3spphFJI9OD5box538ELO3FvgB/0B4oqSkbdaBlZKWYqSJ37YI5eouFOpk+y7BRxsNh92NqYXhULcuMYWflLWYaa5bmUoQlIjfWYiZegaxSlGJRgTzWJ31ZVn+iymGU5C3EsqZf7AmmmLxp4D4bZDrzyFViSIzLZ3gKuENAi0Z1OTKdMJZNLZmShaaXgKCACiEOeAxic8cEUPaZpcpx3N/UfsuwSYLnkCu6bv5Y4NtzdvyU53MkMBfhSkMIYio5QDmtZiYGEMCVur11Y7/QdCtP+u23todDKk8dV+zmwVJsESWkdphXXmaELJGGhUP7QQLc1W+DHONdwsbDWU3iutVIQBecnTPE45w0hZwXaTJe9EOX33aJScJ1RJ57R6RYgNCODWIyoYOZIjavuOeYL1oD1pH+k/fxoTd4zE9+JWISCTa5wOxEkAPgDNkFjv0peiqIAAAAASUVORK5CYII=

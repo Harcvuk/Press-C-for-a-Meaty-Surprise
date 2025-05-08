@@ -1,3 +1,4 @@
+disableScript(); //temporary while i phase it out, it breaks everything otherwise
 import flixel.FlxObject;
 import flixel.camera.FlxCameraFollowStyle;
 import flixel.tweens.FlxEase;
@@ -51,8 +52,8 @@ function update() {
         }
     }
 
-	cameraNotePoint.x = FlxMath.lerp(cameraNotePoint.x, noteOffsets[0], camFollowRate); 
-	cameraNotePoint.y = FlxMath.lerp(cameraNotePoint.y, noteOffsets[1], camFollowRate); 
+	cameraNotePoint.x = FlxMath.lerp(cameraNotePoint.x, noteOffsets[0], camFollowRate);
+	cameraNotePoint.y = FlxMath.lerp(cameraNotePoint.y, noteOffsets[1], camFollowRate);
 
     switch(classicMode){
         case true:
@@ -140,7 +141,7 @@ function onEvent(event) {
         var durSeconds = (Conductor.stepCrochet / 1000) * duration;
 
         trace('\nFOCUSED CHAR:'+char.curCharacter+'\nposInstead:'+posInstead+'\nx:'+targetX+'\ny:'+targetY+'\nduration:'+duration+'\neaseStyle:'+ease+'\neaseDirection:'+ease2);
-        
+
         switch (posInstead){
             case true:
                 //idk
@@ -208,7 +209,7 @@ function onEvent(event) {
               trace('Invalid ease function: $ease');
               return;
             }
-    
+
             tweenCamZoom(zoom, durSeconds, direct, easeFunction);
         }
     }
@@ -240,7 +241,7 @@ public function tweenCamZoom(?zoom:Float, ?duration:Float, ?direct:Bool, ?ease:N
         cancelCamZoomTween();
 
         var targetZoom = zoom * (direct ? 1 : defaultCamZoom);
-      
+
         if (duration == 0)
         {
             defaultCamZoom = targetZoom;
