@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character sprite="Tallfriend" scale="1.7" flipX="true" isPlayer="true" icon="Seezee">
+<character sprite="Tallfriend" scale="1.7" flipX="true" isPlayer="true" icon="Seezee" x="-100" y="300">
 	<anim name="idle" anim="Tallfriend idle" x="0" y="0" fps="10" loop="false"/>
 	<anim name="singUP" anim="Tallfriend singUP" x="0" y="0" fps="10" loop="false"/>
 	<anim name="singLEFT" anim="Tallfriend singLEFT" x="0" y="0" fps="10" loop="false"/>
