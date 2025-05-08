@@ -2,317 +2,10 @@
 	"events": [
 		{
 			"params": [
-				0
+				1
 			],
 			"name": "Camera Movement",
 			"time": 0
-		},
-		{
-			"params": [
-				1.2,
-				true,
-				16,
-				"Quad",
-				"Out"
-			],
-			"name": "VSlice Camera Zoom",
-			"time": 4800
-		},
-		{
-			"params": [
-				1.4,
-				true,
-				16,
-				"Quad",
-				"Out"
-			],
-			"name": "VSlice Camera Zoom",
-			"time": 6000
-		},
-		{
-			"params": [
-				1.6,
-				true,
-				16,
-				"Quad",
-				"Out"
-			],
-			"name": "VSlice Camera Zoom",
-			"time": 7200
-		},
-		{
-			"params": [
-				1.8,
-				true,
-				16,
-				"Quad",
-				"Out"
-			],
-			"name": "VSlice Camera Zoom",
-			"time": 8400
-		},
-		{
-			"params": [
-				2,
-				true,
-				16,
-				"Instant (Ignores Direction)",
-				"Out"
-			],
-			"name": "VSlice Camera Zoom",
-			"time": 9000
-		},
-		{
-			"params": [
-				0.8,
-				true,
-				16,
-				"Elastic",
-				"Out"
-			],
-			"name": "VSlice Camera Zoom",
-			"time": 9600
-		},
-		{
-			"params": [
-				1,
-				false,
-				0,
-				0,
-				16,
-				"Elastic",
-				"Out"
-			],
-			"time": 14400,
-			"name": "VSlice Camera Movement"
-		},
-		{
-			"params": [
-				0,
-				false,
-				0,
-				0,
-				16,
-				"Sine",
-				"Out"
-			],
-			"time": 19200,
-			"name": "VSlice Camera Movement"
-		},
-		{
-			"params": [
-				1,
-				false,
-				0,
-				0,
-				16,
-				"Elastic",
-				"Out"
-			],
-			"time": 21600,
-			"name": "VSlice Camera Movement"
-		},
-		{
-			"params": [
-				0,
-				false,
-				0,
-				0,
-				16,
-				"Expo",
-				"Out"
-			],
-			"time": 22800,
-			"name": "VSlice Camera Movement"
-		},
-		{
-			"params": [
-				1,
-				false,
-				0,
-				0,
-				16,
-				"Elastic",
-				"Out"
-			],
-			"time": 24000,
-			"name": "VSlice Camera Movement"
-		},
-		{
-			"params": [
-				0,
-				false,
-				0,
-				0,
-				16,
-				"Elastic",
-				"Out"
-			],
-			"time": 28800,
-			"name": "VSlice Camera Movement"
-		},
-		{
-			"params": [
-				1,
-				false,
-				0,
-				0,
-				16,
-				"Elastic",
-				"Out"
-			],
-			"time": 33600,
-			"name": "VSlice Camera Movement"
-		},
-		{
-			"params": [
-				0,
-				false,
-				0,
-				0,
-				16,
-				"Elastic",
-				"Out"
-			],
-			"time": 38400,
-			"name": "VSlice Camera Movement"
-		},
-		{
-			"params": [
-				1,
-				false,
-				0,
-				0,
-				16,
-				"Expo",
-				"Out"
-			],
-			"time": 40800,
-			"name": "VSlice Camera Movement"
-		},
-		{
-			"params": [
-				0,
-				false,
-				0,
-				0,
-				16,
-				"Elastic",
-				"Out"
-			],
-			"time": 48000,
-			"name": "VSlice Camera Movement"
-		},
-		{
-			"params": [
-				1,
-				false,
-				0,
-				0,
-				16,
-				"Elastic",
-				"Out"
-			],
-			"time": 52800,
-			"name": "VSlice Camera Movement"
-		},
-		{
-			"params": [
-				0,
-				false,
-				0,
-				0,
-				16,
-				"Cube",
-				"Out"
-			],
-			"time": 62700,
-			"name": "VSlice Camera Movement"
-		},
-		{
-			"params": [
-				1,
-				false,
-				0,
-				0,
-				16,
-				"Elastic",
-				"Out"
-			],
-			"time": 64800,
-			"name": "VSlice Camera Movement"
-		},
-		{
-			"params": [
-				0,
-				false,
-				0,
-				0,
-				16,
-				"Instant (Ignores Duration and Direction)",
-				"Out"
-			],
-			"time": 67200,
-			"name": "VSlice Camera Movement"
-		},
-		{
-			"params": [
-				1.6,
-				true,
-				16,
-				"Elastic",
-				"Out"
-			],
-			"time": 67200,
-			"name": "VSlice Camera Zoom"
-		},
-		{
-			"params": [
-				1.2,
-				true,
-				16,
-				"Elastic",
-				"Out"
-			],
-			"time": 76800,
-			"name": "VSlice Camera Zoom"
-		},
-		{
-			"params": [
-				1,
-				false,
-				0,
-				0,
-				16,
-				"Instant (Ignores Duration and Direction)",
-				"Out"
-			],
-			"time": 76800,
-			"name": "VSlice Camera Movement"
-		},
-		{
-			"params": [
-				0,
-				false,
-				0,
-				0,
-				16,
-				"Elastic",
-				"Out"
-			],
-			"time": 86400,
-			"name": "VSlice Camera Movement"
-		},
-		{
-			"params": [
-				0.6,
-				true,
-				16,
-				"Elastic",
-				"Out"
-			],
-			"time": 86400,
-			"name": "VSlice Camera Zoom"
 		}
 	],
 	"scrollSpeed": 3,
@@ -830,7 +523,7 @@
 					"type": 0
 				},
 				{
-					"id": 2,
+					"id": 1,
 					"sLen": 0,
 					"time": 20700,
 					"type": 0
@@ -878,7 +571,7 @@
 					"type": 0
 				},
 				{
-					"id": 3,
+					"id": 0,
 					"sLen": 0,
 					"time": 21750,
 					"type": 0
@@ -890,7 +583,7 @@
 					"type": 0
 				},
 				{
-					"id": 1,
+					"id": 0,
 					"sLen": 0,
 					"time": 22050,
 					"type": 0
@@ -932,7 +625,7 @@
 					"type": 0
 				},
 				{
-					"id": 3,
+					"id": 1,
 					"sLen": 0,
 					"time": 23250,
 					"type": 0
@@ -944,7 +637,7 @@
 					"type": 0
 				},
 				{
-					"id": 0,
+					"id": 1,
 					"sLen": 450,
 					"time": 23400,
 					"type": 0
@@ -956,13 +649,19 @@
 					"type": 0
 				},
 				{
+					"id": 0,
+					"sLen": 750,
+					"time": 28950,
+					"type": 0
+				},
+				{
 					"id": 3,
 					"sLen": 225,
 					"time": 29250,
 					"type": 0
 				},
 				{
-					"id": 2,
+					"id": 0,
 					"sLen": 225,
 					"time": 29700,
 					"type": 0
@@ -992,7 +691,7 @@
 					"type": 0
 				},
 				{
-					"id": 1,
+					"id": 0,
 					"sLen": 150,
 					"time": 31500,
 					"type": 0
@@ -1136,7 +835,7 @@
 					"type": 0
 				},
 				{
-					"id": 2,
+					"id": 1,
 					"sLen": 825,
 					"time": 41850,
 					"type": 0
@@ -1232,7 +931,7 @@
 					"type": 0
 				},
 				{
-					"id": 2,
+					"id": 0,
 					"sLen": 0,
 					"time": 50025,
 					"type": 0
@@ -1304,13 +1003,13 @@
 					"type": 0
 				},
 				{
-					"id": 3,
+					"id": 0,
 					"sLen": 0,
 					"time": 51975,
 					"type": 0
 				},
 				{
-					"id": 2,
+					"id": 1,
 					"sLen": 0,
 					"time": 52050,
 					"type": 0
@@ -1358,13 +1057,13 @@
 					"type": 0
 				},
 				{
-					"id": 3,
+					"id": 1,
 					"sLen": 0,
 					"time": 54675,
 					"type": 0
 				},
 				{
-					"id": 2,
+					"id": 0,
 					"sLen": 0,
 					"time": 54750,
 					"type": 0
@@ -1460,8 +1159,8 @@
 					"type": 0
 				},
 				{
-					"id": 3,
-					"sLen": 75,
+					"id": 0,
+					"sLen": 112.5,
 					"time": 64500,
 					"type": 0
 				},
@@ -1562,7 +1261,7 @@
 					"type": 0
 				},
 				{
-					"id": 3,
+					"id": 1,
 					"sLen": 525,
 					"time": 69000,
 					"type": 0
@@ -1574,7 +1273,7 @@
 					"type": 0
 				},
 				{
-					"id": 2,
+					"id": 1,
 					"sLen": 75,
 					"time": 69750,
 					"type": 0
@@ -1604,7 +1303,7 @@
 					"type": 0
 				},
 				{
-					"id": 0,
+					"id": 1,
 					"sLen": 75,
 					"time": 70500,
 					"type": 0
@@ -1616,19 +1315,19 @@
 					"type": 0
 				},
 				{
-					"id": 2,
+					"id": 0,
 					"sLen": 75,
 					"time": 70800,
 					"type": 0
 				},
 				{
-					"id": 1,
+					"id": 0,
 					"sLen": 75,
 					"time": 70950,
 					"type": 0
 				},
 				{
-					"id": 3,
+					"id": 0,
 					"sLen": 75,
 					"time": 71100,
 					"type": 0
@@ -1676,7 +1375,7 @@
 					"type": 0
 				},
 				{
-					"id": 0,
+					"id": 1,
 					"sLen": 225,
 					"time": 72600,
 					"type": 0
@@ -1730,7 +1429,7 @@
 					"type": 0
 				},
 				{
-					"id": 1,
+					"id": 2,
 					"sLen": 150,
 					"time": 75900,
 					"type": 0
@@ -1754,19 +1453,19 @@
 					"type": 0
 				}
 			],
-			"position": "dad",
-			"strumScale": 1,
 			"visible": true,
-			"type": 0,
-			"characters": [
-				"Jagger"
-			],
 			"strumPos": [
 				0,
 				50
 			],
+			"position": "dad",
+			"strumScale": 1,
+			"vocalsSuffix": "",
 			"strumLinePos": 0.25,
-			"vocalsSuffix": ""
+			"type": 0,
+			"characters": [
+				"Jagger"
+			]
 		},
 		{
 			"notes": [
@@ -2407,7 +2106,7 @@
 					"type": 0
 				},
 				{
-					"id": 0,
+					"id": 1,
 					"sLen": 675,
 					"time": 43350,
 					"type": 0
@@ -2509,13 +2208,13 @@
 					"type": 0
 				},
 				{
-					"id": 3,
+					"id": 1,
 					"sLen": 225,
 					"time": 52800,
 					"type": 0
 				},
 				{
-					"id": 0,
+					"id": 3,
 					"sLen": 225,
 					"time": 53400,
 					"type": 0
@@ -2581,13 +2280,13 @@
 					"type": 0
 				},
 				{
-					"id": 1,
+					"id": 3,
 					"sLen": 150,
 					"time": 58800,
 					"type": 0
 				},
 				{
-					"id": 0,
+					"id": 3,
 					"sLen": 150,
 					"time": 59100,
 					"type": 0
@@ -2659,25 +2358,25 @@
 					"type": 0
 				},
 				{
-					"id": 0,
+					"id": 2,
 					"sLen": 0,
 					"time": 61575,
 					"type": 0
 				},
 				{
-					"id": 2,
+					"id": 3,
 					"sLen": 0,
 					"time": 61650,
 					"type": 0
 				},
 				{
-					"id": 1,
+					"id": 2,
 					"sLen": 450,
 					"time": 61800,
 					"type": 0
 				},
 				{
-					"id": 2,
+					"id": 3,
 					"sLen": 450,
 					"time": 61800,
 					"type": 0
@@ -2713,7 +2412,7 @@
 					"type": 0
 				},
 				{
-					"id": 0,
+					"id": 3,
 					"sLen": 0,
 					"time": 63750,
 					"type": 0
@@ -2731,25 +2430,25 @@
 					"type": 0
 				},
 				{
-					"id": 0,
+					"id": 2,
 					"sLen": 0,
 					"time": 64200,
 					"type": 0
 				},
 				{
-					"id": 2,
+					"id": 3,
 					"sLen": 0,
 					"time": 64275,
 					"type": 0
 				},
 				{
-					"id": 0,
+					"id": 2,
 					"sLen": 0,
 					"time": 64350,
 					"type": 0
 				},
 				{
-					"id": 3,
+					"id": 1,
 					"sLen": 0,
 					"time": 64425,
 					"type": 0
@@ -2827,7 +2526,7 @@
 					"type": 0
 				},
 				{
-					"id": 0,
+					"id": 3,
 					"sLen": 0,
 					"time": 76950,
 					"type": 0
@@ -2899,7 +2598,7 @@
 					"type": 0
 				},
 				{
-					"id": 1,
+					"id": 3,
 					"sLen": 225,
 					"time": 78900,
 					"type": 0
@@ -2917,7 +2616,7 @@
 					"type": 0
 				},
 				{
-					"id": 0,
+					"id": 3,
 					"sLen": 75,
 					"time": 79650,
 					"type": 0
@@ -2929,7 +2628,7 @@
 					"type": 0
 				},
 				{
-					"id": 1,
+					"id": 2,
 					"sLen": 0,
 					"time": 80100,
 					"type": 0
@@ -2941,25 +2640,25 @@
 					"type": 0
 				},
 				{
-					"id": 2,
+					"id": 1,
 					"sLen": 75,
 					"time": 80250,
 					"type": 0
 				},
 				{
-					"id": 0,
+					"id": 1,
 					"sLen": 225,
 					"time": 80400,
 					"type": 0
 				},
 				{
-					"id": 3,
+					"id": 2,
 					"sLen": 225,
 					"time": 80700,
 					"type": 0
 				},
 				{
-					"id": 0,
+					"id": 2,
 					"sLen": 0,
 					"time": 81000,
 					"type": 0
@@ -2971,7 +2670,7 @@
 					"type": 0
 				},
 				{
-					"id": 1,
+					"id": 2,
 					"sLen": 0,
 					"time": 81150,
 					"type": 0
@@ -2983,7 +2682,7 @@
 					"type": 0
 				},
 				{
-					"id": 0,
+					"id": 2,
 					"sLen": 225,
 					"time": 81300,
 					"type": 0
@@ -3049,28 +2748,28 @@
 					"type": 0
 				}
 			],
-			"position": "boyfriend",
-			"strumScale": 1,
 			"visible": true,
-			"type": 1,
-			"characters": [
-				"Seezee"
-			],
 			"strumPos": [
 				0,
 				50
 			],
+			"position": "boyfriend",
+			"strumScale": 1,
+			"vocalsSuffix": "",
 			"strumLinePos": 0.75,
-			"vocalsSuffix": ""
+			"type": 1,
+			"characters": [
+				"Seezee"
+			]
 		},
 		{
 			"notes": [],
+			"visible": false,
 			"position": "girlfriend",
 			"type": 2,
 			"characters": [
 				"gf"
-			],
-			"visible": false
+			]
 		}
 	],
 	"codenameChart": true,
