@@ -4,6 +4,6 @@ public var intendedScore:Int = 0;
 function update(elapsed){
     intendedScore = songScore;
     lerpScore = Math.floor(FlxMath.lerp(intendedScore, lerpScore, Math.exp(-elapsed * 24)));
-    scoreTxt.text = 'Score: ' +lerpScore;
+    scoreTxt.text = 'Score: ' + lerpScore;
 
 }
