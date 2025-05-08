@@ -1,0 +1,17 @@
+{
+	"opponentModeAllowed": false,
+	"icon": "EYAD",
+	"difficulties": [
+		"Normal",
+		"Alt"
+	],
+	"parsedColor": -9825247,
+	"color": "#6A1421",
+	"name": "headache-ok",
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "headache-ok",
+	"beatsPerMeasure": 4,
+	"needsVoices": false,
+	"bpm": 200
+}
