@@ -1,6 +1,16 @@
+import flixel.addons.display.FlxBackdrop;
+import flixel.addons.display.FlxGridOverlay;
+
+var backdrop:FlxBackdrop;
 var intro:FlxSprite;
+var bgs:FunkinSprite;
 
 function create() {
+
+	    backdrop = new FlxBackdrop(FlxGridOverlay.createGrid(128, 128, FlxG.width, FlxG.height, true, FlxColor.fromRGB(139, 0, 0), FlxColor.fromRGB(0, 0, 0)));
+    backdrop.velocity.set(50, 50);
+    add(backdrop);
+
 	trace("WELCOME");
 	FlxG.sound.music?.stop();
 	intro = new FlxSprite();
