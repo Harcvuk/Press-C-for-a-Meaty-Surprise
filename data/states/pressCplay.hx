@@ -1,5 +1,7 @@
-import funkin.menus.FreeplayState.FreeplaySonglist;
 import funkin.savedata.FunkinSave;
+import flixel.text.FlxBitmapText;
+import flixel.graphics.frames.FlxBitmapFont;
+import funkin.menus.FreeplayState.FreeplaySonglist;
 songs = FreeplaySonglist.get().songs;
 
 path = "menu/freeplay/";
@@ -8,6 +10,10 @@ function create() {
 		CoolUtil.playMusic(Paths.music("freakyMenu"), true, 1, true, 150);
 		FlxG.sound.music.persist = true;
 	}
+
+	//character stuff (important to be first)
+	for(k=>s in songs) if (s.name == Options.freeplayLastSong) curSelected = k;
+	for(k=>diff in songs[curSelected]?.difficulties) if (diff == Options.freeplayLastDifficulty) curDifficulty = k;
 
 	//background, CHOOSE PLAYER, and descriptions
 	camSRB = new FlxCamera(64,0,320,200,720/200);
@@ -24,24 +30,31 @@ function create() {
 	choosePlayer.camera = camSRB;
 	CoolUtil.cameraCenter(choosePlayer,camSRB,0x01);
 
-
+	//description
 	descriptionBox = new FunkinSprite(141,29).makeSolid(174,166,0xFF000052);
 	descriptionBox.camera = camSRB;
 	add(descriptionBox);
 	descriptionBox.alpha = 0.5;
 
+
+	descriptionFill = new FlxBitmapText(146,33,"ege",FlxBitmapFont.fromAngelCode("assets/images/fonts/srb2Fill.png", "assets/images/fonts/srb2Fill.xml"));
+	descriptionShadow = new FlxBitmapText(descriptionFill.x,descriptionFill.y,descriptionFill.text,FlxBitmapFont.fromAngelCode("assets/images/fonts/srb2Shadow.png", "assets/images/fonts/srb2Shadow.xml"));
+
+	description = [descriptionFill,descriptionShadow];
+	for (desc in description) {
+		desc.camera = camSRB;
+		add(desc);
+		desc.text = "ege"; //i didnt finish this ok
+	}
+
 	//left side
-	descriptionBox = new FunkinSprite(5,29).makeSolid(134,166,0xFF000052);
-	descriptionBox.camera = camSRB;
-	add(descriptionBox);
+	charBox = new FunkinSprite(5,29).makeSolid(134,166,0xFF000052);
+	charBox.camera = camSRB;
+	add(charBox);
 
 	camChars = new FlxCamera(93,115,128,160,720/200);
 	FlxG.cameras.add(camChars,false);
 	camChars.bgColor = 0;
-
-	//character stuff
-	for(k=>s in songs) if (s.name == Options.freeplayLastSong) curSelected = k;
-	for(k=>diff in songs[curSelected]?.difficulties) if (diff == Options.freeplayLastDifficulty) curDifficulty = k;
 
 	songIcons = [];
 	for (i => song in songs) {
