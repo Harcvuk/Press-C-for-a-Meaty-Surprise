@@ -25,7 +25,7 @@ function onEvent(e) if (e.event.name == "[BCC] Zoom Tween") {
 		{
 			"name": "Tween Time (Steps)",
 			"type": "Float(0.0625,256,0.01,2)",
-			"defaultValue": 1.00
+			"defaultValue": 4.00
 		},
 		{
 			"name": "Tween Ease (ex: circ, quad, cube)",

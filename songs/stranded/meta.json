@@ -3,8 +3,7 @@
 	"icon": "Jagger",
 	"difficulties": [
 		"Hard",
-		"Erect",
-		"placeholder"
+		"Erect"
 	],
 	"parsedColor": -32256,
 	"customValues": {},
