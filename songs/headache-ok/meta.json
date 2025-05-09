@@ -2,7 +2,7 @@
 	"opponentModeAllowed": false,
 	"icon": "EYAD",
 	"difficulties": [
-		"Normal",
+		"Hard",
 		"Alt"
 	],
 	"parsedColor": -9825247,

@@ -19,12 +19,6 @@ function create() {
 	camSRB = new FlxCamera(64,0,320,200,720/200);
 	FlxG.cameras.add(camSRB,false);
 
-	//DELETE temp WHEN DONE!
-	temp = new FunkinSprite(0,0,Paths.image(path+"temp"));
-	temp.camera = camSRB;
-	temp.alpha = 2/3;
-	add(temp);
-
 	choosePlayer = new FunkinSprite(0,8,Paths.image(path+"M_PICKP"));
 	add(choosePlayer);
 	choosePlayer.camera = camSRB;
@@ -34,18 +28,28 @@ function create() {
 	descriptionBox = new FunkinSprite(141,29).makeSolid(174,166,0xFF000052);
 	descriptionBox.camera = camSRB;
 	add(descriptionBox);
-	descriptionBox.alpha = 0.5;
 
+	makeTexties();
 
-	descriptionFill = new FlxBitmapText(146,33,"ege",FlxBitmapFont.fromAngelCode("assets/images/fonts/srb2Fill.png", "assets/images/fonts/srb2Fill.xml"));
-	descriptionShadow = new FlxBitmapText(descriptionFill.x,descriptionFill.y,descriptionFill.text,FlxBitmapFont.fromAngelCode("assets/images/fonts/srb2Shadow.png", "assets/images/fonts/srb2Shadow.xml"));
+	score = new FlxBitmapText(146,89,"Score:",FlxBitmapFont.fromAngelCode("assets/fonts/srb2.png", "assets/fonts/srb2.xml"));
+	score.camera = camSRB;
+	score.color = 0xFFFFFF00;
+	add(score);
 
-	description = [descriptionFill,descriptionShadow];
-	for (desc in description) {
-		desc.camera = camSRB;
-		add(desc);
-		desc.text = "ege"; //i didnt finish this ok
-	}
+	scoreText = new FlxBitmapText(score.x+score.width-2,score.y,"ee",FlxBitmapFont.fromAngelCode("assets/fonts/srb2.png", "assets/fonts/srb2.xml"));
+	scoreText.camera = camSRB;
+	add(scoreText);
+
+	difficulty = new FlxBitmapText(146,97,"Difficulty:",FlxBitmapFont.fromAngelCode("assets/fonts/srb2.png", "assets/fonts/srb2.xml"));
+	difficulty.camera = camSRB;
+	difficulty.color = 0xFFFFFF00;
+	add(difficulty);
+
+	difficultyText = new FlxBitmapText(difficulty.x+difficulty.width-2,difficulty.y,"ee",FlxBitmapFont.fromAngelCode("assets/fonts/srb2.png", "assets/fonts/srb2.xml"));
+	difficultyText.camera = camSRB;
+	add(difficultyText);
+
+	getSaveStuff();
 
 	//left side
 	charBox = new FunkinSprite(5,29).makeSolid(134,166,0xFF000052);
@@ -103,9 +107,56 @@ function changeSelection(amount) {
 		if (oldSelected + amount == curSelected) FlxTween.tween(icon,{y:icon.y-icon.height*amount},9/35); //linear tween if
 		else icon.y = 16 + (i - curSelected) * icon.height;
 	}
+
+	makeTexties();
+	getSaveStuff();
 }
 
 function changeDifficulty(amount) {
 	FlxG.sound.play(Paths.sound("DSMENU1"));
 	curDifficulty = FlxMath.wrap(curDifficulty+amount, 0, songs[curSelected].difficulties.length - 1);
+	getSaveStuff();
+}
+
+var descriptiones = [];
+function makeTexties() {
+	for (i in descriptiones) {
+		remove(i);
+		i.destroy();
+	}
+	var descPath = "songs/" + songs[curSelected].name + "/desc.txt";
+	var descText = Assets.exists(Paths.getPath(descPath)) ? StringTools.replace(Assets.getText(Paths.getPath(descPath)),"\\n","\n") : "no desc";
+	var startX = 146;
+	var startY = 33;
+	var lineHeight = 8;
+	var lines = descText.split("\n");
+	for (i => line in lines) {
+		var parts = line.split("¨");
+		var curX = startX;
+
+
+		for (j => part in parts) {
+			if (part.length == 0) continue;
+
+			if (j % 2 == 1 && j > 0 && StringTools.endsWith(parts[j-1]," ")) part = " " + part;
+
+			var desc = new FlxBitmapText();
+			desc.font = FlxBitmapFont.fromAngelCode("assets/fonts/srb2.png", "assets/fonts/srb2.xml");
+			desc.color = (j % 2 == 1) ? 0xFFFFFF00 : -1;
+			desc.text = part;
+			desc.setPosition(curX,startY + i * lineHeight);
+			desc.camera = camSRB;
+			add(desc);
+			descriptiones.push(desc);
+
+			curX += desc.width-2;
+		}
+	}
+}
+
+function getSaveStuff() {
+	var songScore = FunkinSave.getSongHighscore(songs[curSelected].name, songs[curSelected].difficulties[curDifficulty]).score;
+	scoreText.text = songScore;
+
+	difficultyText.text = songs[curSelected].difficulties.length > 1 ? "<" + songs[curSelected].difficulties[curDifficulty] + ">" : songs[curSelected].difficulties[curDifficulty];
 }
