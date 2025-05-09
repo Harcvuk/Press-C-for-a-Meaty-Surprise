@@ -4,6 +4,7 @@ import flixel.addons.display.FlxGridOverlay;
 var backdrop:FlxBackdrop;
 var intro:FlxSprite;
 var speed:Float = 150;
+var hah:Bool = false;
 
 function create() {
 
