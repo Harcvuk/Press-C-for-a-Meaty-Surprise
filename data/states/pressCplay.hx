@@ -28,7 +28,6 @@ function create() {
 	descriptionBox = new FunkinSprite(141,29).makeSolid(174,166,0xFF000052);
 	descriptionBox.camera = camSRB;
 	add(descriptionBox);
-	descriptionBox.alpha = 2/3;
 
 	makeTexties();
 
