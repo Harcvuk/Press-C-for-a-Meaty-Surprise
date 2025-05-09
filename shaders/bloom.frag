@@ -5,7 +5,7 @@ vec3 sampleSplit(sampler2D tex, vec2 coord)
 {
 	vec3 frag;
 	frag.r = textureCam(tex, vec2(coord.x - (chromatic / 100), coord.y)).r;
-	frag.g = textureCam(tex, vec2(coord.x       , coord.y)).g;
+	frag.g = textureCam(tex, vec2(coord.x,coord.y)).g;
 	frag.b = textureCam(tex, vec2(coord.x + (chromatic / 100), coord.y)).b;
 	return frag;
 }
