@@ -3,11 +3,11 @@ import flixel.addons.display.FlxGridOverlay;
 
 var backdrop:FlxBackdrop;
 var intro:FlxSprite;
-var bgs:FunkinSprite;
+var speed:Float = 150;
 
 function create() {
 
-	    backdrop = new FlxBackdrop(FlxGridOverlay.createGrid(128, 128, FlxG.width, FlxG.height, true, FlxColor.fromRGB(139, 0, 0), FlxColor.fromRGB(0, 0, 0)));
+	    backdrop = new FlxBackdrop(FlxGridOverlay.createGrid(128, 128, FlxG.width, FlxG.height, true, FlxColor.fromRGB(1,74,44), FlxColor.fromRGB(0,114,39)));
     backdrop.velocity.set(50, 50);
     add(backdrop);
 
@@ -29,6 +29,11 @@ function create() {
 	}
 }
 
+function update(elapsed:Float) {
+    if (hah) speed = FlxMath.lerp(speed, 3600, elapsed * 1.5);
+    backdrop.x -= speed * elapsed;
+    backdrop.y -= speed * elapsed;
+}
 function postUpdate() {
 	if (controls.ACCEPT && FlxG.save.data.seezeeSawIntro) FlxG.switchState(new MainMenuState());
 	switch (intro.animation.frameIndex) {
@@ -36,5 +41,7 @@ function postUpdate() {
 			CoolUtil.playMusic(Paths.sound("sbb_splash"));
 		case 106:
 			FlxG.camera.flash(FlxColor.WHITE, 1);
+  case 200:
+   hah = true;
 	}
 }
