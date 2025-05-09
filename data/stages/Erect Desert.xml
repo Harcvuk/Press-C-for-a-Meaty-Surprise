@@ -1,0 +1,14 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.6" folder="stages/HardDesert/">
+	<solid name="bg" x="-1100" y="-1110" color="#b591ff" width="4000" height="4000"/>
+	<sprite name="treesBack" sprite="treesBack" scroll="0.4" scale="2" alpha="0.8"/>
+	<sprite name="sand" sprite="sand" scale="2" scroll="0.6"/>
+	<sprite name="treesMiddle" y="50" sprite="treesMiddle" scale="2" scroll="0.6"/>
+	<sprite name="sandMiddle" sprite="sandMiddle" scale="2"/>
+	<sprite name="treesFront" y="50" sprite="treesFront" scale="2"/>
+	<gf x="336" y="385.5"/>
+	<dad x="347" y="395"/>
+	<combo x="158.5" y="325"/>
+	<bf x="1098.5" y="260.5"/>
+	<sprite name="sandFront" sprite="sandFront" scale="2" scroll="1.2"/>
+</stage>
