@@ -1,6 +1,14 @@
 var intro:FlxSprite;
+var bgs:FunkinSprite;
 
 function create() {
+
+	bgs = new FunkinSprite(0, -200, Paths.image("bgs"));
+    bgs.scale.set(2.1, 2.1);
+    bgs.screenCenter(0x11);
+    FlxTween.tween(bgs, {x:500, y:-500}, 15);
+    add(bgs);
+
 	trace("WELCOME");
 	FlxG.sound.music?.stop();
 	intro = new FlxSprite();
