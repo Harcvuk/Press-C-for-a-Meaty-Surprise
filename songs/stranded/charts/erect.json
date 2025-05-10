@@ -4,16 +4,16 @@
 			"params": [
 				0
 			],
-			"time": 0,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 0
 		},
 		{
 			"params": [
 				2.2,
 				false
 			],
-			"time": 0,
-			"name": "get snappy"
+			"name": "get snappy",
+			"time": 0
 		},
 		{
 			"params": [
@@ -22,8 +22,8 @@
 				"lerp",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 4800
+			"time": 4800,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
@@ -32,8 +32,8 @@
 				"lerp",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 6000
+			"time": 6000,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
@@ -42,8 +42,8 @@
 				"lerp",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 7200
+			"time": 7200,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
@@ -52,8 +52,8 @@
 				"lerp",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 8400
+			"time": 8400,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
@@ -62,8 +62,8 @@
 				"none (happens instantly)",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 9000
+			"time": 9000,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
@@ -72,106 +72,106 @@
 				"circ",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 9600
+			"time": 9600,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 14400
-		},
-		{
-			"params": [
-				0
-			],
-			"name": "Camera Movement",
-			"time": 19200
-		},
-		{
-			"params": [
-				1
-			],
-			"time": 21600,
+			"time": 14400,
 			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 22800
+			"time": 19200,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				1
 			],
 			"name": "Camera Movement",
-			"time": 24000
+			"time": 21600
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 28800
+			"time": 22800,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 33600
-		},
-		{
-			"params": [
-				0
-			],
-			"name": "Camera Movement",
-			"time": 38400
-		},
-		{
-			"params": [
-				1
-			],
-			"time": 40800,
+			"time": 24000,
 			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 48000
+			"time": 28800,
+			"name": "Camera Movement"
+		},
+		{
+			"params": [
+				1
+			],
+			"time": 33600,
+			"name": "Camera Movement"
+		},
+		{
+			"params": [
+				0
+			],
+			"time": 38400,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				1
 			],
 			"name": "Camera Movement",
-			"time": 52800
+			"time": 40800
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 62700
+			"time": 48000,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 64800
+			"time": 52800,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 67200
+			"time": 62700,
+			"name": "Camera Movement"
+		},
+		{
+			"params": [
+				1
+			],
+			"time": 64800,
+			"name": "Camera Movement"
+		},
+		{
+			"params": [
+				0
+			],
+			"time": 67200,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
@@ -180,8 +180,8 @@
 				"circ",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 67200
+			"time": 67200,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
@@ -190,22 +190,22 @@
 				"circ",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 76800
+			"time": 76800,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 76800
+			"time": 76800,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 86400
+			"time": 86400,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
@@ -214,16 +214,13 @@
 				"circ",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 86400
+			"time": 86400,
+			"name": "[BCC] Zoom Tween"
 		}
 	],
 	"scrollSpeed": 3,
-	"codenameChart": true,
 	"strumLines": [
 		{
-			"strumScale": 1,
-			"position": "dad",
 			"notes": [
 				{
 					"id": 0,
@@ -1660,21 +1657,21 @@
 					"type": 0
 				}
 			],
+			"position": "dad",
+			"strumScale": 1,
+			"visible": true,
+			"type": 0,
 			"characters": [
 				"Jagger"
 			],
-			"type": 0,
-			"visible": true,
 			"strumPos": [
 				0,
 				50
 			],
-			"vocalsSuffix": "",
-			"strumLinePos": 0.25
+			"strumLinePos": 0.25,
+			"vocalsSuffix": ""
 		},
 		{
-			"strumScale": 1,
-			"position": "boyfriend",
 			"notes": [
 				{
 					"id": 3,
@@ -2955,28 +2952,22 @@
 					"type": 0
 				}
 			],
+			"position": "boyfriend",
+			"strumScale": 1,
+			"visible": true,
+			"type": 1,
 			"characters": [
 				"Seezee"
 			],
-			"type": 1,
-			"visible": true,
 			"strumPos": [
 				0,
 				50
 			],
-			"vocalsSuffix": "",
-			"strumLinePos": 0.75
-		},
-		{
-			"position": "girlfriend",
-			"notes": [],
-			"type": 2,
-			"characters": [
-				"gf"
-			],
-			"visible": false
+			"strumLinePos": 0.75,
+			"vocalsSuffix": ""
 		}
 	],
+	"codenameChart": true,
 	"stage": "Erect Desert",
 	"noteTypes": []
 }
