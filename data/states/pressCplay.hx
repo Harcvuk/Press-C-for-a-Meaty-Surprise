@@ -31,7 +31,7 @@ function create() {
 
 	makeTexties();
 
-	score = new FlxBitmapText(146,89,"Score:",FlxBitmapFont.fromAngelCode("assets/fonts/srb2.png", "assets/fonts/srb2.xml"));
+	score = new FlxBitmapText(146,121,"Score:",FlxBitmapFont.fromAngelCode("assets/fonts/srb2.png", "assets/fonts/srb2.xml"));
 	score.camera = camSRB;
 	score.color = 0xFFFFFF00;
 	add(score);
@@ -40,7 +40,7 @@ function create() {
 	scoreText.camera = camSRB;
 	add(scoreText);
 
-	difficulty = new FlxBitmapText(146,97,"Difficulty:",FlxBitmapFont.fromAngelCode("assets/fonts/srb2.png", "assets/fonts/srb2.xml"));
+	difficulty = new FlxBitmapText(score.x,score.y+8,"Difficulty:",FlxBitmapFont.fromAngelCode("assets/fonts/srb2.png", "assets/fonts/srb2.xml"));
 	difficulty.camera = camSRB;
 	difficulty.color = 0xFFFFFF00;
 	add(difficulty);
@@ -97,6 +97,7 @@ function changeSelection(amount) {
 
 	curSelected = FlxMath.wrap(curSelected + amount, 0, songs.length - 1);
 	Options.freeplayLastSong = songs[curSelected].name;
+	if (curDifficulty > songs[curSelected].difficulties.length-1) curDifficulty = 0;
 	Options.freeplayLastDifficulty = curDifficulty;
 	//trace(curSelected,songs[curSelected].name);
 
