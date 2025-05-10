@@ -1,4 +1,4 @@
-create  var names:Array<String> = [
+var names:Array<String> = [
 	"HeroEyad: Director and Programmer of Press C for headache",
 	"TechyHarcvuk: Director and Made everything for Meaty Surprise",
 	"Bitto: Programmer and Charter",
