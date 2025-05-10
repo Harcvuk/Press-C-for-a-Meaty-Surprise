@@ -10,5 +10,4 @@ function onNoteCreation(e) {
 	var noteskin = getNoteskin(e.strumLineID);
 	e.note.antialiasing = false;
 	e.noteSprite = "game/notes/"+noteskin;
-	if (strumLines.members[e.strumLineID].characters[0].curCharacter == "minnis cule") e.note.gapFix = 1.2;
 }
