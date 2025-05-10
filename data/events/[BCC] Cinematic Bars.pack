@@ -10,6 +10,9 @@ function postCreate() for (bar in [topCinematic,bottomCinematic]) {
 	cinemaBars.push(bar);
 }
 
+var lerpTarget = 0;
+var lerpSpeed = 0.05;
+var lerping = false;
 function onEvent(e) if (e.event.name == "[BCC] Cinematic Bars") {
 	for (bar in cinemaBars)	{
 		FlxTween.cancelTweensOf(bar); //dont let two tweens happen at the same time
@@ -18,15 +21,22 @@ function onEvent(e) if (e.event.name == "[BCC] Cinematic Bars") {
 		if (overHUD) add(bar);
 		else insert(0,bar);
 	}
+	lerping = e.event.params[2] == "lerp";
 	switch (e.event.params[2]) {
 		case "none (happens instantly)": //instant snap to the pixel height
 			topCinematic.y = e.event.params[0]-FlxG.height;
 			bottomCinematic.y = FlxG.height-e.event.params[0];
+		case "lerp":
+			lerpTarget = e.event.params[0];
+			lerpSpeed = e.event.params[5];
 		default:
 			var barEase = CoolUtil.flxeaseFromString(e.event.params[2],e.event.params[3]);
 			for (s => bar in cinemaBars) FlxTween.tween(bar,{y:[e.event.params[0]-FlxG.height,FlxG.height-e.event.params[0]][s]},(Conductor.stepCrochet*e.event.params[1])/1000,{ease:barEase});
 	}
-}________PACKSEP________{
+}
+
+function update() if (lerping) for (s => bar in cinemaBars) bar.y = lerp(bar.y,[lerpTarget-FlxG.height,FlxG.height-lerpTarget][s],lerpSpeed);
+________PACKSEP________{
 	"params": [
 		{
 			"name": "Height Target (pixels, 0 to 361 (off to blocks entire screen)",
@@ -40,7 +50,7 @@ function onEvent(e) if (e.event.name == "[BCC] Cinematic Bars") {
 		},
 		{
 			"name": "Tween Ease",
-			"type": "DropDown('none (happens instantly)','linear', 'back', 'bounce', 'circ', 'cube', 'elastic', 'expo', 'quad', 'quart', 'quint', 'sine', 'smoothStep', 'smootherStep')",
+			"type": "DropDown('none (happens instantly)','linear', 'lerp', 'back', 'bounce', 'circ', 'cube', 'elastic', 'expo', 'quad', 'quart', 'quint', 'sine', 'smoothStep', 'smootherStep')",
 			"defValue": "circ"
 		},
 		{
@@ -52,6 +62,11 @@ function onEvent(e) if (e.event.name == "[BCC] Cinematic Bars") {
 			"name": "Go over HUD",
 			"type": "Bool",
 			"defaultValue": false
+		},
+		{
+			"name": "(for 'lerp' ease) lerp speed",
+			"type": "String",
+			"defaultValue": "0.05"
 		}
 	]
 }________PACKSEP________iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAGlJREFUOI3tU0EKwCAMi+Ij2v8/Lv6iO1lKV8aGO+ywgIgp0SbFBsCwgb4j/sYFYwUwSSdF1c+i6nzFwQAjaU/3td7JILZcIdYnCVF1Gz2SUXCFSbqmtJC7yQ+cLOxg4EYGEXms7f8LOAC3H1lkFwdKegAAAABJRU5ErkJggg==

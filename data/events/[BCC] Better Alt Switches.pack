@@ -1,0 +1,28 @@
+[BCC] Better Alt Switches.hx________PACKSEP________//bro i'm gonna
+function onEvent(e) if (e.event.name == "[BCC] Better Alt Switches") {
+	var params = e.event.params;
+	var firstSuffix = params[0];
+	var secondSuffix = params[1];
+	var sturm = strumLines.members[params[2]];
+
+	sturm.animSuffix = (firstSuffix != "" ? firstSuffix : "");
+	for (character in sturm.characters) character.idleSuffix = (secondSuffix != "" ? secondSuffix : "");
+}________PACKSEP________{
+	"params": [
+		{
+			"name": "animation suffix (leave empty to disable)",
+			"type": "String",
+			"defaultValue": "-alt"
+		},
+		{
+			"name": "idle suffix (leave empty to disable)",
+			"type": "String",
+			"defaultValue": "-alt"
+		},
+		{
+			"name": "Strumline",
+			"type": "StrumLine",
+			"defValue": 0
+		}
+	]
+}________PACKSEP________iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAI9JREFUOI2dktEJAzAIRJ+lS7j/cI5x/WhSxGoaKgQCl3uoF+Nd4r8yAxQRreruAJz0x4R2d7Ra26CuRkCuE+QKcII89+XUZoaY+9dOBEjD6bS1eAGyHeGUow2a1RGmB/negcYlKhlUzJb+xnUKnfkDiAhsifnUtquZvIMq1Fg78/UIk/kIyGNNZn4kdNXcCx6vUMSwtXaNAAAAAElFTkSuQmCC
