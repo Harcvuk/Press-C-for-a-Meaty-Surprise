@@ -8,7 +8,7 @@ var hah:Bool = false;
 
 function create() {
 
-	    backdrop = new FlxBackdrop(FlxGridOverlay.createGrid(128, 128, FlxG.width, FlxG.height, true, FlxColor.fromRGB(1,74,44), FlxColor.fromRGB(0,114,39)));
+	backdrop = new FlxBackdrop(FlxGridOverlay.createGrid(128, 128, FlxG.width, FlxG.height, true, FlxColor.fromRGB(1,74,44), FlxColor.fromRGB(0,114,39)));
     backdrop.velocity.set(50, 50);
     add(backdrop);
 
