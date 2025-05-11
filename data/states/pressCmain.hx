@@ -5,6 +5,7 @@ import funkin.menus.ModSwitchMenu;
 import funkin.editors.EditorPicker;
 import flixel.text.FlxBitmapText;
 import flixel.graphics.frames.FlxBitmapFont;
+import funkin.editors.ui.UIState as UI;
 
 var path = "game/menus/mainMenu/";
 function create() {
@@ -134,4 +135,8 @@ function randomMeat() {
 	FlxG.sound.music.volume = 0.25;
 	FlxTween.cancelTweensOf(FlxG.sound.music);
 	FlxTween.tween(FlxG.sound.music,{volume:1},0.5);
+}
+
+function postUpdate() {
+	if (FlxG.keys.justPressed.C) FlxG.switchState(new UI(true, "PasswordState")); // i love github mobile.
 }

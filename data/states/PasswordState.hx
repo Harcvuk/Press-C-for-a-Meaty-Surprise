@@ -3,23 +3,27 @@ import funkin.editors.ui.UITextBox;
 import flixel.addons.display.FlxBackdrop;
 import flixel.addons.display.FlxGridOverlay;
 import haxe.crypto.Sha256;
+import flixel.text.FlxTextBorderStyle as Border;
 
 
 var source = [
-	{password: "fadb68f2a094c1db2f6fa959ec350a9c51507a14ae7f2324c00b082f2493efaa", song: "tutorial", difficulty: "easy"}, // this is "coolpassword"
-	{password: "a595a45d227e801a36e0905ebaacf64940baa22ba3eaed0f4fb18f406a53b603", song: "stress", difficulty: "hard"} // this is "tankman"
+	{password: "a84f08c5ab6d3b28ddea1fd4c56e957a98cac426f65863dfdf93e29048e36a37", song: "my-new-cookings", difficulty: "hard"}, // this is "cookings"
+	{password: "8b1131e107b88a5acbef97b6cecc18a74b9f57fc110dd7523b5b85bc2967aaaa", song: "wanna play real life", difficulty: "hard"} // this is "real life"
 ];
 
 var inputKey:UITextBox;
 function create() {
-	add(var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.WHITE).screenCenter(0x11));
+	add(var bg = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.WHITE).screenCenter(0x11));
 
-	var grid:FlxBackdrop = new FlxBackdrop(FlxGridOverlay.createGrid(80, 80, 160, 160, true, 0x33FFFFFF, 0x0));
+	var grid = new FlxBackdrop(FlxGridOverlay.createGrid(80, 80, 160, 160, true, FlxColor.fromRGB(1,74,44), FlxColor.fromRGB(0,114,39)));
 	grid.velocity.set(40, 40);
 	grid.scrollFactor.set(0, 0);
 	add(grid);
 
-	var text:FlxText = new FlxText(225, 150, 0, "Enter Password").setFormat(Paths.font("vcr.ttf"), 100, FlxColor.WHITE, "center");
+	text = new FlxText(0, 150, 1280, "PASSWORD SCRIPT!!!!!!!!!").setFormat(Paths.font("vcr.ttf"), 80, FlxColor.WHITE, "center");
+	text.setFormat(Paths.font("vcr.ttf"), 80, -1, "center",Border.OUTLINE,0xFF000000);
+	text.borderSize *= 3;
+
 	add(text);
 
 	inputKey = new UITextBox(850, 30, "", 400, 60);
@@ -41,9 +45,10 @@ function update(elapsed:Float) {
 		FlxG.mouse.visible = false;
 	}
 }
+
 function onButtonKey() {
-	var enteredPassword:String = inputKey.label.text;
-	var hashedEnteredPassword:String = Sha256.encode(enteredPassword);
+	var enteredPassword = inputKey.label.text;
+	var hashedEnteredPassword = Sha256.encode(enteredPassword);
 	for (passwords in source) {
 		if (hashedEnteredPassword == passwords.password) {
 			CoolUtil.playMenuSFX(1);
@@ -59,4 +64,11 @@ function onButtonKey() {
 	}
 	CoolUtil.playMenuSFX(2);
 	trace('Incorrect password (' + enteredPassword + ')');
+}
+
+var color = 0;
+function postUpdate(elapsed) {
+	color = FlxMath.wrap(color+3,0,360);
+	trace(color);
+	text.color = FlxColor.fromHSB(color, 1, 1);
 }
