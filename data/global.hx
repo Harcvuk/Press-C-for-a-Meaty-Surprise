@@ -10,6 +10,7 @@ FlxG.save.data.seezeeSawIntro ??= false;
 
 static var redirectStates:Map<Class<FlxState>, String> = [
 	TitleState => "SeezeeBashIntro",
+	MainMenuState => "pressCMain"
 	FreeplayState => "PressCplay",
 	CreditsMain => "Credits",
 ];
