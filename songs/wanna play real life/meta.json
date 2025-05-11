@@ -1,0 +1,17 @@
+{
+	"beatsPerMeasure": 4,
+	"opponentModeAllowed": false,
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"bpm": 140,
+	"difficulties": [
+		"DIFFICULTY"
+	],
+	"needsVoices": true,
+	"parsedColor": -7179779,
+	"displayName": "wanna play real life",
+	"icon": "face",
+	"name": "wanna play real life",
+	"color": "#9271FD",
+	"customValues": {}
+}
