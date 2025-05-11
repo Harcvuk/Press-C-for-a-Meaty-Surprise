@@ -4,7 +4,7 @@ import flixel.graphics.frames.FlxBitmapFont;
 import funkin.menus.FreeplayState.FreeplaySonglist;
 songs = FreeplaySonglist.get().songs;
 
-path = "menu/freeplay/";
+path = "game/menus/freeplay/";
 function create() {
 	if (FlxG.sound.music == null || !FlxG.sound.music.playing) {
 		CoolUtil.playMusic(Paths.music("freakyMenu"), true, 1, true, 150);
