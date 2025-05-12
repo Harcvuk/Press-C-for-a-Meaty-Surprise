@@ -1,0 +1,101 @@
+{ "frames": [
+   {
+    "filename": "no0000",
+    "frame": { "x": 0, "y": 0, "w": 128, "h": 37 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 37 },
+    "sourceSize": { "w": 128, "h": 37 },
+    "duration": 100
+   },
+   {
+    "filename": "plop0000",
+    "frame": { "x": 129, "y": 0, "w": 128, "h": 37 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 37 },
+    "sourceSize": { "w": 128, "h": 37 },
+    "duration": 33
+   },
+   {
+    "filename": "plop0001",
+    "frame": { "x": 258, "y": 0, "w": 128, "h": 37 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 37 },
+    "sourceSize": { "w": 128, "h": 37 },
+    "duration": 33
+   },
+   {
+    "filename": "plop0002",
+    "frame": { "x": 0, "y": 38, "w": 128, "h": 37 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 37 },
+    "sourceSize": { "w": 128, "h": 37 },
+    "duration": 33
+   },
+   {
+    "filename": "plop0003",
+    "frame": { "x": 129, "y": 38, "w": 128, "h": 37 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 37 },
+    "sourceSize": { "w": 128, "h": 37 },
+    "duration": 33
+   },
+   {
+    "filename": "plop0004",
+    "frame": { "x": 258, "y": 38, "w": 128, "h": 37 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 37 },
+    "sourceSize": { "w": 128, "h": 37 },
+    "duration": 33
+   },
+   {
+    "filename": "plop0005",
+    "frame": { "x": 0, "y": 76, "w": 128, "h": 37 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 37 },
+    "sourceSize": { "w": 128, "h": 37 },
+    "duration": 33
+   },
+   {
+    "filename": "plop0006",
+    "frame": { "x": 129, "y": 76, "w": 128, "h": 37 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 37 },
+    "sourceSize": { "w": 128, "h": 37 },
+    "duration": 33
+   },
+   {
+    "filename": "plop0007",
+    "frame": { "x": 258, "y": 76, "w": 128, "h": 37 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 37 },
+    "sourceSize": { "w": 128, "h": 37 },
+    "duration": 33
+   },
+   {
+    "filename": "plop0008",
+    "frame": { "x": 0, "y": 0, "w": 128, "h": 37 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 37 },
+    "sourceSize": { "w": 128, "h": 37 },
+    "duration": 100
+   }
+ ],
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.3.14-beta1-x64",
+  "image": "puddle.png",
+  "format": "RGBA8888",
+  "size": { "w": 386, "h": 113 },
+  "scale": "1"
+ }
+}

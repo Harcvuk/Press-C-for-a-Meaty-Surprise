@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<character x="100" y="380" sprite="The Heroic Eyad Of The Sahara" scale="2" icon="The Heroic Eyad Of The Sahara" color="#00E5FF" antialiasing="false" camy="50">
+	<anim name="idle" anim="idle" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="left" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="right" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singUP" anim="up" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="down" x="0" y="0" fps="24" loop="false"/>
+	<anim name="eye of ad" anim="eye of ad" x="0" y="0" fps="24" loop="true"/>
+</character>

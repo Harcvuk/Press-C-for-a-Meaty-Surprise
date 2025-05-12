@@ -1,0 +1,119 @@
+{ "frames": [
+   {
+    "filename": "idle0000",
+    "frame": { "x": 235, "y": 405, "w": 120, "h": 190 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 57, "y": 57, "w": 120, "h": 190 },
+    "sourceSize": { "w": 177, "h": 247 },
+    "duration": 83
+   },
+   {
+    "filename": "idle0001",
+    "frame": { "x": 118, "y": 403, "w": 116, "h": 201 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 34, "y": 46, "w": 116, "h": 201 },
+    "sourceSize": { "w": 177, "h": 247 },
+    "duration": 83
+   },
+   {
+    "filename": "idle0002",
+    "frame": { "x": 0, "y": 248, "w": 117, "h": 204 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 30, "y": 43, "w": 117, "h": 204 },
+    "sourceSize": { "w": 177, "h": 247 },
+    "duration": 83
+   },
+   {
+    "filename": "right0000",
+    "frame": { "x": 356, "y": 405, "w": 98, "h": 203 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 58, "y": 43, "w": 98, "h": 203 },
+    "sourceSize": { "w": 177, "h": 247 },
+    "duration": 83
+   },
+   {
+    "filename": "right0001",
+    "frame": { "x": 455, "y": 412, "w": 97, "h": 203 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 42, "y": 43, "w": 97, "h": 203 },
+    "sourceSize": { "w": 177, "h": 247 },
+    "duration": 83
+   },
+   {
+    "filename": "left0000",
+    "frame": { "x": 456, "y": 0, "w": 147, "h": 205 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 42, "w": 147, "h": 205 },
+    "sourceSize": { "w": 177, "h": 247 },
+    "duration": 83
+   },
+   {
+    "filename": "left0001",
+    "frame": { "x": 456, "y": 206, "w": 141, "h": 205 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 22, "y": 42, "w": 141, "h": 205 },
+    "sourceSize": { "w": 177, "h": 247 },
+    "duration": 83
+   },
+   {
+    "filename": "up0000",
+    "frame": { "x": 305, "y": 0, "w": 150, "h": 223 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 17, "y": 23, "w": 150, "h": 223 },
+    "sourceSize": { "w": 177, "h": 247 },
+    "duration": 83
+   },
+   {
+    "filename": "up0001",
+    "frame": { "x": 142, "y": 0, "w": 162, "h": 208 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 11, "y": 38, "w": 162, "h": 208 },
+    "sourceSize": { "w": 177, "h": 247 },
+    "duration": 83
+   },
+   {
+    "filename": "down0000",
+    "frame": { "x": 271, "y": 224, "w": 134, "h": 180 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 23, "y": 67, "w": 134, "h": 180 },
+    "sourceSize": { "w": 177, "h": 247 },
+    "duration": 83
+   },
+   {
+    "filename": "down0001",
+    "frame": { "x": 142, "y": 209, "w": 128, "h": 193 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 26, "y": 54, "w": 128, "h": 193 },
+    "sourceSize": { "w": 177, "h": 247 },
+    "duration": 83
+   },
+   {
+    "filename": "eye of ad0000",
+    "frame": { "x": 0, "y": 0, "w": 141, "h": 247 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 22, "y": 0, "w": 141, "h": 247 },
+    "sourceSize": { "w": 177, "h": 247 },
+    "duration": 83
+   }
+ ],
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.3.14-beta1-x64",
+  "image": "The Heroic Eyad Of The Sahara.png",
+  "format": "I8",
+  "size": { "w": 603, "h": 615 },
+  "scale": "1"
+ }
+}

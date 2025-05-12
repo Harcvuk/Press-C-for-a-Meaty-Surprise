@@ -1,0 +1,15 @@
+<!DOCTYPE codename-engine-stage>
+<stage folder="stages/the heroic irl lands/" zoom="0.7">
+	<solid name="bg" x="-1100" y="-1110" width="4000" height="4000" color="#009DFE"/>
+	<solid name="hills2" x="-1455" y="1013" width="4784" height="3000" color="#00FF55"/>
+	<sprite name="hills" x="-259" y="842" sprite="hills" scale="2" antialiasing="false"/>
+	<sprite name="tree" x="-322" y="380" sprite="tree"  scale="2" antialiasing="false"/>
+	<sprite name="puddle" x="1528" y="1230" sprite="puddle" scale="2" antialiasing="false">
+		<anim name="plop" anim="plop"/>
+		<anim name="no" anim="no"/>
+	</sprite>
+	<gf x="590" scrolly="1" y="454.5" scrollx="1"/>
+	<dad x="347" y="395"/>
+	<bf x="1107.5" y="401.5"/>
+	<combo x="1034" y="681"/>
+</stage>

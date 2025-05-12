@@ -5,12 +5,12 @@
 	"stepsPerBeat": 4,
 	"bpm": 140,
 	"difficulties": [
-		"DIFFICULTY"
+		"Hard"
 	],
-	"needsVoices": true,
+	"needsVoices": false,
 	"parsedColor": -7179779,
 	"displayName": "wanna play real life",
-	"icon": "face",
+	"icon": "real",
 	"name": "wanna play real life",
 	"color": "#9271FD",
 	"customValues": {}
