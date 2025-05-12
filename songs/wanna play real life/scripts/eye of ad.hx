@@ -39,8 +39,8 @@ function ra() {
 	camGame.followLerp = 0;
 }
 
+var colour = 0;
 function DJEYAD(what) {
-	trace(what);
 	eyadText.text = what;
 	switch (what) {
 		case "D","DJ":
@@ -52,6 +52,16 @@ function DJEYAD(what) {
 			c.redOffset = c.greenOffset = c.blueOffset = 100;
 			FlxTween.cancelTweensOf(eyadText);
 			FlxTween.tween(eyadText,{"colorTransform.redOffset":0,"colorTransform.greenOffset":0,"colorTransform.blueOffset":0},1,{ease:FlxEase.circOut});
+			if (what == "EYAD IS HERE!") {
+				eyadText.color = FlxColor.fromHSB(colour, 1, 1);
+				colour += 72;
+			}
 		case "die": remove(eyadText);
 	}
+}
+
+function eyadTextKill() {
+	eyadText.moves = true;
+	FlxTween.tween(eyadText,{y:eyadText.y - 100},1.5,{ease:FlxEase.expoOut}).then(FlxTween.tween(eyadText,{y:FlxG.height+500},1.5,{ease:FlxEase.expoIn}));
+	FlxTween.tween(eyadText,{"scale.x":2,"scale.y":2,angle:30},3,{ease:FlxEase.circOut});
 }

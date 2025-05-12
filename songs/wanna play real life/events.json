@@ -4,64 +4,72 @@
 			"params": [
 				0
 			],
-			"time": 6857.14285714286,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 6857.14285714286
 		},
 		{
 			"params": [
 				1
 			],
-			"time": 10285.7142857143,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 10285.7142857143
 		},
 		{
 			"params": [
 				0
 			],
-			"time": 13714.2857142857,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 13714.2857142857
 		},
 		{
 			"params": [
 				1
 			],
-			"time": 16714.2857142857,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 16714.2857142857
 		},
 		{
 			"params": [
 				0
 			],
-			"time": 20571.4285714286,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 20571.4285714286
 		},
 		{
 			"params": [
 				1
 			],
-			"time": 21857.1428571429,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 21857.1428571429
 		},
 		{
 			"params": [
 				0
 			],
-			"time": 24000,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 24000
 		},
 		{
 			"params": [
 				1
 			],
-			"time": 25178.5714285714,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 25178.5714285714
 		},
 		{
 			"params": [
 				0
 			],
-			"time": 26250,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 26250
+		},
+		{
+			"params": [
+				"plop",
+				""
+			],
+			"time": 27428.5714285714,
+			"name": "HScript Call"
 		},
 		{
 			"params": [
@@ -69,22 +77,22 @@
 				""
 			],
 			"name": "HScript Call",
-			"time": 27428.5714285714
-		},
-		{
-			"params": [
-				"plop",
-				""
-			],
-			"time": 29142.8571428571,
-			"name": "HScript Call"
+			"time": 29142.8571428571
 		},
 		{
 			"params": [
 				1
 			],
-			"time": 29678.5714285714,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 29678.5714285714
+		},
+		{
+			"params": [
+				"plop",
+				""
+			],
+			"time": 30857.1428571429,
+			"name": "HScript Call"
 		},
 		{
 			"params": [
@@ -92,37 +100,21 @@
 				""
 			],
 			"name": "HScript Call",
-			"time": 30857.1428571429
-		},
-		{
-			"params": [
-				"plop",
-				""
-			],
-			"time": 32571.4285714286,
-			"name": "HScript Call"
+			"time": 32571.4285714286
 		},
 		{
 			"params": [
 				0
 			],
-			"time": 33107.1428571429,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 33107.1428571429
 		},
 		{
 			"params": [
 				"plop",
 				""
 			],
-			"name": "HScript Call",
-			"time": 33214.2857142857
-		},
-		{
-			"params": [
-				"plop",
-				""
-			],
-			"time": 33857.1428571429,
+			"time": 33214.2857142857,
 			"name": "HScript Call"
 		},
 		{
@@ -131,14 +123,14 @@
 				""
 			],
 			"name": "HScript Call",
-			"time": 34285.7142857143
+			"time": 33857.1428571429
 		},
 		{
 			"params": [
 				"plop",
 				""
 			],
-			"time": 34928.5714285714,
+			"time": 34285.7142857143,
 			"name": "HScript Call"
 		},
 		{
@@ -147,14 +139,14 @@
 				""
 			],
 			"name": "HScript Call",
-			"time": 35571.4285714286
+			"time": 34928.5714285714
 		},
 		{
 			"params": [
 				"plop",
 				""
 			],
-			"time": 36000,
+			"time": 35571.4285714286,
 			"name": "HScript Call"
 		},
 		{
@@ -163,21 +155,37 @@
 				""
 			],
 			"name": "HScript Call",
-			"time": 36642.8571428571
+			"time": 36000
+		},
+		{
+			"params": [
+				"plop",
+				""
+			],
+			"time": 36642.8571428571,
+			"name": "HScript Call"
 		},
 		{
 			"params": [
 				1
 			],
-			"time": 36857.1428571429,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 36857.1428571429
 		},
 		{
 			"params": [
 				"plop",
 				""
 			],
-			"time": 37285.7142857143,
+			"name": "HScript Call",
+			"time": 37285.7142857143
+		},
+		{
+			"params": [
+				"plop",
+				""
+			],
+			"time": 37714.2857142857,
 			"name": "HScript Call"
 		},
 		{
@@ -186,14 +194,14 @@
 				""
 			],
 			"name": "HScript Call",
-			"time": 37714.2857142857
+			"time": 38357.1428571429
 		},
 		{
 			"params": [
 				"plop",
 				""
 			],
-			"time": 38357.1428571429,
+			"time": 39000,
 			"name": "HScript Call"
 		},
 		{
@@ -202,14 +210,14 @@
 				""
 			],
 			"name": "HScript Call",
-			"time": 39000
+			"time": 39428.5714285714
 		},
 		{
 			"params": [
 				"plop",
 				""
 			],
-			"time": 39428.5714285714,
+			"time": 40071.4285714286,
 			"name": "HScript Call"
 		},
 		{
@@ -218,62 +226,54 @@
 				""
 			],
 			"name": "HScript Call",
-			"time": 40071.4285714286
-		},
-		{
-			"params": [
-				"plop",
-				""
-			],
-			"time": 40714.2857142857,
-			"name": "HScript Call"
+			"time": 40714.2857142857
 		},
 		{
 			"params": [
 				0,
 				true
 			],
-			"time": 41142.8571428571,
-			"name": "get snappy"
+			"name": "get snappy",
+			"time": 41142.8571428571
 		},
 		{
 			"params": [
 				0
 			],
-			"time": 41142.8571428571,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 41142.8571428571
 		},
 		{
 			"params": [
 				"goodbye",
 				""
 			],
-			"time": 41142.8571428571,
-			"name": "HScript Call"
+			"name": "HScript Call",
+			"time": 41142.8571428571
 		},
 		{
 			"params": [
 				0,
 				false
 			],
-			"time": 41250,
-			"name": "get snappy"
+			"name": "get snappy",
+			"time": 41250
 		},
 		{
 			"params": [
 				"plop",
 				""
 			],
-			"name": "HScript Call",
-			"time": 41464.2857142857
+			"time": 41464.2857142857,
+			"name": "HScript Call"
 		},
 		{
 			"params": [
 				"ra",
 				""
 			],
-			"time": 41571.4285714286,
-			"name": "HScript Call"
+			"name": "HScript Call",
+			"time": 41571.4285714286
 		},
 		{
 			"params": [
@@ -282,24 +282,24 @@
 				"none (happens instantly)",
 				"Out"
 			],
-			"time": 41571.4285714286,
-			"name": "[BCC] Zoom Tween"
+			"name": "[BCC] Zoom Tween",
+			"time": 41571.4285714286
 		},
 		{
 			"params": [
 				"goodbye",
 				""
 			],
-			"time": 41571.4285714286,
-			"name": "HScript Call"
+			"name": "HScript Call",
+			"time": 41571.4285714286
 		},
 		{
 			"params": [
 				1,
 				false
 			],
-			"time": 46285.7142857143,
-			"name": "get snappy"
+			"name": "get snappy",
+			"time": 46285.7142857143
 		},
 		{
 			"params": [
@@ -308,8 +308,8 @@
 				"lerp",
 				"Out"
 			],
-			"time": 46285.7142857143,
-			"name": "[BCC] Zoom Tween"
+			"name": "[BCC] Zoom Tween",
+			"time": 46285.7142857143
 		},
 		{
 			"params": [
@@ -318,51 +318,59 @@
 				"lerp",
 				"Out"
 			],
-			"time": 50142.8571428571,
-			"name": "[BCC] Zoom Tween"
+			"name": "[BCC] Zoom Tween",
+			"time": 50142.8571428571
 		},
 		{
 			"params": [
 				1
 			],
-			"time": 52607.1428571429,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 52607.1428571429
 		},
 		{
 			"params": [
 				0
 			],
-			"time": 54910.7142857143,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 54910.7142857143
 		},
 		{
 			"params": [
 				1
 			],
-			"time": 55553.5714285714,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 55553.5714285714
 		},
 		{
 			"params": [
 				0
 			],
-			"time": 57000,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 57000
 		},
 		{
 			"params": [
 				"DJEYAD",
 				"D"
 			],
-			"time": 57000,
-			"name": "HScript Call"
+			"name": "HScript Call",
+			"time": 57000
 		},
 		{
 			"params": [
 				"DJEYAD",
 				"D"
 			],
-			"time": 57133.9285714286,
+			"name": "HScript Call",
+			"time": 57133.9285714286
+		},
+		{
+			"params": [
+				"DJEYAD",
+				"D"
+			],
+			"time": 57267.8571428571,
 			"name": "HScript Call"
 		},
 		{
@@ -371,78 +379,78 @@
 				"D"
 			],
 			"name": "HScript Call",
-			"time": 57267.8571428571
-		},
-		{
-			"params": [
-				"DJEYAD",
-				"D"
-			],
-			"time": 57401.7857142857,
-			"name": "HScript Call"
+			"time": 57401.7857142857
 		},
 		{
 			"params": [
 				"DJEYAD",
 				"DJ"
 			],
-			"name": "HScript Call",
-			"time": 57535.7142857143
+			"time": 57535.7142857143,
+			"name": "HScript Call"
 		},
 		{
 			"params": [
 				"DJEYAD",
 				"DJ EYAD"
 			],
-			"time": 58071.4285714286,
-			"name": "HScript Call"
+			"name": "HScript Call",
+			"time": 58071.4285714286
 		},
 		{
 			"params": [
 				"DJEYAD",
 				"DJ EYAD IS"
 			],
-			"name": "HScript Call",
-			"time": 58607.1428571429
+			"time": 58607.1428571429,
+			"name": "HScript Call"
 		},
 		{
 			"params": [
 				"DJEYAD",
 				"DJ EYAD IS HERE"
 			],
-			"time": 58875,
-			"name": "HScript Call"
+			"name": "HScript Call",
+			"time": 58875
 		},
 		{
 			"params": [
 				"DJEYAD",
 				"EYAD IS HERE!"
 			],
-			"name": "HScript Call",
-			"time": 60214.2857142857
+			"time": 60214.2857142857,
+			"name": "HScript Call"
 		},
 		{
 			"params": [
 				"DJEYAD",
 				"E-"
 			],
-			"name": "HScript Call",
-			"time": 61017.8571428571
+			"time": 61017.8571428571,
+			"name": "HScript Call"
 		},
 		{
 			"params": [
 				"DJEYAD",
 				"E-E-"
 			],
-			"time": 61151.7857142857,
-			"name": "HScript Call"
+			"name": "HScript Call",
+			"time": 61151.7857142857
 		},
 		{
 			"params": [
 				"DJEYAD",
 				"EYAD IS HERE!"
 			],
-			"time": 61285.7142857143,
+			"name": "HScript Call",
+			"time": 61285.7142857143
+		},
+		{
+			"params": [
+				"DJEYAD",
+				"EYAD IS HERE!"
+			],
+			"time": 62357.1428571429,
 			"name": "HScript Call"
 		},
 		{
@@ -451,79 +459,111 @@
 				"EYAD IS HERE!"
 			],
 			"name": "HScript Call",
-			"time": 62357.1428571429
+			"time": 63428.5714285714
 		},
 		{
 			"params": [
 				"DJEYAD",
 				"EYAD IS HERE!"
 			],
-			"time": 63428.5714285714,
+			"time": 64500,
 			"name": "HScript Call"
 		},
 		{
 			"params": [
-				"DJEYAD",
-				"EYAD IS HERE!"
+				-5,
+				1,
+				"expo",
+				"Out"
+			],
+			"name": "[BCC] Angle Tween",
+			"time": 65504.4642857143
+		},
+		{
+			"params": [
+				5,
+				1,
+				"expo",
+				"Out"
+			],
+			"time": 65638.3928571429,
+			"name": "[BCC] Angle Tween"
+		},
+		{
+			"params": [
+				-5,
+				1,
+				"expo",
+				"Out"
+			],
+			"time": 65772.3214285714,
+			"name": "[BCC] Angle Tween"
+		},
+		{
+			"params": [
+				180,
+				3,
+				"expo",
+				"Out"
+			],
+			"name": "[BCC] Angle Tween",
+			"time": 66000
+		},
+		{
+			"params": [
+				"0.3",
+				2,
+				"expo",
+				"Out"
+			],
+			"name": "[BCC] Zoom Tween",
+			"time": 66000
+		},
+		{
+			"params": [
+				"2",
+				1,
+				"expo",
+				"In"
+			],
+			"name": "[BCC] Zoom Tween",
+			"time": 66214.2857142857
+		},
+		{
+			"params": [
+				0,
+				64,
+				"circ",
+				"Out"
+			],
+			"name": "[BCC] Angle Tween",
+			"time": 66321.4285714286
+		},
+		{
+			"params": [
+				"",
+				64,
+				"circ",
+				"Out"
+			],
+			"name": "[BCC] Zoom Tween",
+			"time": 66321.4285714286
+		},
+		{
+			"params": [
+				"eyadTextKill",
+				""
 			],
 			"name": "HScript Call",
-			"time": 64500
-		},
-		{
-			"params": [
-				-5,
-				1,
-				"lerp",
-				"Out"
-			],
-			"time": 65504.4642857143,
-			"name": "[BCC] Angle Tween"
-		},
-		{
-			"params": [
-				5,
-				1,
-				"lerp",
-				"Out"
-			],
-			"name": "[BCC] Angle Tween",
-			"time": 65638.3928571429
-		},
-		{
-			"params": [
-				-5,
-				1,
-				"lerp",
-				"Out"
-			],
-			"name": "[BCC] Angle Tween",
-			"time": 65772.3214285714
-		},
-		{
-			"params": [
-				5,
-				1,
-				"lerp",
-				"Out"
-			],
-			"time": 65973.2142857143,
-			"name": "[BCC] Angle Tween"
-		},
-		{
-			"params": [
-				1,
-				"camGame"
-			],
-			"time": 66308.0357142857,
-			"name": "Add Camera Zoom"
+			"time": 66321.4285714286
 		},
 		{
 			"params": [
 				"ra",
 				""
 			],
-			"name": "HScript Call",
-			"time": 76071.4285714286
+			"time": 76071.4285714286,
+			"name": "HScript Call"
 		},
 		{
 			"params": [
@@ -532,8 +572,8 @@
 				"none (happens instantly)",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 76071.4285714286
+			"time": 76071.4285714286,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
@@ -542,7 +582,15 @@
 				"none (happens instantly)",
 				"Out"
 			],
-			"name": "[BCC] Angle Tween",
+			"time": 76071.4285714286,
+			"name": "[BCC] Angle Tween"
+		},
+		{
+			"params": [
+				"DJEYAD",
+				"die"
+			],
+			"name": "HScript Call",
 			"time": 76071.4285714286
 		},
 		{
@@ -552,15 +600,50 @@
 				"lerp",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 80571.4285714286
+			"time": 80571.4285714286,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
 				2
 			],
-			"name": "Camera Movement",
-			"time": 80571.4285714286
+			"time": 80571.4285714286,
+			"name": "Camera Movement"
+		},
+		{
+			"params": [
+				0,
+				"idle",
+				true
+			],
+			"time": 80571.4285714286,
+			"name": "Play Animation"
+		},
+		{
+			"params": [
+				1,
+				false
+			],
+			"time": 80571.4285714286,
+			"name": "get snappy"
+		},
+		{
+			"params": [
+				"ra",
+				""
+			],
+			"time": 87428.5714285714,
+			"name": "HScript Call"
+		},
+		{
+			"params": [
+				"2",
+				4,
+				"none (happens instantly)",
+				"Out"
+			],
+			"time": 87428.5714285714,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
@@ -569,23 +652,41 @@
 				true
 			],
 			"name": "Play Animation",
-			"time": 80571.4285714286
+			"time": 91500
 		},
 		{
 			"params": [
 				1,
-				false
+				true
 			],
 			"name": "get snappy",
-			"time": 80571.4285714286
+			"time": 91500
 		},
 		{
 			"params": [
-				"ra",
+				"",
+				4,
+				"none (happens instantly)",
+				"Out"
+			],
+			"name": "[BCC] Zoom Tween",
+			"time": 91500
+		},
+		{
+			"params": [
+				0,
+				false
+			],
+			"name": "get snappy",
+			"time": 94178.5714285714
+		},
+		{
+			"params": [
+				"superPlop",
 				""
 			],
-			"name": "HScript Call",
-			"time": 87428.5714285714
+			"time": 94285.7142857143,
+			"name": "HScript Call"
 		},
 		{
 			"params": [
@@ -595,14 +696,6 @@
 				"Out"
 			],
 			"name": "[BCC] Zoom Tween",
-			"time": 87428.5714285714
-		},
-		{
-			"params": [
-				"superPlop",
-				""
-			],
-			"name": "HScript Call",
 			"time": 94285.7142857143
 		}
 	]
