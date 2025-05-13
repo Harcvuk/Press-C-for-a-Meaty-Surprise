@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="PeakSeezee" flipX="true" scale="2" isPlayer="true" icon="PeakSZ" color="#4EFF06">
+	<anim name="idle" anim="peak idle" x="0" y="0" fps="10" loop="false"/>
+	<anim name="singUP" anim="peak up" x="0" y="0" fps="10" loop="false"/>
+	<anim name="singLEFT" anim="peak left" x="0" y="0" fps="10" loop="false"/>
+	<anim name="singRIGHT" anim="peak right" x="0" y="0" fps="10" loop="false"/>
+	<anim name="singDOWN" anim="peak down" x="0" y="0" fps="10" loop="false"/>
+</character>

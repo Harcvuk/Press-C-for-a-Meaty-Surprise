@@ -1,0 +1,16 @@
+{
+	"opponentModeAllowed": true,
+	"difficulties": [
+		"Peak"
+	],
+	"icon": "Seezee",
+	"parsedColor": -16714135,
+	"coopAllowed": true,
+	"name": "peakingtrial",
+	"color": "#00F669",
+	"stepsPerBeat": 4,
+	"displayName": "Trial (PEAK!!!!)",
+	"needsVoices": false,
+	"beatsPerMeasure": 4,
+	"bpm": 150
+}

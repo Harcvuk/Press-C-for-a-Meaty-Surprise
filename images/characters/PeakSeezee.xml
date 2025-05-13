@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="PeakSeezee.png">
+<SubTexture name="peak idle0000" x="0" y="0" width="355" height="609" frameX="-114" frameY="-8" frameWidth="640" frameHeight="640" />
+<SubTexture name="peak idle0001" x="1157" y="609" width="355" height="570" frameX="-114" frameY="-47" frameWidth="640" frameHeight="640" />
+<SubTexture name="peak idle0002" x="1545" y="0" width="355" height="520" frameX="-114" frameY="-97" frameWidth="640" frameHeight="640" />
+<SubTexture name="peak idle0003" x="1545" y="520" width="355" height="475" frameX="-114" frameY="-142" frameWidth="640" frameHeight="640" />
+<SubTexture name="peak idle0004" x="1900" y="468" width="355" height="426" frameX="-114" frameY="-191" frameWidth="640" frameHeight="640" />
+<SubTexture name="peak idle0005" x="1545" y="520" width="355" height="475" frameX="-114" frameY="-142" frameWidth="640" frameHeight="640" />
+<SubTexture name="peak idle0006" x="1545" y="0" width="355" height="520" frameX="-114" frameY="-97" frameWidth="640" frameHeight="640" />
+<SubTexture name="peak idle0007" x="1157" y="609" width="355" height="570" frameX="-114" frameY="-47" frameWidth="640" frameHeight="640" />
+<SubTexture name="peak idle0008" x="0" y="0" width="355" height="609" frameX="-114" frameY="-8" frameWidth="640" frameHeight="640" />
+<SubTexture name="peak left0000" x="1900" y="0" width="581" height="468" frameX="-1" frameY="-149" frameWidth="640" frameHeight="640" />
+<SubTexture name="peak left0001" x="355" y="0" width="581" height="609" frameX="-1" frameY="-8" frameWidth="640" frameHeight="640" />
+<SubTexture name="peak right0000" x="0" y="1218" width="609" height="476" frameX="-30" frameY="-141" frameWidth="640" frameHeight="640" />
+<SubTexture name="peak right0001" x="936" y="0" width="609" height="609" frameX="-30" frameY="-8" frameWidth="640" frameHeight="640" />
+<SubTexture name="peak up0000" x="1210" y="1218" width="556" height="471" frameX="-50" frameY="-146" frameWidth="640" frameHeight="640" />
+<SubTexture name="peak up0001" x="0" y="609" width="556" height="609" frameX="-50" frameY="-8" frameWidth="640" frameHeight="640" />
+<SubTexture name="peak down0000" x="609" y="1218" width="601" height="472" frameX="-16" frameY="-139" frameWidth="640" frameHeight="640" />
+<SubTexture name="peak down0001" x="556" y="609" width="601" height="603" frameX="-16" frameY="-8" frameWidth="640" frameHeight="640" />
+</TextureAtlas>

@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-stage>
+<stage folder="stages/The Peak ahh Desert/" zoom="0.4">
+	<sprite scale="2.6" sprite="theSky" x="-100" name="theSky"/>
+	<sprite scale="2.6" sprite="weirdSans" x="-100" name="weirdSans"/>
+	<gf x="336" y="385.5"/>
+	<dad x="-451" y="240.5"/>
+	<combo x="459.5" y="141"/>
+	<bf x="1275.5" y="176"/>
+</stage>
