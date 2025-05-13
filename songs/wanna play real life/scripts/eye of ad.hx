@@ -8,13 +8,16 @@ function postCreate() {
 
 	eyeOfRa = new FunkinSprite(0,0,Paths.image("Explosioneffectgreenscreen"));
 	eyeOfRa.addAnim("ra","ra",24,false);
-	eyeOfRa.addAnim("no","no",24,false);
-	eyeOfRa.scrollFactor.set(0,0);
-	eyeOfRa.zoomFactor = 0;
-	add(eyeOfRa);
-	eyeOfRa.playAnim("no");
-	eyeOfRa.setGraphicSize(FlxG.width,FlxG.height);
-	eyeOfRa.screenCenter();
+	sparkles = new FunkinSprite(0,0,Paths.image("HDGreenScreenStarDustEffect"));
+	sparkles.addAnim("sparkle","sparkle",24,false);
+	for (i in [eyeOfRa,sparkles]) {
+		i.addAnim("no","no",24,false);
+		i.camera = camHUD;
+		insert(0,i);
+		i.playAnim("no");
+		i.setGraphicSize(FlxG.width,FlxG.height);
+		i.screenCenter();
+	}
 
 	eyadText = new FunkinText(0,0,FlxG.width,"D");
 	eyadText.camera = camHUD;
@@ -38,6 +41,9 @@ function ra() {
 	camGame.scroll.set(-104,500);
 	camGame.followLerp = 0;
 }
+
+function gong() eyeOfRa.playAnim("ra",true);
+function sparkle() sparkles.playAnim("sparkle",true);
 
 var colour = 0;
 function DJEYAD(what) {
