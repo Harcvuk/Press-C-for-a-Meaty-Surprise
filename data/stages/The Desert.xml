@@ -8,7 +8,7 @@
 	<sprite name="treesFront" y="50" sprite="treesFront" scale="2"/>
 	<gf x="336" y="385.5"/>
 	<dad x="347" y="395"/>
-	<combo x="158.5" y="325"/>
+	<combo x="558.5" y="625"/>
 	<bf x="1098.5" y="260.5"/>
 	<sprite name="sandFront" sprite="sandFront" scale="2" scroll="1.2"/>
 </stage>
