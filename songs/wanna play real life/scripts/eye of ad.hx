@@ -62,6 +62,7 @@ function DJEYAD(what) {
 
 function eyadTextKill() {
 	eyadText.moves = true;
-	FlxTween.tween(eyadText,{y:eyadText.y - 100},1.5,{ease:FlxEase.expoOut}).then(FlxTween.tween(eyadText,{y:FlxG.height+500},1.5,{ease:FlxEase.expoIn}));
+	var fall = downscroll ? -eyadText.height - 500 : FlxG.height+500;
+	FlxTween.tween(eyadText,{y:eyadText.y - 100 * (-downscroll*2+1)},1.5,{ease:FlxEase.expoOut}).then(FlxTween.tween(eyadText,{y:fall},1.5,{ease:FlxEase.expoIn}));
 	FlxTween.tween(eyadText,{"scale.x":2,"scale.y":2,angle:30},3,{ease:FlxEase.circOut});
 }
