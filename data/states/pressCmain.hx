@@ -79,6 +79,12 @@ function create() {
 	}
 	quitText.alignment = "center";
 
+	quitSecret = new FunkinSprite(0,0);
+	quitSecret.camera = camMenu;
+	add(quitSecret);
+	quitSecret.visible = false;
+	quitSecret.scale.set(0.5,0.5);
+
 	fromIntro = false;
 }
 
@@ -108,9 +114,7 @@ function update() {
 				for (option in menuOptions) option.visible = false;
 				for (quit in [quitBG,quitText]) quit.visible = true;
 				randomizeQuit();
-				new FlxTimer().start(0, () -> {
-					quitting = true;
-				});
+				new FlxTimer().start(0, () -> quitting = true); //1 frame of delay so you actually get to see the quit message
 		}
 	}
 
@@ -129,10 +133,11 @@ function update() {
 	if (quitting) {
 		if (back || FlxG.keys.justPressed.N) {
 			quitting = false;
+			quitSecret.visible = false;
 			for (option in menuOptions) option.visible = true;
 			for (quit in [quitBG,quitText]) quit.visible = false;
 		}
-		if (accept || FlxG.keys.justPressed.Y) {
+		if ((accept || FlxG.keys.justPressed.Y) && imageCounter == 0) {
 			randomMeatSound();
 			controlLock = true;
 			var quitScreen = new FunkinSprite(0,0,Paths.image(path+"GAMEQUIT"));
@@ -140,7 +145,7 @@ function update() {
 			camMenu.bgColor = 0xFF171717;
 			CoolUtil.cameraCenter(quitScreen,camMenu);
 			add(quitScreen);
-			new FlxTimer().start(1,() -> window.close());
+			new FlxTimer().start(2,() -> window.close());
 		}
 		return;
 	}
@@ -224,19 +229,60 @@ var quitTexts = [
 	"Wet it be, John.\n or I'll get meaty.",
 	"Ouuugh I'm peaking\n Peaking so hard mnnng",
 	"It's so fucking hot\n out here help me",
-	"Did you beat it?\n Not the meat, the game."
+	"Did you beat it?\n Not the meat, the game.",
+	"cmon "+ (Discord?.user?.globalName ?? "man").toLowerCase() + "\njust one more " + (Discord?.user?.globalName ?? "man").toLowerCase() + " pls",
+	"You're not who i'm looking for..",
+	"\n#####\npluto",
+	"Press Y and I'll make you regret it all."
 	//please add more!!
 ];
 
+var imageCounter = 0;
 function randomizeQuit() {
+	if (FlxG.random.bool(100/256) || imageCounter > 0) {
+		imageCounter++;
+		quitSecret.visible = true;
+
+		quitSecret.loadSprite(Paths.image(path+"quitImgs/"+imageCounter));
+		quitSecret.updateHitbox();
+		CoolUtil.cameraCenter(quitSecret,camMenu);
+		quitBG.scale.x = quitSecret.width + 24;
+		quitBG.scale.y = quitSecret.height + 24;
+		quitBG.updateHitbox();
+		CoolUtil.cameraCenter(quitBG,camMenu);
+
+		quitText.visible = false;
+
+		if (imageCounter == 3) {
+			var staticSound = FlxG.sound.load(Paths.sound("dog/static"));
+			staticSound.volume = 0;
+			staticSound.play();
+			staticSound.fadeOut(5,1);
+			controlLock = true;
+			FlxTween.tween(FlxG.sound.music,{"pitch":0},5,{ease:FlxEase.sineOut, onComplete: () -> FlxG.sound.music.volume = 0});
+			FlxTween.tween(sky,{"velocity.x":0},5,{ease:FlxEase.sineOut});
+			var windowNF = FlxG.sound.load(Paths.sound("dog/window95"));
+			new FlxTimer().start(7,() -> {
+				windowNF.play();
+				staticSound.fadeOut(1,0);
+			});
+			FlxTween.tween(window,{opacity:0},windowNF.length/1000,{startDelay:7, onComplete: () -> window.close()});
+		}
+		return;
+	}
+	quitText.visible = true;
 	quitText.text = FlxG.random.getObject(quitTexts) + "\n\n(Press 'Y' to quit)";
 	quitText.updateHitbox();
 	CoolUtil.cameraCenter(quitText,camMenu);
 
-	quitBG.scale.x = 24 + quitText.width;
+	quitBG.scale.x = quitText.width + 24;
 	quitBG.scale.y = quitText.height + 5;
 	quitBG.updateHitbox();
 	CoolUtil.cameraCenter(quitBG,camMenu);
 
 	quitText.y = quitBG.y + 3;
+}
+
+function preUpdate() {
+	if (imageCounter == 3 && FlxG.keys.pressed.F5) window.close();
 }
