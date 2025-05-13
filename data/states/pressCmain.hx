@@ -31,12 +31,12 @@ function create() {
 	sonic.updateHitbox();
 	sonic.screenCenter();
 
-	seezee = new FunkinSprite(0,0,Paths.image(path+"TTSONIC"));
+	seezee = new FunkinSprite(0,0,Paths.image(path+"TTSZ"));
 	seezee.scale.set(3.6,3.6);
 	seezee.updateHitbox();
 	seezee.screenCenter();
-	seezee.x += 63;
-	seezee.y -= 112;
+	seezee.x += 22;
+	seezee.y -= 118;
 	seezee.addAnim("pop","pop",2,false);
 	seezee.addAnim("wag","wag",2,true);
 	new FlxTimer().start(32/35, () -> {
@@ -44,7 +44,7 @@ function create() {
 		add(sonic);
 		seezee.playAnim("pop");
 		seezee.animation.finishCallback = () -> {
-			remove(sonic);
+
 			seezee.playAnim("wag");
 		}
 	});
