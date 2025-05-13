@@ -7,6 +7,7 @@ import flixel.text.FlxBitmapText;
 import flixel.graphics.frames.FlxBitmapFont;
 import funkin.editors.ui.UIState as UI;
 import funkin.backend.MusicBeatState;
+import funkin.backend.utils.DiscordUtil as Discord;
 
 var path = "game/menus/mainMenu/";
 function create() {
@@ -53,7 +54,7 @@ function create() {
 	}
 
 	//choices menu
-	camMenu = new FlxCamera(0,0,FlxG.width/3.6,FlxG.height/3.6,3.6);
+	camMenu = new FlxCamera(0,0,FlxG.width/3.6+1,FlxG.height/3.6,3.6);
 	FlxG.cameras.add(camMenu,false);
 	camMenu.alpha = 0;
 	camMenu.bgColor = 0x80000000;
@@ -69,18 +70,33 @@ function create() {
 	}
 	menuOptions[0].color = 0xFFFFFF00;
 
+	quitBG = new FunkinSprite().makeSolid(1,1,0xFF000052);
+	quitText = new FlxBitmapText(0,0,"ege",FlxBitmapFont.fromAngelCode("assets/fonts/srb2.png", "assets/fonts/srb2.xml"));
+	for (i in [quitBG,quitText]) {
+		i.camera = camMenu;
+		add(i);
+		i.visible = false;
+	}
+	quitText.alignment = "center";
+
 	fromIntro = false;
 }
 
+var controlLock = false;
 var menuing = false;
+var quitting = false;
 function update() {
+	if (controlLock) return;
+	var accept = (controls.ACCEPT || FlxG.mouse.justPressed);
+	var back = (controls.BACK || FlxG.mouse.justPressedRight);
 
-	if (controls.ACCEPT || FlxG.mouse.justPressed) if (!menuing) {
+	if (accept) if (!menuing) {
 		curSelected = 0;
 		for (s => i in menuOptions) i.color = s == curSelected ? 0xFFFFFF00 : -1;
 		menuing = true;
 		camMenu.alpha = 1;
 	} else {
+		menuBeep();
 		switch (menuNames[curSelected]) {
 			case "1 PLAYER":
 				MusicBeatState.skipTransOut = MusicBeatState.skipTransIn = true;
@@ -88,14 +104,14 @@ function update() {
 			case "OPTIONS": FlxG.switchState(new OptionsMenu());
 			case "CREDITS": FlxG.switchState(new CreditsMain());
 			case "C": randomMeat();
-			case "QUIT GAME": window.close();
+			case "QUIT GAME":
+				for (option in menuOptions) option.visible = false;
+				for (quit in [quitBG,quitText]) quit.visible = true;
+				randomizeQuit();
+				new FlxTimer().start(0, () -> {
+					quitting = true;
+				});
 		}
-	}
-
-	if (controls.BACK || FlxG.mouse.justPressedRight) if (!menuing) FlxG.switchState(new TitleState()); //temporary
-	else {
-		menuing = false;
-		camMenu.alpha = 0;
 	}
 
 	if (controls.SWITCHMOD) {
@@ -110,14 +126,37 @@ function update() {
 		openSubState(new EditorPicker());
 	}
 
-	if (!menuing) return;
-	if (controls.UP_P || controls.DOWN_P) changeSelection(controls.UP_P ? -1 : 1);
-	if (FlxG.mouse.wheel != 0) changeSelection(-FlxG.mouse.wheel);
+	if (quitting) {
+		if (back || FlxG.keys.justPressed.N) {
+			quitting = false;
+			for (option in menuOptions) option.visible = true;
+			for (quit in [quitBG,quitText]) quit.visible = false;
+		}
+		if (accept || FlxG.keys.justPressed.Y) {
+			randomMeatSound();
+			controlLock = true;
+			var quitScreen = new FunkinSprite(0,0,Paths.image(path+"GAMEQUIT"));
+			quitScreen.camera = camMenu;
+			camMenu.bgColor = 0xFF171717;
+			CoolUtil.cameraCenter(quitScreen,camMenu);
+			add(quitScreen);
+			new FlxTimer().start(1,() -> window.close());
+		}
+		return;
+	}
+	if (menuing) {
+		if (controls.UP_P || controls.DOWN_P) changeSelection(controls.UP_P ? -1 : 1);
+		if (FlxG.mouse.wheel != 0) changeSelection(-FlxG.mouse.wheel);
+		if (back) {
+			menuing = false;
+			camMenu.alpha = 0;
+		}
+	} else if (back) FlxG.switchState(new TitleState());
 }
 
 var curSelected = 0;
 function changeSelection(amount) {
-	FlxG.sound.play(Paths.sound("DSMENU1"));
+	menuBeep();
 	curSelected = FlxMath.wrap(curSelected + amount, 0, menuOptions.length - 1);
 	for (s => i in menuOptions) i.color = s == curSelected ? 0xFFFFFF00 : -1;
 }
@@ -139,6 +178,10 @@ function randomMeat() {
 	meatImage.alpha = 1;
 	FlxTween.tween(meatImage,{alpha:0},1,{ease:FlxEase.circIn});
 
+	randomMeatSound();
+}
+
+function randomMeatSound() {
 	if (FlxG.random.bool(10)) FlxG.sound.play(Paths.sound("rareMeat/"+FlxG.random.getObject(rareMeatSounds)));
 	else FlxG.sound.play(Paths.sound("meat/"+FlxG.random.getObject(meatSounds)));
 	FlxG.sound.music.volume = 0.25;
@@ -148,4 +191,48 @@ function randomMeat() {
 
 function postUpdate() {
 	if (FlxG.keys.justPressed.C) FlxG.switchState(new UI(true, "PasswordState")); // i love github mobile.
+}
+
+var quitTexts = [
+	//edits of the original quit messages
+	"Safestman's tied explosives\nto your freinds, and\nwill activate them if\nyou press the 'Y' key!\nPress 'N' to save them!",
+	"What would Holly say if\nshe saw you quitting the game?",
+	"Hey!\nWhere do ya think you're goin'?",
+	"Forget your studies!\nPlay some more!",
+	"You're trying to say you\nlike Bob Tweaked better than\nthis, right?",
+	"Don't leave yet -- there's a\nsarmale around that corner!",
+	"You'd rather work than play?",
+	"Go ahead and leave. See if I care...\n*sniffle*",
+	"If you leave now,\nEge will take over the planet!",
+	"Don't quit!\nThere are headaches\nto have!",
+	"Aw c'mon, just change\na few more clothes!",
+	"Did you get all those Chaos Emeralds?",
+	"If you leave, I'll use\nmy nin attack on you!",
+	"Don't go!\nYou might find the hidden\nsongs!",
+	"Hit the 'N' key, "+ (Discord?.user?.globalName ?? "Sonic") +"!\nThe 'N' key!",
+	"Are you really going to give up?\nWe certainly would never give you up.",
+	"Come on, just ONE more headache!",
+	"Press 'N' to unlock\nthe Ultimate Cheat!",
+	"Why don't you go back and try\nwriting on that password state to\nsee what happens?",
+	"Every time you press 'Y', a\nMeater cries...",
+	"You'll be back to play soon, though...\n......right?",
+	"Aww, is Headache-ok too\ndifficult for you?",
+	//ok these are original
+	(Discord?.user?.globalName ?? "GARY").toUpperCase() + " THERES A BOMB!!!!",
+	"Press N to get 1 PYRAMILLION dirhams!",
+	"Heh.\nRoom for 94 more?"
+	//please add more!!
+];
+
+function randomizeQuit() {
+	quitText.text = FlxG.random.getObject(quitTexts) + "\n\n(Press 'Y' to quit)";
+	quitText.updateHitbox();
+	CoolUtil.cameraCenter(quitText,camMenu);
+
+	quitBG.scale.x = 24 + quitText.width;
+	quitBG.scale.y = quitText.height + 5;
+	quitBG.updateHitbox();
+	CoolUtil.cameraCenter(quitBG,camMenu);
+
+	quitText.y = quitBG.y + 3;
 }

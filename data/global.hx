@@ -31,3 +31,10 @@ function update(elapsed) if (FlxG.keys.pressed.CONTROL && FlxG.keys.pressed.F5) 
 	trace("reloading global script");
 	GlobalScript.onModSwitch(ModsFolder.currentModFolder);
 }
+
+static var exitSound:FlxSound;
+static function menuBeep() {
+	exitSound = new FlxSound().loadEmbedded(Paths.sound("DSMENU1"), false, false);
+	exitSound.persist = true;
+	exitSound.play();
+}
