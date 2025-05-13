@@ -220,7 +220,11 @@ var quitTexts = [
 	//ok these are original
 	(Discord?.user?.globalName ?? "GARY").toUpperCase() + " THERES A BOMB!!!!",
 	"Press N to get 1 PYRAMILLION dirhams!",
-	"Heh.\nRoom for 94 more?"
+	"Heh.\nRoom for 94 more?",
+	"Wet it be, John.\n or I'll get meaty.",
+	"Ouuugh I'm peaking\n Peaking so hard mnnng",
+	"It's so fucking hot\n out here help me",
+	"Did you beat it?\n Not the meat, the game."
 	//please add more!!
 ];
 
