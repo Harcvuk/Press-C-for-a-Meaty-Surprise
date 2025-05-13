@@ -6,6 +6,7 @@ import funkin.editors.EditorPicker;
 import flixel.text.FlxBitmapText;
 import flixel.graphics.frames.FlxBitmapFont;
 import funkin.editors.ui.UIState as UI;
+import funkin.backend.MusicBeatState;
 
 var path = "game/menus/mainMenu/";
 function create() {
@@ -39,15 +40,17 @@ function create() {
 	seezee.y -= 118;
 	seezee.addAnim("pop","pop",2,false);
 	seezee.addAnim("wag","wag",2,true);
-	new FlxTimer().start(32/35, () -> {
+	if (fromIntro) new FlxTimer().start(32/35, () -> {
 		add(seezee);
 		add(sonic);
 		seezee.playAnim("pop");
-		seezee.animation.finishCallback = () -> {
-
-			seezee.playAnim("wag");
-		}
+		seezee.animation.finishCallback = () -> seezee.playAnim("wag");
 	});
+	else {
+		add(seezee);
+		add(sonic);
+		seezee.playAnim("wag");
+	}
 
 	//choices menu
 	camMenu = new FlxCamera(0,0,FlxG.width/3.6,FlxG.height/3.6,3.6);
@@ -65,6 +68,8 @@ function create() {
 		add(option);
 	}
 	menuOptions[0].color = 0xFFFFFF00;
+
+	fromIntro = false;
 }
 
 var menuing = false;
@@ -75,12 +80,16 @@ function update() {
 		for (s => i in menuOptions) i.color = s == curSelected ? 0xFFFFFF00 : -1;
 		menuing = true;
 		camMenu.alpha = 1;
-	} else switch (menuNames[curSelected]) {
-		case "1 PLAYER": FlxG.switchState(new FreeplayState());
-		case "OPTIONS": FlxG.switchState(new OptionsMenu());
-		case "CREDITS": FlxG.switchState(new CreditsMain());
-		case "C": randomMeat();
-		case "QUIT GAME": window.close();
+	} else {
+		switch (menuNames[curSelected]) {
+			case "1 PLAYER":
+				MusicBeatState.skipTransOut = MusicBeatState.skipTransIn = true;
+				FlxG.switchState(new FreeplayState());
+			case "OPTIONS": FlxG.switchState(new OptionsMenu());
+			case "CREDITS": FlxG.switchState(new CreditsMain());
+			case "C": randomMeat();
+			case "QUIT GAME": window.close();
+		}
 	}
 
 	if (controls.BACK || FlxG.mouse.justPressedRight) if (!menuing) FlxG.switchState(new TitleState()); //temporary

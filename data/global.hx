@@ -8,6 +8,8 @@ import funkin.backend.assets.ModsFolder;
 
 FlxG.save.data.seezeeSawIntro ??= false;
 
+static var fromIntro = true; //for seezee to skip the intro movement if not coming from the intro
+
 static var redirectStates:Map<Class<FlxState>, String> = [
 	TitleState => "SeezeeBashIntro",
 	MainMenuState => "pressCMain"

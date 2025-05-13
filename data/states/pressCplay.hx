@@ -1,6 +1,7 @@
 import funkin.savedata.FunkinSave;
 import flixel.text.FlxBitmapText;
 import flixel.graphics.frames.FlxBitmapFont;
+import funkin.backend.MusicBeatState;
 import funkin.menus.FreeplayState.FreeplaySonglist;
 songs = FreeplaySonglist.get().songs;
 
@@ -79,7 +80,10 @@ function create() {
 curSelected = 0;
 curDifficulty = 0;
 function update() {
-	if (controls.BACK || FlxG.mouse.justPressedRight) FlxG.switchState(new MainMenuState());
+	if (controls.BACK || FlxG.mouse.justPressedRight) {
+		MusicBeatState.skipTransOut = MusicBeatState.skipTransIn = true;
+		FlxG.switchState(new MainMenuState());
+	}
 
 	if (controls.UP_P || controls.DOWN_P) changeSelection(controls.UP_P ? -1 : 1);
 	if (controls.RIGHT_P || controls.LEFT_P) changeDifficulty(controls.RIGHT_P ? 1 : -1);
