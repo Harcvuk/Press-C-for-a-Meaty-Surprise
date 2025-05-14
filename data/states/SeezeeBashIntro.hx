@@ -18,21 +18,30 @@ function create() {
 	intro.animation.addByPrefix("nin", "nin", 24, false);
 	intro.screenCenter(0x11);
 	add(intro);
+
+	ngc = new FlxSprite();
+	ngc.frames = Paths.getSparrowAtlas("ngc");
+	ngc.animation.addByPrefix("idle", "idle", 10, true);
+	ngc.alpha = 0;
+	ngc.screenCenter(0x11);
+	ngc.scale.set(1.3, 1.3);
+	add(ngc);
 	intro.animation.play("nin");
 	intro.animation.finishCallback = function(name:String) {
 		backdrop.acceleration.set(500,500);
 		FlxTween.tween(backdrop,{alpha:0},2);
-		FlxTween.tween(intro, {"scale.x": 0.1, "scale.y": 0.1, alpha: 0, angle: 120}, 2, {ease: FlxEase.quartOut, onComplete: () -> {
+		ngc.animation.play("idle");
+		FlxTween.tween(intro, {"scale.x": 0.1, "scale.y": 0.1, alpha: 0, angle: 120}, 2, {ease: FlxEase.quartOut}).then(FlxTween.tween(ngc, {alpha: 1}, 2, {ease: FlxEase.quartOut})).then(FlxTween.tween(ngc, {alpha: 0}, 2, {startDelay: 2, ease: FlxEase.quartOut, onComplete: () -> {
 			FlxG.save.data.seezeeSawIntro = true;
 			FlxG.switchState(new MainMenuState());
-		}});
+		}}));
 	}
 }
 
 function postUpdate() {
 	if (controls.ACCEPT && FlxG.save.data.seezeeSawIntro) FlxG.switchState(new MainMenuState());
 	switch (intro.animation.frameIndex) {
-		case 1: CoolUtil.playMusic(Paths.sound("sbb_splash")); // 0 plays it twice also adding it in create either delays it or makes it earlier no, i think main menu first cuz we need options credits and shit
+		case 1: CoolUtil.playMusic(Paths.sound("sbb_splash"), false, 1, false); // 0 plays it twice also adding it in create either delays it or makes it earlier no, i think main menu first cuz we need options credits and shit
 		case 106: FlxG.camera.flash(FlxColor.WHITE, 1);
 	}
 }
