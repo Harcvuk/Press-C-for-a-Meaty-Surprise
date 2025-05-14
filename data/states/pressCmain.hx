@@ -186,7 +186,9 @@ function randomMeat() {
 }
 
 function randomMeatSound() {
-FlxG.random.bool(10) ? FlxG.sound.play(Paths.sound("rareMeat/"+FlxG.random.getObject(rareMeatSounds))) : FlxG.sound.play(Paths.sound("meat/"+FlxG.random.getObject(meatSounds)));
+	var meat = FlxG.sound.load(FlxG.random.bool(10) ? Paths.sound("rareMeat/"+FlxG.random.getObject(rareMeatSounds)) : Paths.sound("meat/"+FlxG.random.getObject(meatSounds)));
+	meat.pitch = FlxG.random.float(0.8,1.25);
+	meat.play();
 	FlxG.sound.music.volume = 0.25;
 	FlxTween.cancelTweensOf(FlxG.sound.music);
 	FlxTween.tween(FlxG.sound.music,{volume:1},0.5);
