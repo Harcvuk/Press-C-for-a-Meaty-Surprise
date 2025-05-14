@@ -6,15 +6,22 @@ import funkin.menus.FreeplayState.FreeplaySonglist;
 songs = FreeplaySonglist.get().songs;
 
 path = "game/menus/freeplay/";
+songTable = [];
 function create() {
 	if (FlxG.sound.music == null || !FlxG.sound.music.playing) {
 		CoolUtil.playMusic(Paths.music("freakyMenu"), true, 1, true, 150);
 		FlxG.sound.music.persist = true;
 	}
 
-	//character stuff (important to be first)
-	for(k=>s in songs) if (s.name == Options.freeplayLastSong) curSelected = k;
-	for(k=>diff in songs[curSelected]?.difficulties) if (diff == Options.freeplayLastDifficulty) curDifficulty = k;
+	//important to be first
+	var lockedSongs = ["my-new-cookings","wanna play real life","peakingtrial"];
+	for (song in songs) {
+		trace(song.name);
+		if (!lockedSongs.contains(song.name) || FlxG.save.data.MeatyunlockedSongs.contains(song.name)) songTable.push(song);
+	}
+	for(k=>s in songTable) if (s.name == Options.freeplayLastSong) curSelected = k;
+	for(k=>diff in songTable[curSelected]?.difficulties) if (diff == Options.freeplayLastDifficulty) curDifficulty = k;
+
 
 	//background, CHOOSE PLAYER, and descriptions
 	camSRB = new FlxCamera(64,0,320,200,720/200);
@@ -62,7 +69,7 @@ function create() {
 	camChars.bgColor = 0;
 
 	songIcons = [];
-	for (i => song in songs) {
+	for (i => song in songTable) {
 		var songIcon = new FunkinSprite();
 		var iconPath = Paths.getPath("songs/"+song.name+"/icon.png");
 		if (Assets.exists(iconPath)) songIcon.loadGraphic(iconPath);
@@ -90,7 +97,7 @@ function update() {
 	if (FlxG.mouse.wheel != 0) changeSelection(-FlxG.mouse.wheel);
 
 	if (controls.ACCEPT || FlxG.mouse.justPressed) {
-		PlayState.loadSong(songs[curSelected].name, songs[curSelected].difficulties[curDifficulty]);
+		PlayState.loadSong(songTable[curSelected].name, songTable[curSelected].difficulties[curDifficulty]);
 		FlxG.switchState(new PlayState());
 	}
 }
@@ -99,11 +106,11 @@ function changeSelection(amount) {
 	FlxG.sound.play(Paths.sound("DSMENU1"));
 	var oldSelected = curSelected;
 
-	curSelected = FlxMath.wrap(curSelected + amount, 0, songs.length - 1);
-	Options.freeplayLastSong = songs[curSelected].name;
-	if (curDifficulty > songs[curSelected].difficulties.length-1) curDifficulty = 0;
+	curSelected = FlxMath.wrap(curSelected + amount, 0, songTable.length - 1);
+	Options.freeplayLastSong = songTable[curSelected].name;
+	if (curDifficulty > songTable[curSelected].difficulties.length-1) curDifficulty = 0;
 	Options.freeplayLastDifficulty = curDifficulty;
-	//trace(curSelected,songs[curSelected].name);
+	//trace(curSelected,songTable[curSelected].name);
 
 	for (i => icon in songIcons) {
 		FlxTween.cancelTweensOf(icon);
@@ -119,7 +126,7 @@ function changeSelection(amount) {
 
 function changeDifficulty(amount) {
 	FlxG.sound.play(Paths.sound("DSMENU1"));
-	curDifficulty = FlxMath.wrap(curDifficulty+amount, 0, songs[curSelected].difficulties.length - 1);
+	curDifficulty = FlxMath.wrap(curDifficulty+amount, 0, songTable[curSelected].difficulties.length - 1);
 	getSaveStuff();
 }
 
@@ -129,7 +136,7 @@ function makeTexties() {
 		remove(i);
 		i.destroy();
 	}
-	var descPath = "songs/" + songs[curSelected].name + "/desc.txt";
+	var descPath = "songs/" + songTable[curSelected].name + "/desc.txt";
 	var descText = Assets.exists(Paths.getPath(descPath)) ? StringTools.replace(Assets.getText(Paths.getPath(descPath)),"\\n","\n") : "no desc";
 	var startX = 146;
 	var startY = 33;
@@ -160,8 +167,8 @@ function makeTexties() {
 }
 
 function getSaveStuff() {
-	var songScore = FunkinSave.getSongHighscore(songs[curSelected].name, songs[curSelected].difficulties[curDifficulty]).score;
+	var songScore = FunkinSave.getSongHighscore(songTable[curSelected].name, songTable[curSelected].difficulties[curDifficulty]).score;
 	scoreText.text = songScore;
 
-	difficultyText.text = songs[curSelected].difficulties.length > 1 ? "<" + songs[curSelected].difficulties[curDifficulty] + ">" : songs[curSelected].difficulties[curDifficulty];
+	difficultyText.text = songTable[curSelected].difficulties.length > 1 ? "<" + songTable[curSelected].difficulties[curDifficulty] + ">" : songTable[curSelected].difficulties[curDifficulty];
 }

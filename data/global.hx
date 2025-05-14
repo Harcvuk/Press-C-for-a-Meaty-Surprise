@@ -8,6 +8,7 @@ import funkin.backend.assets.ModsFolder;
 import haxe.crypto.Sha256;
 
 FlxG.save.data.seezeeSawIntro ??= false;
+FlxG.save.data.MeatyunlockedSongs ??= [];
 
 static var fromIntro = true; //for seezee to skip the intro movement if not coming from the intro
 

@@ -56,6 +56,8 @@ function onButtonKey() {
 			trace('Password correct (' + enteredPassword + ')');
 			FlxG.camera.flash(FlxColor.WHITE, 0.4);
 			FlxG.mouse.visible = false;
+			if (!FlxG.save.data.MeatyunlockedSongs.contains(passwords.song)) FlxG.save.data.MeatyunlockedSongs.push(passwords.song);
+			else trace("song already unlocked idk why you went back here");
 			new FlxTimer().start(0.85, function(tmr:FlxTimer) {
 				PlayState.loadSong(passwords.song, passwords.difficulty);
 				FlxG.switchState(new PlayState());
@@ -70,6 +72,5 @@ function onButtonKey() {
 var color = 0;
 function postUpdate(elapsed) {
 	color = FlxMath.wrap(color+3,0,360);
-	trace(color);
 	text.color = FlxColor.fromHSB(color, 1, 1);
 }
