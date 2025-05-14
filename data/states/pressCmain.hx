@@ -132,8 +132,7 @@ function update() {
 
 	if (quitting) {
 		if (back || FlxG.keys.justPressed.N) {
-			quitting = false;
-			quitSecret.visible = false;
+			quitting = quitSecret.visible = false;
 			for (option in menuOptions) option.visible = true;
 			for (quit in [quitBG,quitText]) quit.visible = false;
 		}
@@ -187,8 +186,7 @@ function randomMeat() {
 }
 
 function randomMeatSound() {
-	if (FlxG.random.bool(10)) FlxG.sound.play(Paths.sound("rareMeat/"+FlxG.random.getObject(rareMeatSounds)));
-	else FlxG.sound.play(Paths.sound("meat/"+FlxG.random.getObject(meatSounds)));
+FlxG.random.bool(10) ? FlxG.sound.play(Paths.sound("rareMeat/"+FlxG.random.getObject(rareMeatSounds))) : FlxG.sound.play(Paths.sound("meat/"+FlxG.random.getObject(meatSounds)));
 	FlxG.sound.music.volume = 0.25;
 	FlxTween.cancelTweensOf(FlxG.sound.music);
 	FlxTween.tween(FlxG.sound.music,{volume:1},0.5);
