@@ -246,8 +246,7 @@ function randomizeQuit() {
 		quitSecret.loadSprite(Paths.image(path+"quitImgs/"+imageCounter));
 		quitSecret.updateHitbox();
 		CoolUtil.cameraCenter(quitSecret,camMenu);
-		quitBG.scale.x = quitSecret.width + 24;
-		quitBG.scale.y = quitSecret.height + 24;
+  quitBG.scale.set(quitSecret.width + 24, quitSecret.height + 24);
 		quitBG.updateHitbox();
 		CoolUtil.cameraCenter(quitBG,camMenu);
 
@@ -275,14 +274,11 @@ function randomizeQuit() {
 	quitText.updateHitbox();
 	CoolUtil.cameraCenter(quitText,camMenu);
 
-	quitBG.scale.x = quitText.width + 24;
-	quitBG.scale.y = quitText.height + 5;
+ quitBG.scale.set(quitText.width + 24, quitText.height + 5);
 	quitBG.updateHitbox();
 	CoolUtil.cameraCenter(quitBG,camMenu);
 
 	quitText.y = quitBG.y + 3;
 }
 
-function preUpdate() {
-	if (imageCounter == 3 && FlxG.keys.pressed.F5) window.close();
-}
+function preUpdate() if (imageCounter == 3 && FlxG.keys.pressed.F5) window.close();
