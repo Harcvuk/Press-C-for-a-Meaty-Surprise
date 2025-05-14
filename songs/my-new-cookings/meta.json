@@ -1,0 +1,17 @@
+{
+	"beatsPerMeasure": 4,
+	"opponentModeAllowed": false,
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"bpm": 175,
+	"difficulties": [
+		"Hard"
+	],
+	"needsVoices": true,
+	"parsedColor": -5592406,
+	"displayName": "My new cookings",
+	"icon": "bobgaming",
+	"name": "my-new-cookings",
+	"color": "#AAAAAA",
+	"customValues": {}
+}

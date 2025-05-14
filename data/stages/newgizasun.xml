@@ -1,0 +1,11 @@
+<!DOCTYPE codename-engine-stage>
+<stage folder="stages/pyramids/" zoom="0.45">
+	<sprite name="pyramids" x="-2601" y="-1008" scale="3" sprite="sky" updateHitbox="true"/>
+	<sprite name="herecomesthesun" x="745" y="-943" scale="1.6" sprite="sun" updateHitbox="true"/>
+	<sprite name="sunbg" x="-1391" y="-1023" scale="1.6" sprite="sunbg" updateHitbox="true"/>
+	<sprite name="sand" x="-2136" y="-308" scale="2" sprite="sand" updateHitbox="true"/>
+	<gf x="400" y="130"/>
+	<dad x="100" y="30"/>
+	<combo x="459.5" y="141"/>
+	<bf x="770" y="100"/>
+</stage>

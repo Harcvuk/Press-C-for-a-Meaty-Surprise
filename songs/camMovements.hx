@@ -6,7 +6,7 @@ function postCreate() {
 function onSongStart() camGame.followLerp = 0.04;
 
 //camera movement per note
-var camNoteOffset = 25;
+public var camNoteOffset = 25;
 public var extraCamOffset = FlxPoint.get(0,0);
 function onCameraMove(e) {
 	var char = e.strumLine.characters[0];
