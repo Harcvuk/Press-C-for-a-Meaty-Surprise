@@ -44,6 +44,11 @@ function ra() {
 
 function gong() eyeOfRa.playAnim("ra",true);
 function sparkle() sparkles.playAnim("sparkle",true);
+function bye() {
+	gf.moves = true;
+	gf.velocity.x = 500;
+	gf.playAnim("walk",true,false,0,"LOCK");
+}
 
 var colour = 0;
 function DJEYAD(what) {

@@ -1,9 +1,10 @@
 <!DOCTYPE codename-engine-character>
-<character x="250" y="310" sprite="eyad irl" scale="2" icon="eyadIrl" color="#777777" antialiasing="false" camx="-150">
+<character x="250" y="310" sprite="eyad irl" scale="2" icon="EYAD" color="#777777" antialiasing="false" camx="-150">
 	<anim name="danceRight" anim="Lidle" x="0" y="0" fps="24" loop="false"/>
 	<anim name="danceLeft" anim="Ridle" x="0" y="0" fps="24" loop="false"/>
 	<anim name="singLEFT" anim="left" x="0" y="0" fps="24" loop="false"/>
 	<anim name="singRIGHT" anim="right" x="0" y="0" fps="24" loop="false"/>
 	<anim name="singUP" anim="up" x="0" y="0" fps="24" loop="false"/>
 	<anim name="singDOWN" anim="down" x="0" y="0" fps="24" loop="false"/>
+	<anim name="walk" anim="walk" x="0" y="0" fps="24" loop="true"/>
 </character>
