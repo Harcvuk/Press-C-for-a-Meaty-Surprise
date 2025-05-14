@@ -139,7 +139,7 @@ function update() {
 		if ((accept || FlxG.keys.justPressed.Y) && imageCounter == 0) {
 			randomMeatSound();
 			controlLock = true;
-			var quitScreen = new FunkinSprite(0,0,Paths.image(path+"GAMEQUIT"));
+			var quitScreen = new FunkinSprite(0,0,Paths.image(path+"GAMEQUIT"+(FlxG.random.bool(20) ? "ALT" : "")));
 			quitScreen.camera = camMenu;
 			camMenu.bgColor = 0xFF171717;
 			CoolUtil.cameraCenter(quitScreen,camMenu);
@@ -222,7 +222,7 @@ var quitTexts = [
 	"Aww, is Headache-ok too\ndifficult for you?",
 	//ok these are original
 	(Discord?.user?.globalName ?? "GARY").toUpperCase() + " THERES A BOMB!!!!",
-	"Press N to get 1 PYRAMILLION dirhams!",
+	"Press 'N' to get 1 PYRAMILLION dirhams!",
 	"Heh.\nRoom for 94 more?",
 	"Wet it be, John.\n or I'll get meaty.",
 	"Ouuugh I'm peaking\n Peaking so hard mnnng",
@@ -231,7 +231,11 @@ var quitTexts = [
 	"cmon "+ (Discord?.user?.globalName ?? "man").toLowerCase() + "\njust one more " + (Discord?.user?.globalName ?? "man").toLowerCase() + " pls",
 	"You're not who i'm looking for..",
 	"\n#####\npluto",
-	"Press Y and I'll make you regret it all."
+	"Press Y and I'll make you regret it all.",
+	"Im going to birthday\nbash your fucking skull in",
+	"Rolling for dog?\nI love gambling.",
+	"(Press 'N' to cancel)",
+	"Are you sure"
 	//please add more!!
 ];
 
