@@ -1,5 +1,6 @@
 import flixel.text.FlxTextBorderStyle as Border;
 import flixel.addons.effects.FlxTrail as Trail;
+import EReg;
 
 var names = [
 	"HeroEyad: Director and Programmer of Press C for headache",
@@ -26,10 +27,9 @@ var colors = [
 	0xFF66EE44
 ];
 
-var credits:Array<FlxText> = [];
-var logo:FunkinSprite;
-
+var credits = [];
 function create() {
+	FlxG.sound.music.volume = 1;
 	camCredits = new FlxCamera();
 	FlxG.cameras.add(camCredits);
 	camCredits.bgColor = 0xFF002211;
@@ -58,7 +58,8 @@ function create() {
 
 var timings = 0.25;
 var matrixColors = [0xFF245724,0xFF1E661E,0xFF008600];
-var matrixLetters = ["S","e","z","Z"];
+var matrixLetters = ["S","s","z","Z","c","C"];
+var canC = true;
 function update(elapsed) {
 	if (controls.BACK || FlxG.mouse.justPressedRight) FlxG.switchState(new MainMenuState());
 
@@ -66,25 +67,65 @@ function update(elapsed) {
 	if (timings >= 0.25) {
 		timings -= 0.25;
 
-		var number = new FlxText();
-		number.text =  FlxG.random.getObject(matrixLetters);
-		number.scale.set(2,2);
-		number.updateHitbox();
-		number.setPosition(FlxG.random.int(-1,128)*10,-number.height);
-		number.color = FlxG.random.getObject(matrixColors);
-		insert(0,number);
+		var letter = new FlxText();
+		letter.text =  FlxG.random.getObject(matrixLetters);
+		letter.scale.set(2,2);
+		letter.updateHitbox();
+		letter.setPosition(FlxG.random.int(-1,128)*10,-letter.height);
+		letter.color = FlxG.random.getObject(matrixColors);
+		insert(0,letter);
 
-		var trail = new Trail(number, null, 20, 10, 0.4, 0.05);
+		var trail = new Trail(letter, null, 20, 10, 0.4, 0.05);
 		insert(0,trail);
 
-		FlxTween.tween(number,{y:FlxG.height*3},FlxG.random.int(6,30),{onComplete: () -> {
-			for (i in [trail,number]) {
+		FlxTween.tween(letter,{y:FlxG.height*3},FlxG.random.int(6,30),{onComplete: () -> {
+			for (i in [trail,letter]) {
 				remove(i);
 				members.remove(i);
 				i.destroy();
 			}
 		}});
+	}
 
+	if (FlxG.keys.justPressed.C && canC) {
+		canC = false;
+		var cFlash = new FunkinSprite(0,0,Paths.image("C"));
+		cFlash.camera = camCredits;
+		CoolUtil.setSpriteSize(cFlash,1280,720);
+		add(cFlash);
+		FlxTween.tween(cFlash,{alpha:0},1);
+		FlxG.sound.play(Paths.sound("C"));
+		FlxG.sound.music.volume = 0;
+		new FlxTimer().start(4,() -> FlxG.sound.music.fadeOut(2,1));
 
+		for (credit in credits) {
+			credit.text = new EReg("[A-Z]","g").replace(credit.text,"C");
+			credit.text = new EReg("[a-z]","g").replace(credit.text,"c");
+		}
+		matrixLetters = ["c","C"];
+
+		var letter = new FlxText();
+		letter.text = "C";
+		letter.scale.set(100,100);
+		letter.updateHitbox();
+		letter.screenCenter(0x01);
+		letter.y = -letter.height+350;
+		letter.color = 0xFF00FF00;
+		insert(0,letter);
+
+		var trail = new Trail(letter, null, 20, 10, 0.4, 0.05);
+		insert(0,trail);
+
+		FlxTween.tween(letter,{y:FlxG.height},10,{onComplete: () -> {
+			for (i in [trail,letter]) {
+				remove(i);
+				members.remove(i);
+				i.destroy();
+			}
+			for (credit in credits) {
+				credit.text = new EReg("[A-Z]","g").replace(credit.text,"C");
+				credit.text = new EReg("[a-z]","g").replace(credit.text,"c");
+			}
+		}});
 	}
 }
