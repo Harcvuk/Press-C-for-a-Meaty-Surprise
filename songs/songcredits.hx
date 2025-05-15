@@ -39,7 +39,7 @@ function postCreate() {
 function startCredits() {
 running = true;
     FlxTween.tween(ding, {x: targetX, alpha: 0.6}, 1.2, { ease: FlxEase.expoOut }).then(FlxTween.tween(ding, {x: FlxG.width + 50, alpha: 0}, 1.0, { ease: FlxEase.expoIn, startDelay: 2.0 }));
-    FlxTween.tween(credits, {x: targetX, alpha: 1}, 1.4, { ease: FlxEase.expoOut }).then(FlxTween.tween(credits, {x: FlxG.width + 50, alpha: 0, "scale.x" : 0.6, "scale.y": 0.6}, 1.0, { ease: FlxEase.expoIn, startDelay: 2.0, onComplete: function(_) {running = false}}));
+    FlxTween.tween(credits, {x: targetX, alpha: 1}, 1.4, { ease: FlxEase.expoOut }).then(FlxTween.tween(credits, {x: FlxG.width + 50, alpha: 0, "scale.x" : 0.6, "scale.y": 0.6}, 1.0, { ease: FlxEase.expoIn, startDelay: 2.0, onComplete: () -> running = false}));
 }
 
 function postUpdate() {
