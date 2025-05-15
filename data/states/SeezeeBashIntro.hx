@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 import flixel.addons.display.FlxGridOverlay;
->>>>>>> 0bef9782e698104af63c4044d0374ab0e7dce37a
 import flixel.addons.text.FlxTypeText;
 import funkin.backend.MusicBeatState;
 
