@@ -2,6 +2,7 @@ import flixel.text.FlxTextBorderStyle as Border;
 
 var ding:FlxSprite;
 var credits:FlxText;
+var cleanupTimer:FlxTimer;
 
 var path = "songs/" + PlayState.instance.curSong + "/credits.txt";
 var lines:Array<String> = Assets.exists(Paths.getPath(path)) ? CoolUtil.coolTextFile(Paths.getPath(path)) : [];
