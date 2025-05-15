@@ -1,6 +1,4 @@
 import flixel.text.FlxTextBorderStyle as Border;
-import flixel.tweens.FlxTween;
-import flixel.tweens.FlxEase;
 
 var ding:FlxSprite;
 var credits:FlxText;
@@ -15,6 +13,7 @@ var def:Array<String> = [
 ];
 var displayText = (lines == null || lines.length == 0) ? def.join("\n") : lines.join("\n");
 var targetX = (FlxG.width - 1280) / 2;
+var running = false;
 
 function postCreate() {
 
@@ -37,6 +36,15 @@ function postCreate() {
 }
 
 function startCredits() {
+running = true;
     FlxTween.tween(ding, {x: targetX, alpha: 0.6}, 1.2, { ease: FlxEase.expoOut }).then(FlxTween.tween(ding, {x: FlxG.width + 50, alpha: 0}, 1.0, { ease: FlxEase.expoIn, startDelay: 2.0 }));
-    FlxTween.tween(credits, {x: targetX, alpha: 1}, 1.4, { ease: FlxEase.expoOut }).then(FlxTween.tween(credits, {x: FlxG.width + 50, alpha: 0, "scale.x" : 0.6, "scale.y": 0.6}, 1.0, { ease: FlxEase.expoIn, startDelay: 2.0}));
+    FlxTween.tween(credits, {x: targetX, alpha: 1}, 1.4, { ease: FlxEase.expoOut }).then(FlxTween.tween(credits, {x: FlxG.width + 50, alpha: 0, "scale.x" : 0.6, "scale.y": 0.6}, 1.0, { ease: FlxEase.expoIn, startDelay: 2.0, onComplete: function(_) {running = false}}));
+}
+
+function postUpdate() {
+    if (!running && cleanupTimer == null) {
+        cleanupTimer = new FlxTimer().start(5, function(_) {
+            for (i in [ding, credits]){remove(i, true); i.destroy(); }
+        });
+    }
 }
