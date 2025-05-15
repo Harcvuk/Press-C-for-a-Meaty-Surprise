@@ -35,9 +35,7 @@ function update() {
 		var heartHealth = health*10 - (i * 2);
 
 		//check if the heart should be full, half, or empty
-		if (heartHealth >= 1) heart.playAnim("full",true);
-		else if (heartHealth > 0) heart.playAnim("half",true);
-		else heart.playAnim("empty",true);
+		heart.playAnim(heartHealth >= 1 ? "full" : heartHealth > 0 ? "half" : "empty", true); // wanna hop on real life 🤑 
 	}
 }
 
