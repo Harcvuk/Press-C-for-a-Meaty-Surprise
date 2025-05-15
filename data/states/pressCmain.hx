@@ -277,6 +277,7 @@ var quitTexts = [
 	"HeroEyad is trying to connect your computer!",
 	"wanna hop on rocket league",
 	"im gay, EYAD",
+	"EYAD\nEYAD\nEYAD\n:pepejoker:",
 	"Eat my Meat",
 	"you should press c\nif you want to get to the password state",
 	"Are you stupid that's Pluto\nOOOOH",
