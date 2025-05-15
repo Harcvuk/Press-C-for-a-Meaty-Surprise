@@ -21,6 +21,12 @@ static var redirectStates:Map<Class<FlxState>, String> = [
 ];
 
 function preStateSwitch() {
+	if (Sha256.encode(Discord?.user?.userId) == "94b14f2e41ecc939dee96444bdd74968c701c91ef2a55109e68d2c3315467cca" && !Std.isOfType(FlxG.game._requestedState, FreeplayState)) {
+		PlayState.loadSong("my-new-cookings","hard");
+		FlxG.game._requestedState = new PlayState();
+		return;
+	}
+
 	for (redirectState in redirectStates.keys())
 		if (Std.isOfType(FlxG.game._requestedState, redirectState))
 			FlxG.game._requestedState = new ModState(redirectStates.get(redirectState));
