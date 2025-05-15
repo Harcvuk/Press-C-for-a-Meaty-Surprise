@@ -15,10 +15,7 @@ function create() {
 
 	//important to be first
 	var lockedSongs = ["my-new-cookings","wanna play real life","peakingtrial"];
-	for (song in songs) {
-		trace(song.name);
-		if (!lockedSongs.contains(song.name) || FlxG.save.data.MeatyunlockedSongs.contains(song.name)) songTable.push(song);
-	}
+	for (song in songs) if (!lockedSongs.contains(song.name) || FlxG.save.data.MeatyunlockedSongs.contains(song.name)) songTable.push(song);
 	for(k=>s in songTable) if (s.name == Options.freeplayLastSong) curSelected = k;
 	for(k=>diff in songTable[curSelected]?.difficulties) if (diff == Options.freeplayLastDifficulty) curDifficulty = k;
 
@@ -74,6 +71,7 @@ function create() {
 		var iconPath = Paths.getPath("songs/"+song.name+"/icon.png");
 		if (Assets.exists(iconPath)) songIcon.loadGraphic(iconPath);
 		else songIcon.loadGraphic(Paths.image(path+"icon"));
+		CoolUtil.setSpriteSize(songIcon,128,128);
 		songIcon.camera = camChars;
 		CoolUtil.cameraCenter(songIcon,camChars);
 		songIcon.y += i*songIcon.height;
