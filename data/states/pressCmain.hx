@@ -273,14 +273,15 @@ var quitTexts = [
 	"Rolling for dog?\nI love gambling.",
 	"(Press 'N' to cancel)",
 	"Are you sure",
- "If you're gonna leave, wanna play ssf32?",
- "HeroEyad is trying to connect your computer!",
- "wanna hop on rocket league",
- "im gay, EYAD",
- "Eat my Meat",
- "you should press c if you want to get to the password state",
- "Are you stupid that's Pluto, OOOOH",
- "It was way more.."
+	"If you're gonna leave, wanna play ssf32?",
+	"HeroEyad is trying to connect your computer!",
+	"wanna hop on rocket league",
+	"im gay, EYAD",
+	"Eat my Meat",
+	"you should press c\nif you want to get to the password state",
+	"Are you stupid that's Pluto\nOOOOH",
+	"It was way more..",
+	"Meat"
 	//please add more!!
 ];
 
