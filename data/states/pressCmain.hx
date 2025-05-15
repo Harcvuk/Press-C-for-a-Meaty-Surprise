@@ -59,6 +59,12 @@ function create() {
 	camMenu.alpha = 0;
 	camMenu.bgColor = 0x80000000;
 
+	versionText = new FlxBitmapText(0,0,"v1.0",FlxBitmapFont.fromAngelCode("assets/fonts/tnyfnt.png", "assets/fonts/tnyfnt.xml"));
+	versionText.setPosition(2,camMenu.height-versionText.height);
+	versionText.alpha = 0.5;
+	versionText.camera = camMenu;
+	add(versionText);
+
 	menuNames = ["1 PLAYER","OPTIONS","CREDITS","C","QUIT GAME"];
 	menuOptions = [];
 	for (s => option in menuNames) {
@@ -85,6 +91,12 @@ function create() {
 	quitSecret.visible = false;
 	quitSecret.scale.set(0.5,0.5);
 
+	if (fromIntro == false) {
+		curSelected = 0;
+		for (s => i in menuOptions) i.color = s == curSelected ? 0xFFFFFF00 : -1;
+		menuing = true;
+		camMenu.alpha = 1;
+	}
 	fromIntro = false;
 }
 
