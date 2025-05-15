@@ -15,6 +15,7 @@ function create() {
 		CoolUtil.playMusic(Paths.music("freakyMenu"), true, 1, true, 150);
 		FlxG.sound.music.persist = true;
 	}
+	FlxG.sound.music.volume = FlxG.sound.music.pitch = 1;
 
 	//MAIN
 	sky = new BG(Paths.image(path+"TITLESKY"),0x01);
@@ -185,8 +186,12 @@ for (meat in Paths.getFolderContent("sounds/meat/")) meatSounds.push(meat.substr
 var rareMeatSounds = [];
 for (meat in Paths.getFolderContent("sounds/rareMeat/")) rareMeatSounds.push(meat.substr(0,meat.length-4));
 var meatImage = new FunkinSprite();
+chosenMeat = -1;
+timesMeated = 0;
+
 function randomMeat() {
-	meatImage.loadGraphic(Paths.image("meat/"+FlxG.random.getObject(meats)));
+	chosenMeat = FlxG.random.int(0,meats.length-1,[chosenMeat]);
+	meatImage.loadGraphic(Paths.image("meat/"+meats[chosenMeat]));
 	meatImage.camera = camMenu;
 	add(meatImage);
 	CoolUtil.setSpriteSize(meatImage,camMenu.width,camMenu.height);
@@ -195,15 +200,32 @@ function randomMeat() {
 	FlxTween.tween(meatImage,{alpha:0},1,{ease:FlxEase.circIn});
 
 	randomMeatSound();
+
+	timesMeated++;
+	trace(timesMeated);
+	if (timesMeated > 199) {
+		FlxG.sound.music.volume = 0;
+		controlLock = true;
+		new FlxTimer().start(Math.max(0.1-((timesMeated-199)/1000),1/240),() -> randomMeat());
+
+		if (timesMeated > 499) {
+			MusicBeatState.skipTransOut = MusicBeatState.skipTransIn = true;
+			FlxG.resetState();
+		}
+
+	}
+
 }
 
 function randomMeatSound() {
 	var meat = FlxG.sound.load(FlxG.random.bool(10) ? Paths.sound("rareMeat/"+FlxG.random.getObject(rareMeatSounds)) : Paths.sound("meat/"+FlxG.random.getObject(meatSounds)));
-	meat.pitch = FlxG.random.float(0.8,1.25);
+	meat.pitch = FlxG.random.float(0.8,1.25) + (timesMeated < 201 ? 0 : (timesMeated-199)/100);
 	meat.play();
-	FlxG.sound.music.volume = 0.25;
-	FlxTween.cancelTweensOf(FlxG.sound.music);
-	FlxTween.tween(FlxG.sound.music,{volume:1},0.5);
+	if (timesMeated < 199) {
+		FlxG.sound.music.volume = 0.25;
+		FlxTween.cancelTweensOf(FlxG.sound.music);
+		FlxTween.tween(FlxG.sound.music,{volume:1},0.5);
+	}
 }
 
 function postUpdate() {
