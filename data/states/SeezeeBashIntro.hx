@@ -1,13 +1,9 @@
-import flixel.addons.display.FlxBackdrop;
 import flixel.addons.display.FlxGridOverlay;
 import flixel.addons.text.FlxTypeText;
 import funkin.backend.MusicBeatState;
 
 function create() {
 	fromIntro = true;
-	backdrop = new FlxBackdrop(FlxGridOverlay.createGrid(128, 128, 256, 256, true, FlxColor.fromRGB(1,74,44), FlxColor.fromRGB(0,114,39)));
-	backdrop.velocity.set(50, 50);
-	add(backdrop);
 
 	FlxG.sound.music?.stop();
 	intro = new FunkinSprite(0,0,Paths.image("game/menus/intro/sbb"));
@@ -41,13 +37,10 @@ function create() {
 
 	intro.playAnim("nin");
 	intro.animation.finishCallback = () -> {
-		FlxTween.tween(backdrop,{alpha:0.25},2);
-		FlxTween.tween(backdrop,{"velocity.x":200,"velocity.y":200},2,{ease:FlxEase.sineInOut});
 		ngc.playAnim("idle");
 		new FlxTimer().start(1,() -> broughtBy.start());
 		FlxTween.tween(intro, {"scale.x": 0.1, "scale.y": 0.1, alpha: 0, angle: 120}, 2, {ease: FlxEase.quartOut, onComplete: () -> {
 			for (i in [ngc,harc]) FlxTween.tween(i, {alpha: 1}, 1, {ease: FlxEase.quartOut, startDelay: 1}).then(FlxTween.tween(i, {alpha: 0}, 1, {ease: FlxEase.quartOut,startDelay:1}));
-			FlxTween.tween(backdrop, {alpha: 0}, 1, {ease: FlxEase.quartOut, startDelay: 3});
 			FlxTween.tween(broughtBy, {alpha: 0}, 1, {ease: FlxEase.quartOut, startDelay: 3, onComplete: () -> {
 				FlxG.save.data.seezeeSawIntro = true;
 				MusicBeatState.skipTransOut = true;
