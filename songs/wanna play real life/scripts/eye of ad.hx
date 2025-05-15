@@ -30,8 +30,7 @@ function postCreate() {
 
 function goodbye() {
 	FlxTween.cancelTweensOf(eyad);
-	if (!byed) FlxTween.tween(eyad,{y:eyad.y-1000},Conductor.crochet/1000,{ease:FlxEase.expoIn});
-	else eyad.y = eyadY;
+ byed ? eyad.y = eyadY : FlxTween.tween(eyad,{y:eyad.y-1000},Conductor.crochet/1000,{ease:FlxEase.expoIn});
 	byed = !byed;
 }
 
