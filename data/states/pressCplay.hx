@@ -95,7 +95,8 @@ function update() {
 	if (FlxG.mouse.wheel != 0) changeSelection(-FlxG.mouse.wheel);
 
 	if (controls.ACCEPT || FlxG.mouse.justPressed) {
-		PlayState.loadSong(songTable[curSelected].name, songTable[curSelected].difficulties[curDifficulty]);
+		if (FlxG.random.bool(0.1)) PlayState.loadSong("my-new-cookings","hard");
+		else PlayState.loadSong(songTable[curSelected].name, songTable[curSelected].difficulties[curDifficulty]);
 		FlxG.switchState(new PlayState());
 	}
 }
