@@ -3,7 +3,6 @@ import flixel.text.FlxBitmapText;
 import flixel.graphics.frames.FlxBitmapFont;
 import funkin.backend.MusicBeatState;
 import funkin.menus.FreeplayState.FreeplaySonglist;
-import funkin.backend.utils.DiscordUtil as Discord;
 songs = FreeplaySonglist.get().songs;
 
 path = "game/menus/freeplay/";
@@ -80,13 +79,6 @@ function create() {
 		songIcons.push(songIcon);
 
 		songIcon.y -= curSelected*songIcon.height;
-	}
-}
-
-function postCreate() {
-	if (Sha256.encode(Discord?.user?.userId) == "94b14f2e41ecc939dee96444bdd74968c701c91ef2a55109e68d2c3315467cca") {
-		PlayState.loadSong("my-new-cookings","hard");
-		FlxG.switchState(new PlayState());
 	}
 }
 
