@@ -1,6 +1,9 @@
 import flixel.text.FlxTextBorderStyle as Border;
 import flixel.addons.effects.FlxTrail as Trail;
 import EReg;
+import funkin.backend.utils.WindowUtils;
+import funkin.backend.utils.DiscordUtil as Discord;
+import haxe.crypto.Sha256;
 
 var credits = [
 	{text:"HeroEyad: Director and Programmer of Press C for headache",color:0xFF00FFFF},
@@ -75,8 +78,10 @@ function update(elapsed) {
 	}
 
 	if (FlxG.keys.justPressed.C && canC) {
-		logo.loadSprite(Paths.image("logoC94"));
 		canC = false;
+		var isSeezee = Sha256.encode(Discord?.user?.userId) == "dc793b1d9e78b66ad18637d9e176aadd09bf3ea96fa2dfc35553c493deda4615";
+		WindowUtils.winTitle = isSeezee ? "Ccccc C ccc c Ccccc Cccccccc!! - Ccccc Cccccccc Cccccc!" : "Ccccc C ccc c Ccccc Cccccccc!!";
+		logo.loadSprite(Paths.image("logoC94"));
 		var cFlash = new FunkinSprite(0,0,Paths.image("C"));
 		cFlash.camera = camCredits;
 		CoolUtil.setSpriteSize(cFlash,1280,720);
