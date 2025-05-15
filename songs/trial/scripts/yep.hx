@@ -1,0 +1,1 @@
+GameOverSubstate.script = "data/scripts/harc-balledLines";

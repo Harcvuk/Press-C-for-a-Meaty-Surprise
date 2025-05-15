@@ -1,0 +1,12 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="hipixzee" x="-900" y="-150" scale="0.75" isPlayer="true" flipX="true" icon="dad" color="#AE66CE" holdTime="6.1">
+	<anim name="idle" anim="idle" x="0" y="0" fps="2" loop="true"/>
+	<anim name="singLEFT" anim="left" x="5" y="0" fps="12" loop="false"/>
+	<anim name="singDOWN" anim="down" x="0" y="0" fps="12" loop="false"/>
+	<anim name="singUP" anim="up" x="0" y="0" fps="12" loop="false"/>
+	<anim name="singRIGHT" anim="right" x="0" y="0" fps="12" loop="false"/>
+	<anim name="singLEFTmiss" anim="miss" x="0" y="0" fps="12" loop="false"/>
+	<anim name="singDOWNmiss" anim="miss" x="0" y="0" fps="12" loop="false"/>
+	<anim name="singUPmiss" anim="miss" x="0" y="0" fps="12" loop="false"/>
+	<anim name="singRIGHTmiss" anim="miss" x="0" y="0" fps="12" loop="false"/>
+</character>
