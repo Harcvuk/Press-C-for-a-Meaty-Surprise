@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character y="140" sprite="SZ" scale="2" flipX="true" isPlayer="true" icon="SZ" color="#14FF08">
+<character y="140" sprite="SZ" scale="2" flipX="true" isPlayer="true" icon="SZ" color="#14FF08" gameOverChar="SZ-dead">
 	<anim name="singRIGHT-alt" anim="Seezee AR" x="0" y="0" fps="10" loop="false"/>
 	<anim name="singLEFT-alt" anim="Seezee AL" x="0" y="0" fps="10" loop="false"/>
 	<anim name="singDOWN-alt" anim="Seezee AD" x="0" y="0" fps="10" loop="false"/>

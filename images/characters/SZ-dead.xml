@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="SZ-dead.png">
+<SubTexture name="first0000" x="0" y="0" width="238" height="448" frameX="-194" frameY="-14" frameWidth="640" frameHeight="480" />
+<SubTexture name="first0001" x="238" y="0" width="247" height="439" frameX="-185" frameY="-23" frameWidth="640" frameHeight="480" />
+<SubTexture name="first0002" x="485" y="0" width="234" height="422" frameX="-199" frameY="-40" frameWidth="640" frameHeight="480" />
+<SubTexture name="first0003" x="719" y="0" width="222" height="407" frameX="-205" frameY="-54" frameWidth="640" frameHeight="480" />
+<SubTexture name="first0004" x="0" y="448" width="233" height="366" frameX="-194" frameY="-95" frameWidth="640" frameHeight="480" />
+<SubTexture name="first0005" x="233" y="448" width="241" height="339" frameX="-181" frameY="-122" frameWidth="640" frameHeight="480" />
+<SubTexture name="first0006" x="474" y="448" width="217" height="299" frameX="-211" frameY="-162" frameWidth="640" frameHeight="480" />
+<SubTexture name="first0007" x="691" y="448" width="219" height="259" frameX="-206" frameY="-202" frameWidth="640" frameHeight="480" />
+<SubTexture name="first0008" x="941" y="0" width="221" height="229" frameX="-184" frameY="-231" frameWidth="640" frameHeight="480" />
+<SubTexture name="first0009" x="941" y="229" width="220" height="201" frameX="-210" frameY="-259" frameWidth="640" frameHeight="480" />
+<SubTexture name="first0010" x="1546" y="1005" width="226" height="200" frameX="-205" frameY="-261" frameWidth="640" frameHeight="480" />
+<SubTexture name="first0011" x="1546" y="1205" width="266" height="197" frameX="-196" frameY="-264" frameWidth="640" frameHeight="480" />
+<SubTexture name="first0012" x="0" y="1418" width="324" height="197" frameX="-161" frameY="-264" frameWidth="640" frameHeight="480" />
+<SubTexture name="first0013" x="0" y="814" width="355" height="202" frameX="-151" frameY="-267" frameWidth="640" frameHeight="480" />
+<SubTexture name="first0014" x="355" y="814" width="384" height="201" frameX="-138" frameY="-269" frameWidth="640" frameHeight="480" />
+<SubTexture name="first0015" x="739" y="814" width="384" height="201" frameX="-138" frameY="-269" frameWidth="640" frameHeight="480" />
+<SubTexture name="first0016" x="1162" y="0" width="384" height="201" frameX="-138" frameY="-269" frameWidth="640" frameHeight="480" />
+<SubTexture name="first0017" x="1162" y="201" width="384" height="201" frameX="-138" frameY="-269" frameWidth="640" frameHeight="480" />
+<SubTexture name="first0018" x="1162" y="402" width="384" height="201" frameX="-138" frameY="-269" frameWidth="640" frameHeight="480" />
+<SubTexture name="first0019" x="1162" y="603" width="384" height="201" frameX="-138" frameY="-269" frameWidth="640" frameHeight="480" />
+<SubTexture name="first0020" x="1162" y="804" width="384" height="201" frameX="-138" frameY="-269" frameWidth="640" frameHeight="480" />
+<SubTexture name="first0021" x="0" y="1016" width="384" height="201" frameX="-138" frameY="-269" frameWidth="640" frameHeight="480" />
+<SubTexture name="loop0000" x="384" y="1016" width="384" height="201" frameX="-138" frameY="-269" frameWidth="640" frameHeight="480" />
+<SubTexture name="confirm0000" x="768" y="1016" width="384" height="201" frameX="-138" frameY="-269" frameWidth="640" frameHeight="480" />
+<SubTexture name="confirm0001" x="1152" y="1016" width="384" height="201" frameX="-138" frameY="-269" frameWidth="640" frameHeight="480" />
+<SubTexture name="confirm0002" x="0" y="1217" width="384" height="201" frameX="-138" frameY="-269" frameWidth="640" frameHeight="480" />
+<SubTexture name="confirm0003" x="384" y="1217" width="384" height="201" frameX="-138" frameY="-269" frameWidth="640" frameHeight="480" />
+<SubTexture name="confirm0004" x="768" y="1217" width="384" height="201" frameX="-138" frameY="-269" frameWidth="640" frameHeight="480" />
+<SubTexture name="confirm0005" x="1152" y="1217" width="384" height="201" frameX="-138" frameY="-269" frameWidth="640" frameHeight="480" />
+<SubTexture name="confirm0006" x="1546" y="0" width="384" height="201" frameX="-138" frameY="-269" frameWidth="640" frameHeight="480" />
+<SubTexture name="confirm0007" x="1546" y="201" width="384" height="201" frameX="-138" frameY="-269" frameWidth="640" frameHeight="480" />
+<SubTexture name="confirm0008" x="1546" y="402" width="384" height="201" frameX="-138" frameY="-269" frameWidth="640" frameHeight="480" />
+<SubTexture name="confirm0009" x="1546" y="603" width="384" height="201" frameX="-138" frameY="-269" frameWidth="640" frameHeight="480" />
+<SubTexture name="confirm0010" x="1546" y="804" width="384" height="201" frameX="-138" frameY="-269" frameWidth="640" frameHeight="480" />
+</TextureAtlas>

@@ -1,0 +1,6 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="SZ-dead" scale="2" flipX="true" icon="SZ" color="#0F8300" gameOverChar="SZ-dead">
+	<anim name="deathConfirm" anim="confirm" x="0" y="0" fps="10" loop="false"/>
+	<anim name="deathLoop" anim="loop" x="0" y="0" fps="10" loop="false"/>
+	<anim name="firstDeath" anim="first" x="0" y="0" fps="10" loop="false"/>
+</character>
