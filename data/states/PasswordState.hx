@@ -36,14 +36,11 @@ function create() {
 	buttonKey.screenCenter(0x01);
 	buttonKey.scale.set(3, 3);
 	add(buttonKey);
-
-	FlxG.mouse.visible = true;
 }
 function update(elapsed:Float) {
 	if (FlxG.keys.justPressed.ESCAPE) {
 		CoolUtil.playMenuSFX(2);
 		FlxG.switchState(new MainMenuState());
-		FlxG.mouse.visible = false;
 	}
 }
 
@@ -55,7 +52,6 @@ function onButtonKey() {
 			CoolUtil.playMenuSFX(1);
 			trace('Password correct (' + enteredPassword + ')');
 			FlxG.camera.flash(FlxColor.WHITE, 0.4);
-			FlxG.mouse.visible = false;
 			if (!FlxG.save.data.MeatyunlockedSongs.contains(passwords.song)) FlxG.save.data.MeatyunlockedSongs.push(passwords.song);
 			else trace("song already unlocked idk why you went back here");
 			new FlxTimer().start(0.85, function(tmr:FlxTimer) {
