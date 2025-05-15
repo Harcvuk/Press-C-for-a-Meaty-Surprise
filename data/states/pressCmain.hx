@@ -202,6 +202,7 @@ function randomMeat() {
 	randomMeatSound();
 
 	timesMeated++;
+	versionText.text = "v"+(1+timesMeated/10);
 	trace(timesMeated);
 	if (timesMeated > 199) {
 		FlxG.sound.music.volume = 0;
