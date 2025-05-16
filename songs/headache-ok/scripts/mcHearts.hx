@@ -1,6 +1,7 @@
 import flixel.text.FlxTextBorderStyle as Border;
 var hearts = [];
 function postCreate() {
+	GameOverSubstate.script = "data/deaths/slepTime";
 	health = 2;
 	//create the health icons
 	if (!ultimate) for (i in 0...10) {
