@@ -14,6 +14,10 @@ FlxG.save.data.MeatyunlockedSongs ??= [];
 static var fromIntro = true; //for seezee to skip the intro movement if not coming from the intro
 static var ultimate = false;
 
+function new() {
+	ultimate = false;
+}
+
 static var redirectStates:Map<Class<FlxState>, String> = [
 	TitleState => "SeezeeBashIntro",
 	MainMenuState => "pressCMain"
