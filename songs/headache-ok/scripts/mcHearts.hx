@@ -48,8 +48,13 @@ function update(elapsed) {
 }
 
 var healthLoss = -3/10;
+var hitTimer = new FlxTimer();
 function onPlayerMiss(e) {
 	if (ultimate) return;
+
+	var b = boyfriend.colorTransform;
+	b.redOffset = 128;
+	hitTimer.start(0.25,() -> b.redOffset = 0);
 
 	FlxG.sound.play(Paths.sound("hitsounds/hit"+FlxG.random.int(1,3)));
 	e.healthGain = healthLoss;
