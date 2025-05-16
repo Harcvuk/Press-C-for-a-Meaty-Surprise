@@ -1,22 +1,22 @@
 {
-	"beatsPerMeasure": 4,
 	"opponentModeAllowed": false,
-	"coopAllowed": false,
-	"stepsPerBeat": 4,
-	"bpm": 200,
+	"icon": "EYAD",
 	"difficulties": [
 		"Hard",
 		"Alt"
 	],
-	"needsVoices": false,
 	"parsedColor": -9825247,
-	"displayName": "Headache-OK",
-	"icon": "EYAD",
-	"name": "headache-ok",
-	"color": "#6A1421",
 	"customValues": {
-		"creditsFont": "minecraft.ttf",
+		"composer": "Bitto",
 		"creditsOutline": "SHADOW",
-		"composer": "Bitto"
-	}
+		"creditsFont": "minecraft.ttf"
+	},
+	"color": "#6A1421",
+	"name": "headache-ok",
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "Headache-OK",
+	"beatsPerMeasure": 4,
+	"needsVoices": false,
+	"bpm": 200
 }

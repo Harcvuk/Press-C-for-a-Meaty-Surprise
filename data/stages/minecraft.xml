@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="1" folder="stages/minecraft/">
+	<sprite name="bg" sprite="bg" x="-215" y="-80" scale="5" updateHitbox="true" antialiasing = "false"/>
+	<sprite name="sign" sprite="sign" x="1350" y="400" scale="2.5" updateHitbox="true" antialiasing = "false"/>
+	<sprite name="hand" sprite="hand" x="1380" y="485" scale="5" updateHitbox="true" antialiasing = "false"/>
+	<combo x="0" y="100"/>
+	<dad x="0" y="0"/>
+	<bf x="500" y="-160" scale="0.7"/>
+</stage>
