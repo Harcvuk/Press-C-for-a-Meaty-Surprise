@@ -1,4 +1,5 @@
 import flixel.text.FlxTextBorderStyle as Border;
+import flixel.addons.effects.FlxTrail as Trail;
 var byed = false;
 var eyadY = 0;
 var eyad = dad;
@@ -30,7 +31,7 @@ function postCreate() {
 
 function goodbye() {
 	FlxTween.cancelTweensOf(eyad);
- byed ? eyad.y = eyadY : FlxTween.tween(eyad,{y:eyad.y-1000},Conductor.crochet/1000,{ease:FlxEase.expoIn});
+	byed ? eyad.y = eyadY : FlxTween.tween(eyad,{y:eyad.y-1000},Conductor.crochet/1000,{ease:FlxEase.expoIn});
 	byed = !byed;
 }
 
@@ -47,7 +48,17 @@ function bye() {
 	gf.moves = true;
 	gf.velocity.x = 500;
 	gf.playAnim("walk",true,false,0,"LOCK");
+
+	trail = new Trail(gf, null, 20, 3, 0.4, 0.05);
+	insert(members.indexOf(gf),trail);
+
+	var pass = new FunkinText(860,900,0,"pass:\ncookings");
+	pass.alignment = "center";
+	pass.size -= 2;
+	insert(members.indexOf(gf),pass);
 }
+
+function superPlop() remove(trail);
 
 var colour = 0;
 function DJEYAD(what) {
