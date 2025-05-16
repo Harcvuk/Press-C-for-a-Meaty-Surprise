@@ -66,7 +66,9 @@ function postCreate() {
 function postUpdate() {
 	var ratements = (accuracy == -1) ? "?" : getRating() + " (" + FlxMath.roundDecimal(Math.max(accuracy,0)*100,2) + ") - " + getRatingFC();
 
-	infotxt.text = "Score:" + songScore + " | Misses:" + misses + " | Rating: " + ratements;
+	infotxt.text = "Score:" + songScore;
+	if (!ultimate) infotxt.text += " | Misses:" + misses;
+	infotxt.text += " | Rating: " + ratements;
 	infotxt.screenCenter(0x01);
 
 	comboGroup.cameras = [camCombo];
