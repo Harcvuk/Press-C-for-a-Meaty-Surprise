@@ -3,8 +3,9 @@ import flixel.text.FlxBitmapText;
 import flixel.graphics.frames.FlxBitmapFont;
 import funkin.backend.MusicBeatState;
 import funkin.menus.FreeplayState.FreeplaySonglist;
-songs = FreeplaySonglist.get().songs;
+import funkin.editors.charter.Charter;
 
+songs = FreeplaySonglist.get().songs;
 path = "game/menus/freeplay/";
 songTable = [];
 function create() {
@@ -110,6 +111,11 @@ function update() {
 		if (FlxG.random.bool(0.1) && FlxG.save.data.MeatyunlockedSongs.contains("my-new-cookings")) PlayState.loadSong("my-new-cookings","hard");
 		else PlayState.loadSong(songTable[curSelected].name, songTable[curSelected].difficulties[curDifficulty]);
 		FlxG.switchState(new PlayState());
+	}
+
+	if (FlxG.keys.justPressed.SEVEN) {
+
+		FlxG.switchState(new Charter(songTable[curSelected].name, songTable[curSelected].difficulties[curDifficulty], true));
 	}
 }
 
