@@ -79,6 +79,7 @@ function update(elapsed) {
 
 	if (FlxG.keys.justPressed.C && canC) {
 		canC = false;
+		Main.framerateSprite.codenameBuildField.text = "Cccccccc Cccccc " + cificator(Main.releaseCycle) + "\nCccccc " + cificator(engine.commit) + " (" + cificator(engine.hash) + ")";
 		var isSeezee = Sha256.encode(Discord?.user?.userId) == "dc793b1d9e78b66ad18637d9e176aadd09bf3ea96fa2dfc35553c493deda4615";
 		WindowUtils.winTitle = isSeezee ? "Ccccc C ccc c Ccccc Cccccccc!! - Ccccc Cccccccc Cccccc!" : "Ccccc C ccc c Ccccc Cccccccc!!";
 		logo.loadSprite(Paths.image("logoC94"));
@@ -90,10 +91,7 @@ function update(elapsed) {
 		FlxG.sound.play(Paths.sound("C"));
 		FlxG.sound.music.volume = 0;
 
-		for (credit in creditTextSprites) {
-			credit.text = new EReg("[A-Z]","g").replace(credit.text,"C");
-			credit.text = new EReg("[a-z]","g").replace(credit.text,"c");
-		}
+		for (credit in creditTextSprites) credit.text = cificator(credit.text);
 		matrixLetters = ["c","C"];
 
 		var letter = new FlxText();
@@ -119,4 +117,16 @@ function update(elapsed) {
 		FlxTween.tween(si,{pitch:4},15);
 		si.onComplete = () -> FlxG.sound.music.fadeOut(2,1);
 	}
+}
+
+function destroy() {
+	Main.framerateSprite.codenameBuildField.text = "Codename Engine " + Main.releaseCycle + "\nCommit " + engine.commit + " (" + engine.hash + ")";
+}
+
+function cificator(string) {
+	var temp = string;
+	string = new EReg("[A-Z]","g").replace(string,"C");
+	string = new EReg("[a-z]","g").replace(string,"c");
+
+	return string;
 }
