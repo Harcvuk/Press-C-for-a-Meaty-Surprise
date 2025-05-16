@@ -10,11 +10,13 @@
 	],
 	"needsVoices": false,
 	"parsedColor": -9825247,
-	"displayName": "headache-ok",
+	"displayName": "Headache-OK",
 	"icon": "EYAD",
 	"name": "headache-ok",
 	"color": "#6A1421",
 	"customValues": {
-		"creditsFont": "minecraft.ttf"
+		"creditsFont": "minecraft.ttf",
+		"creditsOutline": "SHADOW",
+		"composer": "Bitto"
 	}
 }

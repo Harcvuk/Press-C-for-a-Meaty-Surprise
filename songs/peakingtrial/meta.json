@@ -13,5 +13,7 @@
 	"icon": "PeakJAG",
 	"name": "peakingtrial",
 	"color": "#00F669",
-	"customValues": {}
+	"customValues": {
+		"composer":"harc"
+	}
 }

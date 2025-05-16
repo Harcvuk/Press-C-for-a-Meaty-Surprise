@@ -9,7 +9,9 @@
 	"coopAllowed": true,
 	"name": "stranded",
 	"color": "#FF8200",
-	"customValues": {},
+	"customValues": {
+		"composer": "Harc"
+	},
 	"stepsPerBeat": 4,
 	"displayName": "Stranded",
 	"needsVoices": true,

@@ -5,7 +5,9 @@
 		"Hard"
 	],
 	"parsedColor": -15011072,
-	"customValues": {},
+	"customValues": {
+		"composer":"Harc"
+	},
 	"color": "#1AF300",
 	"name": "trial",
 	"coopAllowed": true,

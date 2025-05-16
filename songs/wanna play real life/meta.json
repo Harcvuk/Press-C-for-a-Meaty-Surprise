@@ -13,5 +13,7 @@
 	"icon": "eyadRL",
 	"name": "wanna play real life",
 	"color": "#9271FD",
-	"customValues": {}
+	"customValues": {
+		"composer": "Mario"
+	}
 }
