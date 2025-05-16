@@ -1,6 +1,5 @@
 import funkin.backend.utils.WindowUtils;
 import funkin.backend.utils.DiscordUtil as Discord;
-import funkin.menus.BetaWarningState;
 import funkin.menus.credits.CreditsMain;
 import lime.graphics.Image;
 import haxe.crypto.Sha256;
