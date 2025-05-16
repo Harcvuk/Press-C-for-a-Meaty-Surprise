@@ -11,7 +11,7 @@ import funkin.backend.utils.DiscordUtil as Discord;
 import flixel.input.keyboard.FlxKey;
 
 var ultimateSequences = [
-    [FlxKey.U, FlxKey.L, FlxKey.T, FlxKey.I, FlxKey.M, FlxKey.A, FlxKey.T, FlxKey.E,]
+	[FlxKey.U, FlxKey.L, FlxKey.T, FlxKey.I, FlxKey.M, FlxKey.A, FlxKey.T, FlxKey.E,]
 ];
 var userInput = [];
 
@@ -116,9 +116,9 @@ function update() {
 	var back = (controls.BACK || FlxG.mouse.justPressedRight);
 
 	if (FlxG.keys.justPressed.ANY && ((FlxG.keys.firstJustPressed() <= 90 && FlxG.keys.firstJustPressed() >= 65) || (FlxG.keys.firstJustPressed() <= 57 && FlxG.keys.firstJustPressed() >= 48))) { //check for numbers and letters, by character ID
-        userInput.push(FlxG.keys.firstJustPressed()); 
-        checkSequence();
-    }
+		userInput.push(FlxG.keys.firstJustPressed());
+		checkSequence();
+	}
 
 	if (accept) if (!menuing) {
 		curSelected = 0;
@@ -183,25 +183,25 @@ function update() {
 }
 
 function checkSequence() {
-    var tempSeqs = ultimateSequences;
+	var tempSeqs = ultimateSequences;
 
-    //Filter all temporary sequences based on keys pressed in order
-    for (k=>key in userInput) {
-        tempSeqs = tempSeqs.filter(x -> key == x[k]);
+	//Filter all temporary sequences based on keys pressed in order
+	for (k=>key in userInput) {
+		tempSeqs = tempSeqs.filter(x -> key == x[k]);
 
-        if (tempSeqs.length == 0) { //Reset it all if nothing matches
-            userInput = [];
-            return;
-        }
-    }
-
-    //Then check if all the available sequences match length, since filtering above will take care of what keystrokes are pressed anyways
-    for (i in tempSeqs) {
-        if (i.length == userInput.length) {
-            ultimate = !ultimate;
+		if (tempSeqs.length == 0) { //Reset it all if nothing matches
 			userInput = [];
-        }
-    }
+			return;
+		}
+	}
+
+	//Then check if all the available sequences match length, since filtering above will take care of what keystrokes are pressed anyways
+	for (i in tempSeqs) {
+		if (i.length == userInput.length) {
+			ultimate = !ultimate;
+			userInput = [];
+		}
+	}
 }
 
 var curSelected = 0;
@@ -316,7 +316,6 @@ var quitTexts = [
 	"Are you stupid that's Pluto\nOOOOH",
 	"It was way more..",
 	"Meat"
-	//please add more!!
 ];
 
 var imageCounter = 0;
