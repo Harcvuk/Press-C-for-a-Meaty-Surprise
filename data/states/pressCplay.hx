@@ -29,8 +29,11 @@ function create() {
 	choosePlayer.camera = camSRB;
 	CoolUtil.cameraCenter(choosePlayer,camSRB,0x01);
 
+	var boxColor = 0xFF000052;
+	if (ultimate) boxColor = 0xFF842608;
+
 	//description
-	descriptionBox = new FunkinSprite(141,29).makeSolid(174,166,0xFF000052);
+	descriptionBox = new FunkinSprite(141,29).makeSolid(174,166,boxColor);
 	descriptionBox.camera = camSRB;
 	add(descriptionBox);
 
@@ -54,10 +57,19 @@ function create() {
 	difficultyText.camera = camSRB;
 	add(difficultyText);
 
+	if (ultimate) {
+		var ultimateText = new FlxBitmapText(descriptionBox.x+difficulty.width-2,33,"ee",FlxBitmapFont.fromAngelCode("assets/fonts/srb2.png", "assets/fonts/srb2.xml"));
+		ultimateText.camera = camSRB;
+		ultimateText.text = "ULTIMATE.";
+		ultimateText.color = 0xFFFF8383;
+		ultimateText.x = descriptionBox.x + descriptionBox.width - ultimateText.width;
+		add(ultimateText);
+	}
+
 	getSaveStuff();
 
 	//left side
-	charBox = new FunkinSprite(5,29).makeSolid(134,166,0xFF000052);
+	charBox = new FunkinSprite(5,29).makeSolid(134,166,boxColor);
 	charBox.camera = camSRB;
 	add(charBox);
 
@@ -149,7 +161,18 @@ function makeTexties() {
 	var startY = 33;
 	var lineHeight = 8;
 	var lines = descText.split("\n");
+
+	var linesLeft = 2;
+	if (ultimate) {
+		lines = ["", ""].concat(lines);
+	}
+
 	for (i => line in lines) {
+		if (ultimate && linesLeft > 0 && line.length == 1) {
+			linesLeft--;
+			continue;
+		}
+		
 		var parts = line.split("¨");
 		var curX = startX;
 
@@ -162,7 +185,7 @@ function makeTexties() {
 			desc.font = FlxBitmapFont.fromAngelCode("assets/fonts/srb2.png", "assets/fonts/srb2.xml");
 			desc.color = (j % 2 == 1) ? 0xFFFFFF00 : -1;
 			desc.text = part ?? "no desc";
-			desc.setPosition(curX,startY + i * lineHeight);
+			desc.setPosition(curX,startY + (i-2+linesLeft) * lineHeight);
 			desc.camera = camSRB;
 			add(desc);
 			descriptiones.push(desc);

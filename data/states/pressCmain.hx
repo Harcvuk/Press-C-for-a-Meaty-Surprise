@@ -8,6 +8,12 @@ import flixel.graphics.frames.FlxBitmapFont;
 import funkin.editors.ui.UIState as UI;
 import funkin.backend.MusicBeatState;
 import funkin.backend.utils.DiscordUtil as Discord;
+import flixel.input.keyboard.FlxKey;
+
+var ultimateSequences = [
+    [FlxKey.U, FlxKey.L, FlxKey.T, FlxKey.I, FlxKey.M, FlxKey.A, FlxKey.T, FlxKey.E,]
+];
+var userInput = [];
 
 var path = "game/menus/mainMenu/";
 function create() {
@@ -109,6 +115,11 @@ function update() {
 	var accept = (controls.ACCEPT || FlxG.mouse.justPressed);
 	var back = (controls.BACK || FlxG.mouse.justPressedRight);
 
+	if (FlxG.keys.justPressed.ANY && ((FlxG.keys.firstJustPressed() <= 90 && FlxG.keys.firstJustPressed() >= 65) || (FlxG.keys.firstJustPressed() <= 57 && FlxG.keys.firstJustPressed() >= 48))) { //check for numbers and letters, by character ID
+        userInput.push(FlxG.keys.firstJustPressed()); 
+        checkSequence();
+    }
+
 	if (accept) if (!menuing) {
 		curSelected = 0;
 		for (s => i in menuOptions) i.color = s == curSelected ? 0xFFFFFF00 : -1;
@@ -169,6 +180,28 @@ function update() {
 			camMenu.alpha = 0;
 		}
 	} else if (back) FlxG.switchState(new TitleState());
+}
+
+function checkSequence() {
+    var tempSeqs = ultimateSequences;
+
+    //Filter all temporary sequences based on keys pressed in order
+    for (k=>key in userInput) {
+        tempSeqs = tempSeqs.filter(x -> key == x[k]);
+
+        if (tempSeqs.length == 0) { //Reset it all if nothing matches
+            userInput = [];
+            return;
+        }
+    }
+
+    //Then check if all the available sequences match length, since filtering above will take care of what keystrokes are pressed anyways
+    for (i in tempSeqs) {
+        if (i.length == userInput.length) {
+            ultimate = !ultimate;
+			userInput = [];
+        }
+    }
 }
 
 var curSelected = 0;
