@@ -126,6 +126,8 @@ function changeSelection(amount) {
 function changeDifficulty(amount) {
 	FlxG.sound.play(Paths.sound("DSMENU1"));
 	curDifficulty = FlxMath.wrap(curDifficulty+amount, 0, songTable[curSelected].difficulties.length - 1);
+
+	makeTexties();
 	getSaveStuff();
 }
 
@@ -135,8 +137,14 @@ function makeTexties() {
 		remove(i);
 		i.destroy();
 	}
+
 	var descPath = "songs/" + songTable[curSelected].name + "/desc.txt";
-	var descText = Assets.exists(Paths.getPath(descPath)) ? StringTools.replace(Assets.getText(Paths.getPath(descPath)),"\\n","\n") : "no desc";
+	var descPre = "songs/" + songTable[curSelected].name + "/desc";
+	var descDiff = descPre + "-" + songTable[curSelected].difficulties[curDifficulty] + ".txt";
+	var descBase = descPre + ".txt";
+	var descPath = (Assets.exists(Paths.getPath(descDiff))) ? Paths.getPath(descDiff) : (Assets.exists(Paths.getPath(descBase))) ? Paths.getPath(descBase) : null;
+	var descText = StringTools.replace(Assets.getText(descPath ?? "no desc"), "\\n", "\n");
+
 	var startX = 146;
 	var startY = 33;
 	var lineHeight = 8;
@@ -144,7 +152,6 @@ function makeTexties() {
 	for (i => line in lines) {
 		var parts = line.split("¨");
 		var curX = startX;
-
 
 		for (j => part in parts) {
 			if (part.length == 0) continue;
@@ -154,7 +161,7 @@ function makeTexties() {
 			var desc = new FlxBitmapText();
 			desc.font = FlxBitmapFont.fromAngelCode("assets/fonts/srb2.png", "assets/fonts/srb2.xml");
 			desc.color = (j % 2 == 1) ? 0xFFFFFF00 : -1;
-			desc.text = part;
+			desc.text = part ?? "no desc";
 			desc.setPosition(curX,startY + i * lineHeight);
 			desc.camera = camSRB;
 			add(desc);
