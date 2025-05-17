@@ -5,7 +5,6 @@ function postCreate() {
 	meat.screenCenter();
 	meat.antialiasing = true;
 	mid = FlxPoint.get(meat.x,meat.y);
-	trace(mid);
 	meat.scale.set(0.8,0.8);
 }
 
@@ -18,6 +17,7 @@ function onCountdown(e) {
 			add(meat);
 			meat.angle = -15;
 			FlxTween.tween(meat,{x:meat.x-50,y:meat.y+50*(downscroll ? -1 : 1)},Conductor.crochet/2000,{ease:FlxEase.expoOut});
+			if (FlxG.random.bool(2)) e.soundPath = "introP";
 		case 1:
 			meat.angle = 5;
 			FlxTween.tween(meat,{x:mid.x+50,y:mid.y,angle:25},Conductor.crochet/2000,{ease:FlxEase.expoOut});
