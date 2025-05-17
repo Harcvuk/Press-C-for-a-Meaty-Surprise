@@ -1,6 +1,5 @@
 import funkin.backend.utils.WindowUtils;
 import funkin.backend.utils.DiscordUtil as Discord;
-import funkin.menus.BetaWarningState;
 import funkin.menus.credits.CreditsMain;
 import lime.graphics.Image;
 import haxe.crypto.Sha256;
@@ -13,6 +12,10 @@ FlxG.save.data.MeatyunlockedSongs ??= [];
 
 static var fromIntro = true; //for seezee to skip the intro movement if not coming from the intro
 static var ultimate = false;
+
+function new() {
+	ultimate = false;
+}
 
 static var redirectStates:Map<Class<FlxState>, String> = [
 	TitleState => "SeezeeBashIntro",

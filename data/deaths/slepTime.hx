@@ -1,3 +1,5 @@
+import funkin.editors.charter.Charter;
+
 function create(event) {
 	event.cancel();
 	FlxG.sound.music?.stop();
@@ -23,4 +25,17 @@ function create(event) {
 function update() {
 	FlxG.sound.music = null;
 	if (controls.ACCEPT) FlxG.switchState(new PlayState());
+	if (controls.BACK) {
+		if (PlayState.chartingMode && Charter.undos.unsaved) {
+			PlayState.instance.saveWarn(false);
+			return;
+		}
+		PlayState.resetSongInfos();
+		Charter.instance?.__clearStatics();
+
+		FlxG.sound.music?.stop();
+		FlxG.sound.music = null;
+
+		FlxG.switchState(PlayState.isStoryMode ? new StoryMenuState() : new FreeplayState());
+	}
 }
