@@ -1,0 +1,319 @@
+{
+	"events": [],
+	"scrollSpeed": 1.7,
+	"strumLines": [
+		{
+			"notes": [
+				{
+					"id": 1,
+					"sLen": 150,
+					"time": 10200,
+					"type": 0
+				},
+				{
+					"id": 0,
+					"sLen": 0,
+					"time": 10650,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 0,
+					"time": 10800,
+					"type": 0
+				},
+				{
+					"id": 1,
+					"sLen": 0,
+					"time": 11100,
+					"type": 0
+				},
+				{
+					"id": 3,
+					"sLen": 600,
+					"time": 11400,
+					"type": 0
+				},
+				{
+					"id": 1,
+					"sLen": 150,
+					"time": 12600,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 0,
+					"time": 13050,
+					"type": 0
+				},
+				{
+					"id": 3,
+					"sLen": 0,
+					"time": 13200,
+					"type": 0
+				},
+				{
+					"id": 1,
+					"sLen": 0,
+					"time": 13500,
+					"type": 0
+				},
+				{
+					"id": 0,
+					"sLen": 600,
+					"time": 13800,
+					"type": 0
+				},
+				{
+					"id": 1,
+					"sLen": 150,
+					"time": 19800,
+					"type": 0
+				},
+				{
+					"id": 0,
+					"sLen": 0,
+					"time": 20250,
+					"type": 0
+				},
+				{
+					"id": 3,
+					"sLen": 0,
+					"time": 20400,
+					"type": 0
+				},
+				{
+					"id": 1,
+					"sLen": 0,
+					"time": 20700,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 600,
+					"time": 21000,
+					"type": 0
+				},
+				{
+					"id": 0,
+					"sLen": 150,
+					"time": 22200,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 0,
+					"time": 22650,
+					"type": 0
+				},
+				{
+					"id": 3,
+					"sLen": 0,
+					"time": 22800,
+					"type": 0
+				},
+				{
+					"id": 1,
+					"sLen": 0,
+					"time": 23100,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 600,
+					"time": 23400,
+					"type": 0
+				}
+			],
+			"visible": true,
+			"strumPos": [
+				0,
+				50
+			],
+			"position": "dad",
+			"strumScale": 1,
+			"vocalsSuffix": "",
+			"strumLinePos": 0.25,
+			"type": 0,
+			"characters": [
+				"SZFake"
+			]
+		},
+		{
+			"notes": [
+				{
+					"id": 1,
+					"sLen": 0,
+					"time": 14700,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 0,
+					"time": 14850,
+					"type": 0
+				},
+				{
+					"id": 3,
+					"sLen": 450,
+					"time": 15000,
+					"type": 0
+				},
+				{
+					"id": 0,
+					"sLen": 450,
+					"time": 15600,
+					"type": 0
+				},
+				{
+					"id": 1,
+					"sLen": 450,
+					"time": 16200,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 150,
+					"time": 16800,
+					"type": 0
+				},
+				{
+					"id": 1,
+					"sLen": 0,
+					"time": 17100,
+					"type": 0
+				},
+				{
+					"id": 0,
+					"sLen": 0,
+					"time": 17250,
+					"type": 0
+				},
+				{
+					"id": 3,
+					"sLen": 150,
+					"time": 17400,
+					"type": 0
+				},
+				{
+					"id": 1,
+					"sLen": 0,
+					"time": 17700,
+					"type": 0
+				},
+				{
+					"id": 0,
+					"sLen": 150,
+					"time": 17850,
+					"type": 0
+				},
+				{
+					"id": 3,
+					"sLen": 0,
+					"time": 18195,
+					"type": 0
+				},
+				{
+					"id": 1,
+					"sLen": 450,
+					"time": 18600,
+					"type": 0
+				},
+				{
+					"id": 0,
+					"sLen": 0,
+					"time": 24300,
+					"type": 0
+				},
+				{
+					"id": 3,
+					"sLen": 0,
+					"time": 24450,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 450,
+					"time": 24600,
+					"type": 0
+				},
+				{
+					"id": 1,
+					"sLen": 450,
+					"time": 25200,
+					"type": 0
+				},
+				{
+					"id": 0,
+					"sLen": 450,
+					"time": 25800,
+					"type": 0
+				},
+				{
+					"id": 3,
+					"sLen": 150,
+					"time": 26400,
+					"type": 0
+				},
+				{
+					"id": 1,
+					"sLen": 0,
+					"time": 26700,
+					"type": 0
+				},
+				{
+					"id": 0,
+					"sLen": 0,
+					"time": 26850,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 150,
+					"time": 27000,
+					"type": 0
+				},
+				{
+					"id": 3,
+					"sLen": 0,
+					"time": 27450,
+					"type": 0
+				},
+				{
+					"id": 0,
+					"sLen": 150,
+					"time": 27600,
+					"type": 0
+				},
+				{
+					"id": 1,
+					"sLen": 0,
+					"time": 27900,
+					"type": 0
+				},
+				{
+					"id": 2,
+					"sLen": 450,
+					"time": 28200,
+					"type": 0
+				}
+			],
+			"visible": true,
+			"strumPos": [
+				0,
+				50
+			],
+			"position": "boyfriend",
+			"strumScale": 1,
+			"vocalsSuffix": "",
+			"strumLinePos": 0.75,
+			"type": 1,
+			"characters": [
+				"JaggerWorried"
+			]
+		}
+	],
+	"codenameChart": true,
+	"stage": "The Desert",
+	"noteTypes": []
+}

@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="SZFake" scale="1.2" y="-80" icon="FakeSZ" color="#26E100">
+	<anim name="hi" anim="hi" x="0" y="0" fps="1" loop="true"/>
+	<anim name="idle" anim="i" x="0" y="0" fps="10" loop="false"/>
+	<anim name="singUP" anim="u" x="0" y="0" fps="10" loop="false"/>
+	<anim name="singLEFT" anim="l" x="0" y="0" fps="10" loop="false"/>
+	<anim name="singRIGHT" anim="r" x="0" y="0" fps="10" loop="false"/>
+	<anim name="singDOWN" anim="d" x="0" y="0" fps="10" loop="false"/>
+</character>

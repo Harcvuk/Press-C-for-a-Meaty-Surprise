@@ -1,0 +1,13 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="JaggerWorried" scale="2" y="80" flipX="true" icon="JagWorry" color="#FF6300" camx="200">
+	<anim name="singLEFT-alt" anim="Jagger AR" x="18" y="0" fps="10" loop="false"/>
+	<anim name="singRIGHT-alt" anim="Jagger AL" x="-7" y="0" fps="10" loop="false"/>
+	<anim name="singDOWN-alt" anim="Jagger AD" x="67" y="0" fps="10" loop="false"/>
+	<anim name="singUP-alt" anim="Jagger AU" x="63" y="0" fps="10" loop="false"/>
+	<anim name="idle-alt" anim="Jagger altI" x="18" y="0" fps="10" loop="false"/>
+	<anim name="idle" anim="Jagger idle" x="0" y="0" fps="10" loop="false"/>
+	<anim name="singUP" anim="Jagger singUP" x="62" y="0" fps="10" loop="false"/>
+	<anim name="singLEFT" anim="Jagger singRIGHT" x="5" y="0" fps="10" loop="false"/>
+	<anim name="singRIGHT" anim="Jagger singLEFT" x="77" y="0" fps="10" loop="false"/>
+	<anim name="singDOWN" anim="Jagger singDOWN" x="7" y="0" fps="10" loop="false"/>
+</character>
