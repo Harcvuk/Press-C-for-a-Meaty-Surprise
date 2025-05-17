@@ -1,0 +1,47 @@
+{ "frames": [
+   {
+    "filename": "three0000",
+    "frame": { "x": 1154, "y": 0, "w": 277, "h": 423 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 287, "y": 0, "w": 277, "h": 423 },
+    "sourceSize": { "w": 850, "h": 423 },
+    "duration": 100
+   },
+   {
+    "filename": "two0000",
+    "frame": { "x": 851, "y": 0, "w": 302, "h": 403 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 274, "y": 10, "w": 302, "h": 403 },
+    "sourceSize": { "w": 850, "h": 423 },
+    "duration": 100
+   },
+   {
+    "filename": "one0000",
+    "frame": { "x": 1432, "y": 0, "w": 203, "h": 389 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 288, "y": 17, "w": 203, "h": 389 },
+    "sourceSize": { "w": 850, "h": 423 },
+    "duration": 100
+   },
+   {
+    "filename": "go0000",
+    "frame": { "x": 0, "y": 0, "w": 850, "h": 281 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 71, "w": 850, "h": 281 },
+    "sourceSize": { "w": 850, "h": 423 },
+    "duration": 100
+   }
+ ],
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.3.14-beta1-x64",
+  "image": "countdown.png",
+  "format": "RGBA8888",
+  "size": { "w": 1635, "h": 423 },
+  "scale": "1"
+ }
+}
