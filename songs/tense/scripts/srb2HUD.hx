@@ -5,6 +5,7 @@ public var camSRB:FlxCamera;
 
 path = "HUD/SRB2/";
 function create() {
+	GameOverSubstate.script = "data/deaths/slepTime";
 	//make the srb2
 	camSRB = new FlxCamera(0,0,FlxG.width/2,FlxG.height/2,2);
 	camSRB.bgColor = 0;
@@ -82,7 +83,7 @@ function postUpdate() {
 	camSRB.zoom = 1.25 + (camHUD.zoom * 0.75); //also needs to bump too ok?
 
 	//visual bug fix (health + default health gain)
-	healthNights.scale.x = health >= 2 ? 96*health : 192;
+	healthNights.scale.x = health <= 2 ? 96*health : 192;
 
 	sonicScoreText.text = songScore; //needs to show score ok?
 	sonicTimeText.text = (Conductor.songPosition < 0 ? "0:00" : formatTime(Conductor.songPosition)); //needs to show the time ok?
