@@ -14,5 +14,7 @@
 	"icon": "bobgaming",
 	"name": "my-new-cookings",
 	"color": "#AAAAAA",
-	"customValues": {}
+	"customValues": {
+		"customCountdown": ""
+	}
 }

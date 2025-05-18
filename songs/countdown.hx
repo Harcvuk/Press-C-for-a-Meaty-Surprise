@@ -1,3 +1,5 @@
+if (PlayState.SONG.meta.customValues?.customCountdown != null) disableScript();
+
 function postCreate() {
 	meat = new FunkinSprite(0,0,Paths.image("countdown"));
 	for (s => anim in ["three","two","one","go"])meat.addAnim(s,anim,2,false);
@@ -10,7 +12,7 @@ function postCreate() {
 
 function onCountdown(e) {
 	e.spritePath = null;
-	e.soundPath = ["intro3","intro2","intro1","introGo"][e.swagCounter];
+	e.soundPath = ["3","2","1","Go"][e.swagCounter];
 	if ([0,1,2,3].contains(e.swagCounter)) meat.playAnim(e.swagCounter);
 	switch (e.swagCounter) {
 		case 0:
