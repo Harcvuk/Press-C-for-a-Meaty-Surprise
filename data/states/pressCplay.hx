@@ -15,7 +15,7 @@ function create() {
 	}
 
 	//important to be first
-	var lockedSongs = ["my-new-cookings","wanna play real life","peakingtrial"];
+	var lockedSongs = ["my-new-cookings","wanna play real life","peakingtrial", "too-peak"];
 	for (song in songs) if (!lockedSongs.contains(song.name) || FlxG.save.data.MeatyunlockedSongs.contains(song.name)) songTable.push(song);
 	for(k=>s in songTable) if (s.name == Options.freeplayLastSong) curSelected = k;
 	for(k=>diff in songTable[curSelected]?.difficulties) if (diff == Options.freeplayLastDifficulty) curDifficulty = k;
