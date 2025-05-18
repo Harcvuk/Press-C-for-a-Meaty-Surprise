@@ -22,7 +22,6 @@ function create() {
 	for(k=>s in songTable) {
 		if (s.name == Options.freeplayLastSong) curSelected = k;
 		if (lockedSongs.contains(s.name)) {
-			trace("you played "+ s.name);
 			var songScore = FunkinSave.getSongHighscore(songTable[s].name, songTable[s].difficulties[0]).score;
 			if (songScore != 0) playedUnlocks++;
 		}
