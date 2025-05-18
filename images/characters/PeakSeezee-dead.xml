@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="PeakSeezee-dead.png">
+<SubTexture name="firstDeath0000" x="0" y="0" width="451" height="314" frameX="0" frameY="0" frameWidth="451" frameHeight="314" />
+</TextureAtlas>

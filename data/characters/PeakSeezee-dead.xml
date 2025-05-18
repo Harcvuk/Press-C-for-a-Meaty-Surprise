@@ -1,0 +1,6 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="PeakSeezee-dead" scale="4.6" flipX="true" isPlayer="true" icon="sprite-icon" color="#00C030" gameOverChar="PeakSeezee-dead">
+	<anim name="deathConfirm" anim="firstDeath" x="0" y="0" fps="24" loop="false"/>
+	<anim name="deathLoop" anim="firstDeath" x="0" y="0" fps="24" loop="false"/>
+	<anim name="firstDeath" anim="firstDeath" x="0" y="0" fps="24" loop="false"/>
+</character>
