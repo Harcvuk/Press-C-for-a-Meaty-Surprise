@@ -14,8 +14,9 @@
 	"name": "tense",
 	"color": "#FF8200",
 	"customValues": {
-		"creditsOutline": "SHADOW",
+		"customCountdown": "",
 		"composer": "SSNTails (kinda)",
+		"creditsOutline": "SHADOW",
 		"creditsFont": "sonic2.ttf"
 	}
 }
