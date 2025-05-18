@@ -15,11 +15,11 @@ function create() {
 	}
 
 	//important to be first
-	var lockedSongs = ["my-new-cookings","wanna play real life","peakingtrial", "too-peak"];
+	var lockedSongs = ["my-new-cookings","wanna play real life","peakingtrial", "too-peak","Tense"];
 	for (song in songs) if (!lockedSongs.contains(song.name) || FlxG.save.data.MeatyunlockedSongs.contains(song.name)) songTable.push(song);
+
 	for(k=>s in songTable) if (s.name == Options.freeplayLastSong) curSelected = k;
 	for(k=>diff in songTable[curSelected]?.difficulties) if (diff == Options.freeplayLastDifficulty) curDifficulty = k;
-
 
 	//background, CHOOSE PLAYER, and descriptions
 	camSRB = new FlxCamera(64,0,320,200,720/200);
@@ -178,7 +178,7 @@ function makeTexties() {
 			linesLeft--;
 			continue;
 		}
-		
+
 		var parts = line.split("¨");
 		var curX = startX;
 
