@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-stage>
+<stage folder="stages/wood zone/" zoom="5">
+	<gf x="449" y="-427"/>
+	<sprite x="596" antialiasing="false" y="32" sprite="main" name="main"/>
+	<dad x="700" y="127"/>
+	<bf/>
+	<combo/>
+</stage>

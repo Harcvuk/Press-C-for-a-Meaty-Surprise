@@ -1,0 +1,21 @@
+{
+	"beatsPerMeasure": 4,
+	"opponentModeAllowed": true,
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"bpm": 120,
+	"difficulties": [
+		"Tense"
+	],
+	"needsVoices": false,
+	"parsedColor": -32256,
+	"displayName": "Tense",
+	"icon": "Mario",
+	"name": "tense",
+	"color": "#FF8200",
+	"customValues": {
+		"creditsOutline": "SHADOW",
+		"composer": "SSNTails (kinda)",
+		"creditsFont": "sonic2.ttf"
+	}
+}

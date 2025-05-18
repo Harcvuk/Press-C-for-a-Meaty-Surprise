@@ -15,11 +15,20 @@ function create() {
 	}
 
 	//important to be first
-	var lockedSongs = ["my-new-cookings","wanna play real life","peakingtrial", "too-peak"];
+	var lockedSongs = ["my-new-cookings","wanna play real life","peakingtrial", "too-peak","tense"];
 	for (song in songs) if (!lockedSongs.contains(song.name) || FlxG.save.data.MeatyunlockedSongs.contains(song.name)) songTable.push(song);
-	for(k=>s in songTable) if (s.name == Options.freeplayLastSong) curSelected = k;
-	for(k=>diff in songTable[curSelected]?.difficulties) if (diff == Options.freeplayLastDifficulty) curDifficulty = k;
 
+	var playedUnlocks = 0;
+	for(k=>s in songTable) {
+		if (s.name == Options.freeplayLastSong) curSelected = k;
+		if (lockedSongs.contains(s.name)) {
+			var songScore = FunkinSave.getSongHighscore(songTable[s].name, songTable[s].difficulties[0]).score;
+			if (songScore != 0) playedUnlocks++;
+		}
+	}
+	if (playedUnlocks >= 4) songTable.push(songs[songs.length-1]); //tense is stuck in the last slot of freeplay like this sadly
+
+	for(k=>diff in songTable[curSelected]?.difficulties) if (diff == Options.freeplayLastDifficulty) curDifficulty = k;
 
 	//background, CHOOSE PLAYER, and descriptions
 	camSRB = new FlxCamera(64,0,320,200,720/200);
@@ -178,7 +187,7 @@ function makeTexties() {
 			linesLeft--;
 			continue;
 		}
-		
+
 		var parts = line.split("¨");
 		var curX = startX;
 
