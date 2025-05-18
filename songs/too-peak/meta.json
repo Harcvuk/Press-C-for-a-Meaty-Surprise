@@ -12,5 +12,8 @@
 	"displayName": "Too Peak",
 	"icon": "FakeSZ",
 	"name": "too-peak",
-	"color": "#008809"
+	"color": "#008809",
+	"customValues": {
+		"composer": "Harc"
+	}
 }
