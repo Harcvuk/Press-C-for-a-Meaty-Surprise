@@ -10,7 +10,7 @@ var source = [
 	{password: "a84f08c5ab6d3b28ddea1fd4c56e957a98cac426f65863dfdf93e29048e36a37", song: "my-new-cookings", difficulty: "hard"}, // this is "cookings"
 	{password: "8b1131e107b88a5acbef97b6cecc18a74b9f57fc110dd7523b5b85bc2967aaaa", song: "wanna play real life", difficulty: "Real"}, // this is "real life"
 	{password: "dc9f28b12dd1818ee42ffc92ecb940386214598837348d30d3c6c0b7b57e34c9", song: "peakingtrial", difficulty: "Peak"},  // this is "fire"
-];  {password: "9095bdb859308b62acf04036ffd4adfe366d7f737d276eb6c46ae434f3816c9b", song: "too-peak", difficulty: "hard"} // this is "exe"
+];  {password: "59888a40ad3be41833d56b3ba1d96e40256389f583dd80d6be0a93171151b62f", song: "too-peak", difficulty: "hard"} // this is "spooks"
 
 var inputKey:UITextBox;
 function create() {
