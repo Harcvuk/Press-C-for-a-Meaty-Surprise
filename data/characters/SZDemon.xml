@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character sprite="SZ.exe" scale="2" y="0" icon="SZDemon" color="#26E100">
+<character sprite="SZ.exe" scale="2" y="-60" icon="SZDemon" color="#26E100">
 	<anim name="idle" anim="i" x="0" y="0" fps="10" loop="false"/>
 	<anim name="singUP" anim="u" x="0" y="0" fps="10" loop="false"/>
 	<anim name="singLEFT" anim="l" x="0" y="0" fps="10" loop="false"/>

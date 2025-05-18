@@ -13,4 +13,6 @@
 	<anim name="singLEFTmiss" anim="Seezee LM" x="0" y="0" fps="10" loop="false"/>
 	<anim name="singRIGHTmiss" anim="Seezee RM" x="0" y="0" fps="10" loop="false"/>
 	<anim name="singDOWNmiss" anim="Seezee DM" x="0" y="0" fps="10" loop="false"/>
+	<anim name="reveal" anim="SZ passreveal" x="0" y="0" fps="10" loop="false"/>
+	<anim name="my passwords" anim="SZ password" x="0" y="0" fps="10" loop="true"/>
 </character>
