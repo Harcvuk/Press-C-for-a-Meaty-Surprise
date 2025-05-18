@@ -22,3 +22,11 @@ function update(elapsed) {
 
     if (!FlxG.state.persistentDraw && video.position > 0) FlxG.state.persistentDraw = true;
 }
+
+function update(elapsed) {
+    if (FlxG.keys.pressed.F5) {
+    trace("Sorry, you can't reload during this cutscene.");
+   
+    }
+
+}
