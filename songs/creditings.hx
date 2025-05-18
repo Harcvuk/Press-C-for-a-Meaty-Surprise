@@ -6,7 +6,7 @@ import flixel.text.FlxTextBorderStyle as Border;
 creditsPre = "songs/" + curSong + "/credits";
 
 var path = "hud/credits/";
-var camCredits = new FlxCamera();
+public var camCredits = new FlxCamera();
 function postCreate() {
 
 	FlxG.cameras.add(camCredits,false);

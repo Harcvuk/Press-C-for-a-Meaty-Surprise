@@ -1,7 +1,7 @@
 function postCreate() {
 	meat = new FunkinSprite(0,0,Paths.image("countdown"));
 	for (s => anim in ["three","two","one","go"])meat.addAnim(s,anim,2,false);
-	meat.camera = camHUD;
+	meat.camera = camCredits;
 	meat.screenCenter();
 	meat.antialiasing = true;
 	mid = FlxPoint.get(meat.x,meat.y);
@@ -10,13 +10,13 @@ function postCreate() {
 
 function onCountdown(e) {
 	e.spritePath = null;
-
+	e.soundPath = ["intro3","intro2","intro1","introGo"][e.swagCounter];
 	if ([0,1,2,3].contains(e.swagCounter)) meat.playAnim(e.swagCounter);
 	switch (e.swagCounter) {
 		case 0:
 			add(meat);
 			meat.angle = -15;
-			FlxTween.tween(meat,{x:meat.x-50,y:meat.y+50*(downscroll ? -1 : 1)},Conductor.crochet/2000,{ease:FlxEase.expoOut});
+			FlxTween.tween(meat,{x:meat.x-50,y:meat.y+50},Conductor.crochet/2000,{ease:FlxEase.expoOut});
 			if (FlxG.random.bool(2)) e.soundPath = "introP";
 		case 1:
 			meat.angle = 5;
