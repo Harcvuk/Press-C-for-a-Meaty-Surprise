@@ -1,0 +1,1 @@
+playCutscenes = true; // Force a cutscene to play if there is one. Yes I stole this straight from Top 10 (if you also saw the states folder, or looked at my commit lmao)
