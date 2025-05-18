@@ -20,13 +20,13 @@ function create() {
 
 	var playedUnlocks = 0;
 	for(k=>s in songTable) {
-		if (s.name == Options.freeplayLastSong) curSelected = k;
 		if (lockedSongs.contains(s.name)) {
 			var songScore = FunkinSave.getSongHighscore(songTable[s].name, songTable[s].difficulties[0]).score;
 			if (songScore != 0) playedUnlocks++;
 		}
+		if (playedUnlocks == 4) songTable.push(songs[songs.length-1]); //tense is stuck in the last slot of freeplay like this sadly
+		if (s.name == Options.freeplayLastSong) curSelected = k;
 	}
-	if (playedUnlocks >= 4) songTable.push(songs[songs.length-1]); //tense is stuck in the last slot of freeplay like this sadly
 
 	for(k=>diff in songTable[curSelected]?.difficulties) if (diff == Options.freeplayLastDifficulty) curDifficulty = k;
 
