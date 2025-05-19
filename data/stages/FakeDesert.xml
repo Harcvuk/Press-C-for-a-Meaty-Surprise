@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.6" folder="stages/Fake Desert/">
+	<sprite name="NotsoBlueSky" sprite="NotsoBlueSky" scale="8"/>
+	<sprite name="REALSAND" sprite="REALSAND" scale="2"/>
+	<gf x="336" y="385.5"/>
+	<dad x="-347" y="535"/>
+	<combo x="558.5" y="625"/>
+	<bf x="1298.5" y="360.5"/>
+	<sprite name="sandFront" sprite="sandFront" scale="2" scroll="1.2"/>
+</stage>
