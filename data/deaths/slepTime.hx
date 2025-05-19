@@ -18,7 +18,7 @@ function create(event) {
 	slepTime.alpha = 0;
 	FlxTween.tween(slepTime,{alpha:1},4,{ease:FlxEase.sineOut});
 
-	song = FlxG.sound.load(Paths.music(FlxG.random.bool(0.5) ? "slepPhonk" : "slepTime"));
+	song = FlxG.sound.load(Paths.music(FlxG.random.bool(2.03) ? "slepPhonk" : "slepTime"));
 	song.play();
 	song.onComplete = () -> FlxG.switchState(new PlayState());
 }
