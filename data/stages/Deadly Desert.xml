@@ -1,14 +1,14 @@
 <!DOCTYPE codename-engine-stage>
-<stage zoom="0.6" folder="stages/Deadly Desert/">
-	<sprite name="Sky" sprite="Sky" scale="8"/>
-	<sprite name="TTTGBox" sprite="TTTGBox" scroll="0.8" scale="2" alpha="1"/>
+<stage zoom="0.1" folder="stages/Deadly Desert/">
+	<sprite name="Sky" scroll="0.1" sprite="Sky" scale="8"/>
+	<sprite name="TTTGBox" sprite="TTTGBox" scroll="0.3" scale="2" alpha="1"/>
 	<sprite name="Pyramids" sprite="Pyramids" scroll="0.4" scale="2" alpha="1"/>
 	<sprite name="AntiJaggerPole" y="50" sprite="AntiJaggerPole" scale="2" scroll="0.6"/>
 	<sprite name="BloodyCactus" y="50" sprite="BloodyCactus" scale="2" scroll="0.6"/>
 	<sprite name="Sand" sprite="Sand" scale="2"/>
 	<gf x="336" y="385.5"/>
-	<dad x="347" y="395"/>
+	<dad x="-347" y="535"/>
 	<combo x="558.5" y="625"/>
-	<bf x="1098.5" y="260.5"/>
+	<bf x="1398.5" y="560.5"/>
 	<sprite name="sandFront" sprite="sandFront" scale="2" scroll="1.2"/>
 </stage>
