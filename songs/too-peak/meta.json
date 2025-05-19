@@ -7,7 +7,7 @@
 	"difficulties": [
 		"HARD"
 	],
-	"needsVoices": false,
+	"needsVoices": true,
 	"parsedColor": -16742391,
 	"displayName": "Too Peak",
 	"icon": "FakeSZ",
