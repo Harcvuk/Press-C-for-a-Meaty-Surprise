@@ -9,7 +9,8 @@
 	"customValues": {
 		"composer": "Bitto",
 		"creditsOutline": "SHADOW",
-		"creditsFont": "minecraft.ttf"
+		"creditsFont": "minecraft.ttf",
+		"lockCam": true
 	},
 	"color": "#6A1421",
 	"name": "headache-ok",
