@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character sprite="Jagger" scale="2" flipX="true" icon="Jagger" color="#FF6300" camx="-200">
+<character sprite="Jagger" scale="2" flipX="true" camx="-200" icon="Jagger" color="#FF6300" gameOverChar="Jag-dead">
 	<anim name="singLEFT-alt" anim="Jagger AR" x="18" y="0" fps="10" loop="false"/>
 	<anim name="singRIGHT-alt" anim="Jagger AL" x="-7" y="0" fps="10" loop="false"/>
 	<anim name="singDOWN-alt" anim="Jagger AD" x="67" y="0" fps="10" loop="false"/>

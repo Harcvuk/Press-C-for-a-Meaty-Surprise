@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character x="150" y="70" sprite="PissedJagger" flipX="true" scale="2" isPlayer="true" icon="JagMad" color="#FF7A0E">
+<character x="150" y="70" sprite="PissedJagger" scale="2" flipX="true" isPlayer="true" icon="JagMad" color="#FF7A0E" gameOverChar="Jag-dead">
 	<anim name="idle" anim="vibinlmao" x="0" y="0" fps="10" loop="false"/>
 	<anim name="singUP" anim="p" x="0" y="0" fps="10" loop="false"/>
 	<anim name="singLEFT" anim="eft" x="0" y="0" fps="10" loop="false"/>

@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character antialiasing="true" gameOverChar="Jag-dead" sprite="Jag-dead" flipX="true" color="#000000" isPlayer="true">
+<character antialiasing="true" gameOverChar="Jag-dead" scale="2" sprite="Jag-dead" flipX="true" color="#000000" isPlayer="true">
 	<anim x="0" loop="false" y="0" fps="10" anim="confirm" name="deathConfirm"/>
 	<anim x="0" loop="true" y="0" fps="10" anim="deathLoop" name="deathLoop"/>
 	<anim x="0" loop="false" y="0" fps="10" anim="firstDeath" name="firstDeath"/>
