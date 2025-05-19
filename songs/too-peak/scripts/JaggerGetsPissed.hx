@@ -1,10 +1,2 @@
-function postCreate() {
-    switch (curBeat) {
-        case 0:
-        player.characters[1].visible = false;
-        player.characters[0].visible = true;
-        case 84:
-        player.characters[1].visible = true;
-        player.characters[0].visible = false;
-} 
-}
+function postCreate() player.characters[1].visible = false;
+function swapJaggers() for (i in [player.characters[1],player.characters[0]]) i.visible = !i.visible;
