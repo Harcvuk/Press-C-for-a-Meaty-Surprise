@@ -1,0 +1,12 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="PissedJagger" flipX="true" isPlayer="true" icon="JagMad" color="#FF7A0E">
+	<anim name="idle" anim="vibinlmao" x="0" y="0" fps="10" loop="false"/>
+	<anim name="singUP" anim="p" x="0" y="0" fps="10" loop="false"/>
+	<anim name="singLEFT" anim="eft" x="0" y="0" fps="10" loop="false"/>
+	<anim name="singRIGHT" anim="ight" x="0" y="0" fps="10" loop="false"/>
+	<anim name="singDOWN" anim="own" x="0" y="0" fps="10" loop="false"/>
+	<anim name="singUPmiss" anim="UpM" x="0" y="0" fps="10" loop="false"/>
+	<anim name="singLEFTmiss" anim="LeM" x="0" y="0" fps="10" loop="false"/>
+	<anim name="singRIGHTmiss" anim="RiM" x="0" y="0" fps="10" loop="false"/>
+	<anim name="singDOWNmiss" anim="DoM" x="0" y="0" fps="10" loop="false"/>
+</character>

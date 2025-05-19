@@ -7,8 +7,8 @@
 				"smoothStep",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 300
+			"time": 300,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
@@ -19,54 +19,54 @@
 				true,
 				"0.05"
 			],
-			"name": "[BCC] Cinematic Bars",
-			"time": 300
+			"time": 300,
+			"name": "[BCC] Cinematic Bars"
 		},
 		{
 			"params": [
 				1,
 				true
 			],
-			"name": "get snappy",
-			"time": 300
+			"time": 300,
+			"name": "get snappy"
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 300
+			"time": 300,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				"creditings",
 				""
 			],
-			"time": 300,
-			"name": "HScript Call"
+			"name": "HScript Call",
+			"time": 300
 		},
 		{
 			"params": [
 				1.2,
 				false
 			],
-			"name": "get snappy",
-			"time": 2400
+			"time": 2400,
+			"name": "get snappy"
 		},
 		{
 			"params": [
 				"creditings",
 				""
 			],
-			"time": 4800,
-			"name": "HScript Call"
+			"name": "HScript Call",
+			"time": 4800
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 5400
+			"time": 5400,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
@@ -77,8 +77,8 @@
 				true,
 				"0.05"
 			],
-			"name": "[BCC] Cinematic Bars",
-			"time": 5400
+			"time": 5400,
+			"name": "[BCC] Cinematic Bars"
 		},
 		{
 			"params": [
@@ -89,8 +89,8 @@
 				false,
 				"0.05"
 			],
-			"name": "[BCC] Cinematic Bars",
-			"time": 10200
+			"time": 10200,
+			"name": "[BCC] Cinematic Bars"
 		},
 		{
 			"params": [
@@ -99,15 +99,15 @@
 				"lerp",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 10200
+			"time": 10200,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 10200
+			"time": 10200,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
@@ -116,29 +116,29 @@
 				"lerp",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 14700
+			"time": 14700,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 14700
+			"time": 14700,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 19800
+			"time": 19800,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 24300
+			"time": 24300,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
@@ -149,15 +149,15 @@
 				false,
 				"0.05"
 			],
-			"name": "[BCC] Cinematic Bars",
-			"time": 29400
+			"time": 29400,
+			"name": "[BCC] Cinematic Bars"
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 29400
+			"time": 29400,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
@@ -166,8 +166,8 @@
 				"lerp",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 29400
+			"time": 29400,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
@@ -178,8 +178,8 @@
 				false,
 				"0.05"
 			],
-			"name": "[BCC] Cinematic Bars",
-			"time": 38700
+			"time": 38700,
+			"name": "[BCC] Cinematic Bars"
 		},
 		{
 			"params": [
@@ -188,22 +188,22 @@
 				"lerp",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 38700
+			"time": 38700,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 38700
+			"time": 38700,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				180
 			],
-			"time": 48000,
-			"name": "BPM Change"
+			"name": "BPM Change",
+			"time": 48000
 		},
 		{
 			"params": [
@@ -213,8 +213,8 @@
 				"linear",
 				"In"
 			],
-			"time": 48416.6666666667,
-			"name": "Scroll Speed Change"
+			"name": "Scroll Speed Change",
+			"time": 48416.6666666667
 		},
 		{
 			"params": [
@@ -222,8 +222,8 @@
 				"hi",
 				true
 			],
-			"time": 48416.6666666667,
-			"name": "Play Animation"
+			"name": "Play Animation",
+			"time": 48416.6666666667
 		},
 		{
 			"params": [
@@ -232,8 +232,8 @@
 				4,
 				"camGame"
 			],
-			"time": 48416.6666666667,
-			"name": "Camera Flash"
+			"name": "Camera Flash",
+			"time": 48416.6666666667
 		},
 		{
 			"params": [
@@ -244,8 +244,8 @@
 				false,
 				"0.05"
 			],
-			"name": "[BCC] Cinematic Bars",
-			"time": 48416.6666666667
+			"time": 48416.6666666667,
+			"name": "[BCC] Cinematic Bars"
 		},
 		{
 			"params": [
@@ -254,31 +254,31 @@
 				"none (happens instantly)",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 48416.6666666667
+			"time": 48416.6666666667,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
 				1,
 				true
 			],
-			"name": "get snappy",
-			"time": 48416.6666666667
+			"time": 48416.6666666667,
+			"name": "get snappy"
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 48416.6666666667
+			"time": 48416.6666666667,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				1,
 				false
 			],
-			"time": 48500,
-			"name": "get snappy"
+			"name": "get snappy",
+			"time": 48500
 		},
 		{
 			"params": [
@@ -287,8 +287,8 @@
 				0,
 				true
 			],
-			"name": "Change Character",
-			"time": 49833.3333333333
+			"time": 49833.3333333333,
+			"name": "Change Character"
 		},
 		{
 			"params": [
@@ -297,80 +297,80 @@
 				"lerp",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 50000
+			"time": 50000,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
 				2,
 				1.6
 			],
-			"name": "Camera Modulo Change",
-			"time": 50000
+			"time": 50000,
+			"name": "Camera Modulo Change"
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 56166.6666666667
+			"time": 56166.6666666667,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 61583.3333333333
+			"time": 61583.3333333333,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 66833.3333333333
+			"time": 66833.3333333333,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 72166.6666666667
+			"time": 72166.6666666667,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				4,
 				1.3
 			],
-			"name": "Camera Modulo Change",
-			"time": 72166.6666666667
+			"time": 72166.6666666667,
+			"name": "Camera Modulo Change"
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 77500
+			"time": 77500,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 82833.3333333333
+			"time": 82833.3333333333,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 88166.6666666667
+			"time": 88166.6666666667,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 93500
+			"time": 93500,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
@@ -379,8 +379,8 @@
 				"circ",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 93500
+			"time": 93500,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
@@ -391,8 +391,8 @@
 				false,
 				"0.05"
 			],
-			"name": "[BCC] Cinematic Bars",
-			"time": 104166.666666667
+			"time": 104166.666666667,
+			"name": "[BCC] Cinematic Bars"
 		},
 		{
 			"params": [
@@ -401,44 +401,44 @@
 				"lerp",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 104166.666666667
+			"time": 104166.666666667,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
 				2,
 				2
 			],
-			"name": "Camera Modulo Change",
-			"time": 104166.666666667
+			"time": 104166.666666667,
+			"name": "Camera Modulo Change"
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 109500
+			"time": 109500,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 114833.333333333
+			"time": 114833.333333333,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 120166.666666667
+			"time": 120166.666666667,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 125500
+			"time": 125500,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
@@ -449,8 +449,8 @@
 				false,
 				"0.05"
 			],
-			"name": "[BCC] Cinematic Bars",
-			"time": 125500
+			"time": 125500,
+			"name": "[BCC] Cinematic Bars"
 		},
 		{
 			"params": [
@@ -459,16 +459,16 @@
 				"elastic",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 125500
+			"time": 125500,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
 				1,
 				5
 			],
-			"name": "Camera Modulo Change",
-			"time": 125500
+			"time": 125500,
+			"name": "Camera Modulo Change"
 		},
 		{
 			"params": [
@@ -477,8 +477,8 @@
 				"elastic",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 126166.666666667
+			"time": 126166.666666667,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
@@ -487,27 +487,7 @@
 				"elastic",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 126833.333333333
-		},
-		{
-			"params": [
-				"1.5",
-				4,
-				"elastic",
-				"Out"
-			],
-			"name": "[BCC] Zoom Tween",
-			"time": 127500
-		},
-		{
-			"params": [
-				"1",
-				4,
-				"elastic",
-				"Out"
-			],
-			"time": 128166.666666667,
+			"time": 126833.333333333,
 			"name": "[BCC] Zoom Tween"
 		},
 		{
@@ -517,7 +497,7 @@
 				"elastic",
 				"Out"
 			],
-			"time": 128833.333333333,
+			"time": 127500,
 			"name": "[BCC] Zoom Tween"
 		},
 		{
@@ -528,7 +508,7 @@
 				"Out"
 			],
 			"name": "[BCC] Zoom Tween",
-			"time": 129500
+			"time": 128166.666666667
 		},
 		{
 			"params": [
@@ -538,14 +518,34 @@
 				"Out"
 			],
 			"name": "[BCC] Zoom Tween",
-			"time": 130166.666666667
+			"time": 128833.333333333
+		},
+		{
+			"params": [
+				"1",
+				4,
+				"elastic",
+				"Out"
+			],
+			"time": 129500,
+			"name": "[BCC] Zoom Tween"
+		},
+		{
+			"params": [
+				"1.5",
+				4,
+				"elastic",
+				"Out"
+			],
+			"time": 130166.666666667,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 130833.333333333
+			"time": 130833.333333333,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
@@ -554,8 +554,8 @@
 				"elastic",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 130833.333333333
+			"time": 130833.333333333,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
@@ -564,7 +564,27 @@
 				"elastic",
 				"Out"
 			],
-			"time": 131500,
+			"name": "[BCC] Zoom Tween",
+			"time": 131500
+		},
+		{
+			"params": [
+				"1",
+				4,
+				"elastic",
+				"Out"
+			],
+			"time": 132166.666666667,
+			"name": "[BCC] Zoom Tween"
+		},
+		{
+			"params": [
+				"1.5",
+				4,
+				"elastic",
+				"Out"
+			],
+			"time": 132833.333333333,
 			"name": "[BCC] Zoom Tween"
 		},
 		{
@@ -575,7 +595,7 @@
 				"Out"
 			],
 			"name": "[BCC] Zoom Tween",
-			"time": 132166.666666667
+			"time": 133500
 		},
 		{
 			"params": [
@@ -585,7 +605,7 @@
 				"Out"
 			],
 			"name": "[BCC] Zoom Tween",
-			"time": 132833.333333333
+			"time": 134166.666666667
 		},
 		{
 			"params": [
@@ -594,7 +614,7 @@
 				"elastic",
 				"Out"
 			],
-			"time": 133500,
+			"time": 134833.333333333,
 			"name": "[BCC] Zoom Tween"
 		},
 		{
@@ -604,35 +624,15 @@
 				"elastic",
 				"Out"
 			],
-			"time": 134166.666666667,
+			"time": 135500,
 			"name": "[BCC] Zoom Tween"
-		},
-		{
-			"params": [
-				"1",
-				4,
-				"elastic",
-				"Out"
-			],
-			"name": "[BCC] Zoom Tween",
-			"time": 134833.333333333
-		},
-		{
-			"params": [
-				"1.5",
-				4,
-				"elastic",
-				"Out"
-			],
-			"name": "[BCC] Zoom Tween",
-			"time": 135500
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 136166.666666667
+			"time": 136166.666666667,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
@@ -641,8 +641,8 @@
 				"elastic",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 136166.666666667
+			"time": 136166.666666667,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
@@ -651,8 +651,8 @@
 				"elastic",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 136500
+			"time": 136500,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
@@ -661,8 +661,8 @@
 				"elastic",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 136833.333333333
+			"time": 136833.333333333,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
@@ -671,24 +671,44 @@
 				"elastic",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 137166.666666667
+			"time": 137166.666666667,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
+			"time": 137500,
+			"name": "Camera Movement"
+		},
+		{
+			"params": [
+				"1",
+				4,
+				"elastic",
+				"Out"
+			],
+			"name": "[BCC] Zoom Tween",
 			"time": 137500
 		},
 		{
 			"params": [
+				"2",
+				4,
+				"elastic",
+				"Out"
+			],
+			"name": "[BCC] Zoom Tween",
+			"time": 137833.333333333
+		},
+		{
+			"params": [
 				"1",
 				4,
 				"elastic",
 				"Out"
 			],
-			"time": 137500,
+			"time": 138166.666666667,
 			"name": "[BCC] Zoom Tween"
 		},
 		{
@@ -698,45 +718,52 @@
 				"elastic",
 				"Out"
 			],
-			"time": 137833.333333333,
+			"time": 138500,
 			"name": "[BCC] Zoom Tween"
-		},
-		{
-			"params": [
-				"1",
-				4,
-				"elastic",
-				"Out"
-			],
-			"name": "[BCC] Zoom Tween",
-			"time": 138166.666666667
-		},
-		{
-			"params": [
-				"2",
-				4,
-				"elastic",
-				"Out"
-			],
-			"name": "[BCC] Zoom Tween",
-			"time": 138500
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
+			"time": 138833.333333333,
+			"name": "Camera Movement"
+		},
+		{
+			"params": [
+				"1",
+				4,
+				"elastic",
+				"Out"
+			],
+			"name": "[BCC] Zoom Tween",
 			"time": 138833.333333333
 		},
 		{
 			"params": [
+				"2",
+				4,
+				"elastic",
+				"Out"
+			],
+			"name": "[BCC] Zoom Tween",
+			"time": 139166.666666667
+		},
+		{
+			"params": [
 				"1",
 				4,
 				"elastic",
 				"Out"
 			],
-			"time": 138833.333333333,
+			"time": 139500,
 			"name": "[BCC] Zoom Tween"
+		},
+		{
+			"params": [
+				1
+			],
+			"time": 139500,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
@@ -745,8 +772,15 @@
 				"elastic",
 				"Out"
 			],
-			"time": 139166.666666667,
+			"time": 139833.333333333,
 			"name": "[BCC] Zoom Tween"
+		},
+		{
+			"params": [
+				0
+			],
+			"name": "Camera Movement",
+			"time": 140166.666666667
 		},
 		{
 			"params": [
@@ -756,119 +790,58 @@
 				"Out"
 			],
 			"name": "[BCC] Zoom Tween",
-			"time": 139500
+			"time": 140166.666666667
+		},
+		{
+			"params": [
+				"2",
+				4,
+				"elastic",
+				"Out"
+			],
+			"name": "[BCC] Zoom Tween",
+			"time": 140500
 		},
 		{
 			"params": [
 				1
 			],
 			"name": "Camera Movement",
-			"time": 139500
-		},
-		{
-			"params": [
-				"2",
-				4,
-				"elastic",
-				"Out"
-			],
-			"name": "[BCC] Zoom Tween",
-			"time": 139833.333333333
-		},
-		{
-			"params": [
-				0
-			],
-			"time": 140166.666666667,
-			"name": "Camera Movement"
-		},
-		{
-			"params": [
-				"1",
-				4,
-				"elastic",
-				"Out"
-			],
-			"time": 140166.666666667,
-			"name": "[BCC] Zoom Tween"
-		},
-		{
-			"params": [
-				"2",
-				4,
-				"elastic",
-				"Out"
-			],
-			"time": 140500,
-			"name": "[BCC] Zoom Tween"
-		},
-		{
-			"params": [
-				1
-			],
-			"time": 140833.333333333,
-			"name": "Camera Movement"
-		},
-		{
-			"params": [
-				"1",
-				4,
-				"elastic",
-				"Out"
-			],
-			"name": "[BCC] Zoom Tween",
 			"time": 140833.333333333
 		},
 		{
 			"params": [
+				"1",
+				4,
+				"elastic",
+				"Out"
+			],
+			"time": 140833.333333333,
+			"name": "[BCC] Zoom Tween"
+		},
+		{
+			"params": [
 				"2",
 				4,
 				"elastic",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 141166.666666667
+			"time": 141166.666666667,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
 				0
-			],
-			"name": "Camera Movement",
-			"time": 141500
-		},
-		{
-			"params": [
-				0
-			],
-			"name": "Camera Movement",
-			"time": 141500
-		},
-		{
-			"params": [
-				"1",
-				4,
-				"elastic",
-				"Out"
 			],
 			"time": 141500,
-			"name": "[BCC] Zoom Tween"
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
-				"2",
-				4,
-				"elastic",
-				"Out"
+				0
 			],
-			"time": 141833.333333333,
-			"name": "[BCC] Zoom Tween"
-		},
-		{
-			"params": [
-				1
-			],
-			"name": "Camera Movement",
-			"time": 142166.666666667
+			"time": 141500,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
@@ -878,7 +851,7 @@
 				"Out"
 			],
 			"name": "[BCC] Zoom Tween",
-			"time": 142166.666666667
+			"time": 141500
 		},
 		{
 			"params": [
@@ -888,31 +861,58 @@
 				"Out"
 			],
 			"name": "[BCC] Zoom Tween",
-			"time": 142500
+			"time": 141833.333333333
 		},
 		{
 			"params": [
 				1
+			],
+			"time": 142166.666666667,
+			"name": "Camera Movement"
+		},
+		{
+			"params": [
+				"1",
+				4,
+				"elastic",
+				"Out"
+			],
+			"time": 142166.666666667,
+			"name": "[BCC] Zoom Tween"
+		},
+		{
+			"params": [
+				"2",
+				4,
+				"elastic",
+				"Out"
+			],
+			"time": 142500,
+			"name": "[BCC] Zoom Tween"
+		},
+		{
+			"params": [
+				1
+			],
+			"time": 142833.333333333,
+			"name": "Camera Movement"
+		},
+		{
+			"params": [
+				0
 			],
 			"name": "Camera Movement",
 			"time": 142833.333333333
 		},
 		{
 			"params": [
-				0
-			],
-			"time": 142833.333333333,
-			"name": "Camera Movement"
-		},
-		{
-			"params": [
 				"1",
 				4,
 				"elastic",
 				"Out"
 			],
-			"time": 142833.333333333,
-			"name": "[BCC] Zoom Tween"
+			"name": "[BCC] Zoom Tween",
+			"time": 142833.333333333
 		},
 		{
 			"params": [
@@ -921,42 +921,25 @@
 				"elastic",
 				"Out"
 			],
-			"time": 143166.666666667,
-			"name": "[BCC] Zoom Tween"
+			"name": "[BCC] Zoom Tween",
+			"time": 143166.666666667
 		},
 		{
 			"params": [
 				1
 			],
-			"time": 143500,
-			"name": "Camera Movement"
-		},
-		{
-			"params": [
-				"1",
-				4,
-				"elastic",
-				"Out"
-			],
-			"name": "[BCC] Zoom Tween",
+			"name": "Camera Movement",
 			"time": 143500
 		},
 		{
 			"params": [
-				"2",
+				"1",
 				4,
 				"elastic",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 143833.333333333
-		},
-		{
-			"params": [
-				0
-			],
-			"name": "Camera Movement",
-			"time": 144166.666666667
+			"time": 143500,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
@@ -965,22 +948,39 @@
 				"elastic",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 144166.666666667
+			"time": 143833.333333333,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 144250
+			"time": 144166.666666667,
+			"name": "Camera Movement"
+		},
+		{
+			"params": [
+				"2",
+				4,
+				"elastic",
+				"Out"
+			],
+			"time": 144166.666666667,
+			"name": "[BCC] Zoom Tween"
+		},
+		{
+			"params": [
+				0
+			],
+			"time": 144250,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 144833.333333333
+			"time": 144833.333333333,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
@@ -989,32 +989,15 @@
 				"elastic",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 144833.333333333
+			"time": 144833.333333333,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 144916.666666667
-		},
-		{
-			"params": [
-				0
-			],
-			"name": "Camera Movement",
-			"time": 145500
-		},
-		{
-			"params": [
-				"4",
-				4,
-				"elastic",
-				"Out"
-			],
-			"name": "[BCC] Zoom Tween",
-			"time": 145500
+			"time": 144916.666666667,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
@@ -1025,20 +1008,20 @@
 		},
 		{
 			"params": [
-				1
-			],
-			"time": 146166.666666667,
-			"name": "Camera Movement"
-		},
-		{
-			"params": [
-				"5",
+				"4",
 				4,
 				"elastic",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 146166.666666667
+			"time": 145500,
+			"name": "[BCC] Zoom Tween"
+		},
+		{
+			"params": [
+				0
+			],
+			"name": "Camera Movement",
+			"time": 145500
 		},
 		{
 			"params": [
@@ -1049,13 +1032,30 @@
 		},
 		{
 			"params": [
+				"5",
+				4,
+				"elastic",
+				"Out"
+			],
+			"time": 146166.666666667,
+			"name": "[BCC] Zoom Tween"
+		},
+		{
+			"params": [
+				1
+			],
+			"time": 146166.666666667,
+			"name": "Camera Movement"
+		},
+		{
+			"params": [
 				"",
 				4,
 				"elastic",
 				"Out"
 			],
-			"name": "[BCC] Zoom Tween",
-			"time": 146500
+			"time": 146500,
+			"name": "[BCC] Zoom Tween"
 		},
 		{
 			"params": [
@@ -1064,8 +1064,8 @@
 				4,
 				"camHUD"
 			],
-			"name": "Camera Flash",
-			"time": 146916.666666667
+			"time": 146916.666666667,
+			"name": "Camera Flash"
 		},
 		{
 			"params": [
@@ -1076,24 +1076,21 @@
 				false,
 				"0.05"
 			],
-			"name": "[BCC] Cinematic Bars",
-			"time": 146916.666666667
+			"time": 146916.666666667,
+			"name": "[BCC] Cinematic Bars"
 		},
 		{
 			"params": [
 				999,
 				0.1
 			],
-			"name": "Camera Modulo Change",
-			"time": 146916.666666667
+			"time": 146916.666666667,
+			"name": "Camera Modulo Change"
 		}
 	],
 	"scrollSpeed": 1.7,
-	"codenameChart": true,
 	"strumLines": [
 		{
-			"strumScale": 1,
-			"position": "dad",
 			"notes": [
 				{
 					"id": 1,
@@ -4078,21 +4075,21 @@
 					"type": 0
 				}
 			],
+			"position": "dad",
+			"strumScale": 1,
+			"visible": true,
+			"type": 0,
 			"characters": [
 				"SZFake"
 			],
-			"type": 0,
-			"visible": true,
 			"strumPos": [
 				0,
 				50
 			],
-			"vocalsSuffix": "",
-			"strumLinePos": 0.25
+			"strumLinePos": 0.25,
+			"vocalsSuffix": ""
 		},
 		{
-			"strumScale": 1,
-			"position": "boyfriend",
 			"notes": [
 				{
 					"id": 1,
@@ -7017,19 +7014,23 @@
 					"type": 0
 				}
 			],
-			"characters": [
-				"JaggerWorried"
-			],
-			"type": 1,
 			"visible": true,
 			"strumPos": [
 				0,
 				50
 			],
+			"position": "boyfriend",
+			"strumScale": 1,
 			"vocalsSuffix": "",
-			"strumLinePos": 0.75
+			"strumLinePos": 0.75,
+			"type": 1,
+			"characters": [
+				"JaggerWorried",
+				"AngryJagger"
+			]
 		}
 	],
+	"codenameChart": true,
 	"stage": "The Desert",
 	"noteTypes": []
 }

@@ -1,0 +1,19 @@
+{
+	"params": [
+		{
+			"name": "Strumline",
+			"type": "StrumLine",
+			"defaultValue": 0
+		},
+		{
+			"name": "SubChar",
+			"type": "Int(0)",
+			"defaultValue": "0"
+		},
+        {
+            "name": "Name",
+            "type": "String",
+            "defaultValue": "bf"
+        }
+	]
+}
