@@ -4,8 +4,30 @@
 			"params": [
 				1
 			],
+			"name": "Camera Movement",
+			"time": 0
+		},
+		{
+			"params": [
+				1
+			],
 			"time": 0,
 			"name": "Camera Movement"
+		},
+		{
+			"params": [
+				0
+			],
+			"name": "Camera Movement",
+			"time": 1200
+		},
+		{
+			"params": [
+				"creditings",
+				""
+			],
+			"name": "HScript Call",
+			"time": 1200
 		},
 		{
 			"params": [
@@ -27,6 +49,14 @@
 				"creditings",
 				""
 			],
+			"time": 5400,
+			"name": "HScript Call"
+		},
+		{
+			"params": [
+				"creditings",
+				""
+			],
 			"name": "HScript Call",
 			"time": 5400
 		},
@@ -34,7 +64,21 @@
 			"params": [
 				1
 			],
+			"name": "Camera Movement",
+			"time": 6000
+		},
+		{
+			"params": [
+				1
+			],
 			"time": 6000,
+			"name": "Camera Movement"
+		},
+		{
+			"params": [
+				0
+			],
+			"time": 10800,
 			"name": "Camera Movement"
 		},
 		{
@@ -48,6 +92,13 @@
 			"params": [
 				1
 			],
+			"time": 15600,
+			"name": "Camera Movement"
+		},
+		{
+			"params": [
+				1
+			],
 			"name": "Camera Movement",
 			"time": 15600
 		},
@@ -56,7 +107,30 @@
 				1,
 				1
 			],
+			"name": "Camera Modulo Change",
+			"time": 19200
+		},
+		{
+			"params": [
+				1,
+				1
+			],
 			"time": 19200,
+			"name": "Camera Modulo Change"
+		},
+		{
+			"params": [
+				0
+			],
+			"name": "Camera Movement",
+			"time": 20400
+		},
+		{
+			"params": [
+				2,
+				0.9
+			],
+			"time": 20400,
 			"name": "Camera Modulo Change"
 		},
 		{
@@ -78,7 +152,21 @@
 			"params": [
 				1
 			],
+			"name": "Camera Movement",
+			"time": 30000
+		},
+		{
+			"params": [
+				1
+			],
 			"time": 30000,
+			"name": "Camera Movement"
+		},
+		{
+			"params": [
+				0
+			],
+			"time": 39600,
 			"name": "Camera Movement"
 		},
 		{
@@ -92,8 +180,30 @@
 			"params": [
 				1
 			],
+			"time": 49200,
+			"name": "Camera Movement"
+		},
+		{
+			"params": [
+				1
+			],
 			"name": "Camera Movement",
 			"time": 49200
+		},
+		{
+			"params": [
+				0
+			],
+			"name": "Camera Movement",
+			"time": 58800
+		},
+		{
+			"params": [
+				4,
+				1
+			],
+			"time": 58800,
+			"name": "Camera Modulo Change"
 		},
 		{
 			"params": [
@@ -115,6 +225,22 @@
 				0.01,
 				"camGame"
 			],
+			"time": 59100,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 59100,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"name": "Add Camera Zoom",
 			"time": 59100
 		},
@@ -131,6 +257,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 59400
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 59400
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 59400,
 			"name": "Add Camera Zoom"
 		},
@@ -140,6 +282,22 @@
 				"camHUD"
 			],
 			"time": 59400,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 59625,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 59625,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -163,6 +321,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 59850
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 59850
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 59850,
 			"name": "Add Camera Zoom"
 		},
@@ -179,6 +353,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 60300
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 60300
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 60300,
 			"name": "Add Camera Zoom"
 		},
@@ -188,6 +378,22 @@
 				"camHUD"
 			],
 			"time": 60300,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 60600,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 60600,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -211,6 +417,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 60825
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 60825
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 60825,
 			"name": "Add Camera Zoom"
 		},
@@ -220,6 +442,22 @@
 				"camHUD"
 			],
 			"time": 60825,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 61050,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 61050,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -243,6 +481,22 @@
 				0.01,
 				"camGame"
 			],
+			"time": 61500,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 61500,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"name": "Add Camera Zoom",
 			"time": 61500
 		},
@@ -259,6 +513,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 61800
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 61800
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 61800,
 			"name": "Add Camera Zoom"
 		},
@@ -268,6 +538,22 @@
 				"camHUD"
 			],
 			"time": 61800,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 62025,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 62025,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -291,6 +577,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 62250
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 62250
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 62250,
 			"name": "Add Camera Zoom"
 		},
@@ -307,6 +609,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 62700
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 62700
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 62700,
 			"name": "Add Camera Zoom"
 		},
@@ -316,6 +634,22 @@
 				"camHUD"
 			],
 			"time": 62700,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 63000,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 63000,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -339,6 +673,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 63225
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 63225
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 63225,
 			"name": "Add Camera Zoom"
 		},
@@ -348,6 +698,22 @@
 				"camHUD"
 			],
 			"time": 63225,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 63450,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 63450,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -365,6 +731,13 @@
 			],
 			"name": "Add Camera Zoom",
 			"time": 63450
+		},
+		{
+			"params": [
+				1
+			],
+			"name": "Camera Movement",
+			"time": 63600
 		},
 		{
 			"params": [
@@ -378,6 +751,22 @@
 				0.01,
 				"camGame"
 			],
+			"time": 63900,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 63900,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"name": "Add Camera Zoom",
 			"time": 63900
 		},
@@ -394,6 +783,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 64200
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 64200
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 64200,
 			"name": "Add Camera Zoom"
 		},
@@ -403,6 +808,22 @@
 				"camHUD"
 			],
 			"time": 64200,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 64425,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 64425,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -426,6 +847,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 64650
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 64650
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 64650,
 			"name": "Add Camera Zoom"
 		},
@@ -442,6 +879,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 65100
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 65100
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 65100,
 			"name": "Add Camera Zoom"
 		},
@@ -451,6 +904,22 @@
 				"camHUD"
 			],
 			"time": 65100,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 65400,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 65400,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -474,6 +943,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 65625
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 65625
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 65625,
 			"name": "Add Camera Zoom"
 		},
@@ -483,6 +968,22 @@
 				"camHUD"
 			],
 			"time": 65625,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 65850,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 65850,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -506,6 +1007,22 @@
 				0.01,
 				"camGame"
 			],
+			"time": 66300,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 66300,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"name": "Add Camera Zoom",
 			"time": 66300
 		},
@@ -522,6 +1039,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 66600
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 66600
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 66600,
 			"name": "Add Camera Zoom"
 		},
@@ -531,6 +1064,22 @@
 				"camHUD"
 			],
 			"time": 66600,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 66825,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 66825,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -554,6 +1103,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 67050
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 67050
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 67050,
 			"name": "Add Camera Zoom"
 		},
@@ -570,6 +1135,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 67500
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 67500
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 67500,
 			"name": "Add Camera Zoom"
 		},
@@ -579,6 +1160,22 @@
 				"camHUD"
 			],
 			"time": 67500,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 67800,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 67800,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -602,6 +1199,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 68025
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 68025
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 68025,
 			"name": "Add Camera Zoom"
 		},
@@ -611,6 +1224,22 @@
 				"camHUD"
 			],
 			"time": 68025,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 68250,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 68250,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -628,6 +1257,13 @@
 			],
 			"name": "Add Camera Zoom",
 			"time": 68250
+		},
+		{
+			"params": [
+				0
+			],
+			"time": 68400,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
@@ -641,6 +1277,22 @@
 				0.01,
 				"camGame"
 			],
+			"time": 68700,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 68700,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"name": "Add Camera Zoom",
 			"time": 68700
 		},
@@ -657,6 +1309,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 69000
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 69000
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 69000,
 			"name": "Add Camera Zoom"
 		},
@@ -666,6 +1334,22 @@
 				"camHUD"
 			],
 			"time": 69000,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 69225,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 69225,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -689,6 +1373,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 69450
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 69450
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 69450,
 			"name": "Add Camera Zoom"
 		},
@@ -705,6 +1405,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 69900
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 69900
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 69900,
 			"name": "Add Camera Zoom"
 		},
@@ -714,6 +1430,22 @@
 				"camHUD"
 			],
 			"time": 69900,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 70200,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 70200,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -737,6 +1469,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 70425
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 70425
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 70425,
 			"name": "Add Camera Zoom"
 		},
@@ -746,6 +1494,22 @@
 				"camHUD"
 			],
 			"time": 70425,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 70650,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 70650,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -769,6 +1533,22 @@
 				0.01,
 				"camGame"
 			],
+			"time": 71100,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 71100,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"name": "Add Camera Zoom",
 			"time": 71100
 		},
@@ -785,6 +1565,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 71400
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 71400
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 71400,
 			"name": "Add Camera Zoom"
 		},
@@ -794,6 +1590,22 @@
 				"camHUD"
 			],
 			"time": 71400,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 71625,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 71625,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -817,6 +1629,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 71850
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 71850
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 71850,
 			"name": "Add Camera Zoom"
 		},
@@ -833,6 +1661,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 72300
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 72300
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 72300,
 			"name": "Add Camera Zoom"
 		},
@@ -842,6 +1686,22 @@
 				"camHUD"
 			],
 			"time": 72300,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 72600,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 72600,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -865,6 +1725,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 72825
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 72825
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 72825,
 			"name": "Add Camera Zoom"
 		},
@@ -874,6 +1750,22 @@
 				"camHUD"
 			],
 			"time": 72825,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 73050,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 73050,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -896,6 +1788,13 @@
 			"params": [
 				1
 			],
+			"time": 73200,
+			"name": "Camera Movement"
+		},
+		{
+			"params": [
+				1
+			],
 			"name": "Camera Movement",
 			"time": 73200
 		},
@@ -904,6 +1803,22 @@
 				0.01,
 				"camGame"
 			],
+			"time": 73500,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 73500,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"name": "Add Camera Zoom",
 			"time": 73500
 		},
@@ -920,6 +1835,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 73800
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 73800
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 73800,
 			"name": "Add Camera Zoom"
 		},
@@ -929,6 +1860,22 @@
 				"camHUD"
 			],
 			"time": 73800,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 74025,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 74025,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -952,6 +1899,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 74250
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 74250
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 74250,
 			"name": "Add Camera Zoom"
 		},
@@ -968,6 +1931,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 74700
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 74700
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 74700,
 			"name": "Add Camera Zoom"
 		},
@@ -977,6 +1956,22 @@
 				"camHUD"
 			],
 			"time": 74700,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 75000,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 75000,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -1000,6 +1995,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 75225
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 75225
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 75225,
 			"name": "Add Camera Zoom"
 		},
@@ -1009,6 +2020,22 @@
 				"camHUD"
 			],
 			"time": 75225,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 75450,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 75450,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -1032,6 +2059,22 @@
 				0.01,
 				"camGame"
 			],
+			"time": 75900,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 75900,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"name": "Add Camera Zoom",
 			"time": 75900
 		},
@@ -1048,6 +2091,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 76200
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 76200
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 76200,
 			"name": "Add Camera Zoom"
 		},
@@ -1057,6 +2116,22 @@
 				"camHUD"
 			],
 			"time": 76200,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 76425,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 76425,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -1080,6 +2155,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 76650
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 76650
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 76650,
 			"name": "Add Camera Zoom"
 		},
@@ -1096,6 +2187,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 77100
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 77100
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 77100,
 			"name": "Add Camera Zoom"
 		},
@@ -1105,6 +2212,22 @@
 				"camHUD"
 			],
 			"time": 77100,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 77400,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 77400,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -1128,6 +2251,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 77625
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 77625
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 77625,
 			"name": "Add Camera Zoom"
 		},
@@ -1137,6 +2276,22 @@
 				"camHUD"
 			],
 			"time": 77625,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 77850,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 77850,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -1159,8 +2314,23 @@
 			"params": [
 				0
 			],
+			"name": "Camera Movement",
+			"time": 78000
+		},
+		{
+			"params": [
+				0
+			],
 			"time": 78000,
 			"name": "Camera Movement"
+		},
+		{
+			"params": [
+				1,
+				0.7
+			],
+			"time": 79200,
+			"name": "Camera Modulo Change"
 		},
 		{
 			"params": [
@@ -1174,8 +2344,30 @@
 			"params": [
 				1
 			],
+			"name": "Camera Movement",
+			"time": 88800
+		},
+		{
+			"params": [
+				1
+			],
 			"time": 88800,
 			"name": "Camera Movement"
+		},
+		{
+			"params": [
+				0
+			],
+			"time": 98400,
+			"name": "Camera Movement"
+		},
+		{
+			"params": [
+				9999999,
+				0.1
+			],
+			"name": "Camera Modulo Change",
+			"time": 98400
 		},
 		{
 			"params": [
@@ -1197,8 +2389,39 @@
 				"password",
 				""
 			],
+			"name": "HScript Call",
+			"time": 99000
+		},
+		{
+			"params": [
+				"password",
+				""
+			],
 			"time": 99000,
 			"name": "HScript Call"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"name": "Add Camera Zoom",
+			"time": 100800
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 100800
+		},
+		{
+			"params": [
+				120
+			],
+			"name": "BPM Change",
+			"time": 100800
 		},
 		{
 			"params": [
@@ -1228,6 +2451,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 101300
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 101300
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 101300,
 			"name": "Add Camera Zoom"
 		},
@@ -1237,6 +2476,22 @@
 				"camHUD"
 			],
 			"time": 101300,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 101550,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 101550,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -1260,6 +2515,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 101675
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 101675
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 101675,
 			"name": "Add Camera Zoom"
 		},
@@ -1269,6 +2540,22 @@
 				"camHUD"
 			],
 			"time": 101675,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 101925,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 101925,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -1292,6 +2579,22 @@
 				0.01,
 				"camGame"
 			],
+			"name": "Add Camera Zoom",
+			"time": 102050
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 102050
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
 			"time": 102050,
 			"name": "Add Camera Zoom"
 		},
@@ -1301,6 +2604,22 @@
 				"camHUD"
 			],
 			"time": 102050,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"time": 102300,
+			"name": "Add Camera Zoom"
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"time": 102300,
 			"name": "Add Camera Zoom"
 		},
 		{
@@ -1318,6 +2637,22 @@
 			],
 			"name": "Add Camera Zoom",
 			"time": 102300
+		},
+		{
+			"params": [
+				0.01,
+				"camGame"
+			],
+			"name": "Add Camera Zoom",
+			"time": 102550
+		},
+		{
+			"params": [
+				0.01,
+				"camHUD"
+			],
+			"name": "Add Camera Zoom",
+			"time": 102550
 		},
 		{
 			"params": [
@@ -1338,6 +2673,8 @@
 	],
 	"strumLines": [
 		{
+			"strumScale": 1,
+			"position": "boyfriend",
 			"notes": [
 				{
 					"id": 3,
@@ -3596,23 +4933,19 @@
 					"type": 0
 				}
 			],
+			"characters": [
+				"HeroEyad_"
+			],
+			"type": 0,
 			"visible": true,
 			"strumPos": [
 				0,
 				50
 			],
-			"position": "boyfriend",
-			"strumScale": 1,
 			"vocalsSuffix": "-EYAD",
-			"strumLinePos": 0.75,
-			"type": 0,
-			"characters": [
-				"HeroEyad_"
-			]
+			"strumLinePos": 0.75
 		},
 		{
-			"strumScale": 1,
-			"position": "dad",
 			"notes": [
 				{
 					"id": 3,
@@ -6297,21 +7630,39 @@
 					"type": 0
 				}
 			],
+			"position": "dad",
+			"strumScale": 1,
+			"visible": true,
+			"type": 1,
 			"characters": [
 				"seezee_"
 			],
-			"type": 1,
+			"strumPos": [
+				0,
+				50
+			],
+			"strumLinePos": 0.25,
+			"vocalsSuffix": "-sz"
+		},
+		{
+			"notes": [],
 			"visible": true,
 			"strumPos": [
 				0,
 				50
 			],
-			"vocalsSuffix": "-sz",
-			"strumLinePos": 0.25
+			"position": "girlfriend",
+			"strumScale": 1,
+			"vocalsSuffix": "",
+			"strumLinePos": 0.25,
+			"type": 2,
+			"characters": [
+				"mariofy"
+			]
 		}
 	],
-	"scrollSpeed": 3,
 	"codenameChart": true,
+	"scrollSpeed": 3,
 	"stage": "minecraft",
 	"noteTypes": []
 }
