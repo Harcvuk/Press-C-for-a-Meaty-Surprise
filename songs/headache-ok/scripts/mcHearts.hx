@@ -48,7 +48,7 @@ function update(elapsed) {
 	}
 }
 
-var healthLoss = -3/10;
+var healthLoss = -5/10;
 var hitTimer = new FlxTimer();
 function onPlayerMiss(e) {
 	if (ultimate) return;
