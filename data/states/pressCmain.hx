@@ -168,6 +168,7 @@ function update() {
 			camMenu.bgColor = 0xFF171717;
 			CoolUtil.cameraCenter(quitScreen,camMenu);
 			add(quitScreen);
+			versionText.visible = false;
 			new FlxTimer().start(2,() -> window.close());
 		}
 		return;
@@ -355,7 +356,7 @@ function randomizeQuit() {
 	quitText.updateHitbox();
 	CoolUtil.cameraCenter(quitText,camMenu);
 
- quitBG.scale.set(quitText.width + 24, quitText.height + 5);
+	quitBG.scale.set(quitText.width + 24, quitText.height + 5);
 	quitBG.updateHitbox();
 	CoolUtil.cameraCenter(quitBG,camMenu);
 
