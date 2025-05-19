@@ -48,7 +48,7 @@ function postCreate() {
 
 
 	var creditsPath = Paths.getPath((Assets.exists(Paths.getPath(creditsPre + "-" + PlayState.difficulty + ".txt")) ? creditsPre + "-" + PlayState.difficulty : creditsPre)+".txt");
-	var extraCredits = Assets.exists(creditsPath) ? Assets.getText(creditsPath) : "you forgot the credits\nmoron";
+	var extraCredits = Assets.exists(creditsPath) ? StringTools.replace(CoolUtil.coolTextFile(creditsPath).join("\n"),"¨","") : "you forgot the credits\nmoron"; //cooltextfile keeps the double line break from happening
 	miscCredits = new FlxText(FlxG.width/2,0,FlxG.width/2,extraCredits);
 	miscCredits.setFormat(cFont,40,0xFF005F00,"center",cOutline,0xFF000000);
 	miscCredits.borderSize = 2;

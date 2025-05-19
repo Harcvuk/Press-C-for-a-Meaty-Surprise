@@ -3,6 +3,7 @@ if (PlayState.SONG.meta.customValues?.lockCam) disableScript();
 function postCreate() {
 	camGame.followLerp = 1;
 	camGame.zoom = defaultCamZoom;
+	PauseSubState.script = "data/states/pause";
 }
 
 function onSongStart() camGame.followLerp = 0.04;
