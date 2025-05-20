@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character y="140" sprite="EYAD-ok" scale="4.265" antialiasing="false" color="#14FF08" gameOverChar="SZ-dead">
+<character y="140" sprite="EYAD-ok" scale="4.265" antialiasing="false" color="#14FF08" noteskin="mario">
 	<anim name="idle" anim="idle" x="0" y="0" fps="24" loop="false"/>
 	<anim name="singUP" anim="up" x="0" y="0" fps="24" loop="false"/>
 	<anim name="singLEFT" anim="left" x="0" y="0" fps="24" loop="false"/>
