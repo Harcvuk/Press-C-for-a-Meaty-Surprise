@@ -1,7 +1,6 @@
 import flixel.text.FlxBitmapText;
 import flixel.graphics.frames.FlxBitmapFont;
 import funkin.backend.MusicBeatState;
-import funkin.backend.utils.DiscordUtil as Discord;
 import funkin.options.keybinds.KeybindsOptions;
 import funkin.options.TreeMenu;
 import funkin.options.OptionsMenu;
@@ -24,6 +23,7 @@ function formatTime(ms) {
 	return mins + ":" + secStr + "." + centiStr;
 }
 
+mainMenuSprites = [];
 function create(e) {
 	cameras = [camPause];
 	e.cancel();
@@ -31,6 +31,7 @@ function create(e) {
 	camPause.bgColor = 0x80000000;
 	FlxG.cameras.add(camPause,false);
 
+	//main menu
 	box = new FunkinSprite(50,21).makeSolid(262,54,0xFF010153);
 	box.camera = camPause;
 	add(box);
@@ -70,18 +71,53 @@ function create(e) {
 
 	emblem = new FunkinSprite(34,120,Paths.image(path+"select"));
 	add(emblem);
+
+	for (i in [box,songName,score,time,combo,scoreC,timeC,comboC,emblem].concat(choiceStore)) mainMenuSprites.push(i);
+
+	//title menu (easier to just use a single sprite)
+	notCaring = new FunkinSprite(0,81,Paths.image(path+"notCaring"));
+	CoolUtil.cameraCenter(notCaring,camPause,1);
+	notCaring.visible = false;
+	add(notCaring);
+
+	//quit screen
+	quitBG = new FunkinSprite().makeSolid(1,1,0xFF000052);
+	quitText = new FlxBitmapText(0,0,"ege",FlxBitmapFont.fromAngelCode("assets/fonts/srb2.png", "assets/fonts/srb2.xml"));
+	for (i in [quitBG,quitText]) {
+		i.visible = false;
+		add(i);
+	}
+	quitText.alignment = "center";
 }
 
 curMenu = "main";
 function update() {
 	if (controls.DOWN_P||controls.UP_P && curMenu == "main") changeSelection(controls.DOWN_P ? 1 : -1);
-	if (controls.ACCEPT) switch (curMenu) {
+	if (controls.ACCEPT || (curMenu != "main" && FlxG.keys.justPressed.Y)) switch (curMenu) {
 		case "main": choose();
 		case "title":
-			fromIntro = true;
-			//FlxG.switchState(new MainMenuState());
-		case "quit":
-			//wip
+		if (PlayState.chartingMode && Charter.undos.unsaved) {
+			PlayState.instance.saveWarn(false);
+			return;
+		}
+		PlayState.resetSongInfos();
+		Charter.instance?.__clearStatics();
+
+		FlxG.sound.music?.stop();
+		FlxG.sound.music = null;
+
+		fromIntro = true;
+		FlxG.switchState(new MainMenuState());
+		case "quit": window.close();
+	}
+
+	if (controls.BACK || (curMenu != "main" && FlxG.keys.justPressed.N)) switch (curMenu) {
+		case "main": close();
+		case "title","quit":
+			for (i in mainMenuSprites) i.visible = true;
+			notCaring.visible = false;
+			for (i in [quitBG,quitText]) i.visible = false;
+			curMenu = "main";
 	}
 }
 
@@ -108,63 +144,28 @@ function choose() switch (choices[curSelected]) {
 		persistentDraw = false;
 		openSubState(new KeybindsOptions());
 	case "RETURN TO TITLE": returnToTitle();
-	case "QUIT GAME":
+	case "QUIT GAME": quitGame();
 	case "RETURN TO CHARTER": FlxG.switchState(new Charter(PlayState.SONG.meta.name, PlayState.difficulty, false));
 }
 
 function returnToTitle() {
 	curMenu = "title";
-
+	for (i in mainMenuSprites) i.visible = false;
+	notCaring.visible = true;
 }
 
-var quitTexts = [
-	//edits of the original quit messages
-	"Safestman's tied explosives\nto your freinds, and\nwill activate them if\nyou press the 'Y' key!\nPress 'N' to save them!",
-	"What would Holly say if\nshe saw you quitting the game?",
-	"Hey!\nWhere do ya think you're goin'?",
-	"Forget your studies!\nPlay some more!",
-	"You're trying to say you\nlike Bob Tweaked better than\nthis, right?",
-	"Don't leave yet -- there's a\nsarmale around that corner!",
-	"You'd rather work than play?",
-	"Go ahead and leave. See if I care...\n*sniffle*",
-	"If you leave now,\nEge will take over the planet!",
-	"Don't quit!\nThere are headaches\nto have!",
-	"Aw c'mon, just change\na few more clothes!",
-	"Did you get all those Chaos Emeralds?",
-	"If you leave, I'll use\nmy nin attack on you!",
-	"Don't go!\nYou might find the hidden\nsongs!",
-	"Hit the 'N' key, "+ (Discord?.user?.globalName ?? "Sonic") +"!\nThe 'N' key!",
-	"Are you really going to give up?\nWe certainly would never give you up.",
-	"Come on, just ONE more headache!",
-	"Press 'N' to unlock\nthe Ultimate Cheat!",
-	"Why don't you go back and try\nwriting on that password state to\nsee what happens?",
-	"Every time you press 'Y', a\nMeater cries...",
-	"You'll be back to play soon, though...\n......right?",
-	"Aww, is Headache-ok too\ndifficult for you?",
-	//ok these are original
-	(Discord?.user?.globalName ?? "GARY").toUpperCase() + " THERES A BOMB!!!!",
-	"Press 'N' to get 1 PYRAMILLION dirhams!",
-	"Heh.\nRoom for 94 more?",
-	"Wet it be, John.\n or I'll get meaty.",
-	"Ouuugh I'm peaking\n Peaking so hard mnnng",
-	"It's so fucking hot\n out here help me",
-	"Did you beat it?\n Not the meat, the game.",
-	"cmon "+ (Discord?.user?.globalName ?? "man").toLowerCase() + "\njust one more " + (Discord?.user?.globalName ?? "man").toLowerCase() + " pls",
-	"You're not who i'm looking for..",
-	"\n#####\npluto",
-	"Press Y and I'll make you regret it all.",
-	"Im going to birthday\nbash your fucking skull in",
-	"Rolling for dog?\nI love gambling.",
-	"(Press 'N' to cancel)",
-	"Are you sure",
-	"If you're gonna leave, wanna play ssf32?",
-	"HeroEyad is trying to connect your computer!",
-	"wanna hop on rocket league",
-	"im gay. EYAD «",
-	"EYAD\nEYAD\nEYAD\n«",
-	"Eat my Meat",
-	"you should press c\nif you want to get to the password state",
-	"Are you stupid that's Pluto\nOOOOH",
-	"It was way more..",
-	"Meat"
-];
+function quitGame() {
+	curMenu = "quit";
+	for (i in mainMenuSprites) i.visible = false;
+	for (quit in [quitBG,quitText]) quit.visible = true;
+
+	quitText.text = FlxG.random.getObject(quitTexts) + "\n\n(Press 'Y' to quit)";
+	quitText.updateHitbox();
+	CoolUtil.cameraCenter(quitText,camPause);
+
+	quitBG.scale.set(quitText.width + 24, quitText.height + 5);
+	quitBG.updateHitbox();
+	CoolUtil.cameraCenter(quitBG,camPause);
+
+	quitText.y = quitBG.y + 3;
+}

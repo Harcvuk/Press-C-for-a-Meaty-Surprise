@@ -1,4 +1,5 @@
 function postCreate() {
+	PauseSubState.script = "data/states/pause";
 	camGame.followLerp = 0;
 
 	you = new FunkinSprite(0,0,Paths.image("You"));
