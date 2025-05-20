@@ -22,7 +22,7 @@ function create() {
 	//text
 	mainHUD = new FunkinSprite(16,10,Paths.image(path + "ScorTim")); //score,time,
 	comboYellow = new FunkinSprite(16,74,Paths.image(path + "Combo")); //combo
-	lives = new FunkinSprite(16,322,Paths.image(path + "lives")); //lives counter
+	lives = new FunkinSprite(16,322,Paths.image(path + "lives" + (PlayState.difficulty == "D_" ? "La":""))); //lives counter
 
 	//set stuff and add
 	for (hudElement in [mainHUD,comboYellow,lives]) {

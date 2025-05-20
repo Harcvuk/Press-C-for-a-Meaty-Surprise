@@ -10,13 +10,13 @@
 	],
 	"needsVoices": false,
 	"parsedColor": -32256,
-	"displayName": "Tense",
+	"displayName": "D_TENSE",
 	"icon": "la",
 	"name": "tense",
 	"color": "#FF8200",
 	"customValues": {
 		"customCountdown": "",
-		"composer": "Bitto (kinda)",
+		"composer": "Seezee (kinda)",
 		"creditsOutline": "SHADOW",
 		"creditsFont": "sonic2.ttf"
 	}

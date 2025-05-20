@@ -7,3 +7,5 @@ function onPlayerMiss(e) {
 }
 
 function onNoteHit(e) if (e.character.curCharacter == "appleblurt") e.character.debugMode = false;
+
+function postCreate() if (PlayState.difficulty == "D_") boyfriend.visible = false;
