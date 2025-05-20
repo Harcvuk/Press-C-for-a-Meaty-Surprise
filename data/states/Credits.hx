@@ -8,7 +8,7 @@ import haxe.crypto.Sha256;
 var credits = [
 	{text:"HeroEyad: Director and Programmer of Press C for headache",color:0xFF00FFFF},
 	{text:"TechyHarcvuk: Director and Made everything for Meaty Surprise",color:0xFFFF8000},
-	{text:"Bitto: Programmer and Charter, Made \"headache-ok\"",color:0xFFFF0000},
+	{text:"Bitto: Composer, Programmer and Charter",color:0xFFFF0000},
 	{text:"mariofy: 3D-Modeler and Animator",color:0xFF33BB33},
 	{text:"Gumbalino: 3D-Modeler and Animator",color:0xFFAA33DD},
 	{text:"Hipix: Artist and Animator",color:0xFFFFCC33},
