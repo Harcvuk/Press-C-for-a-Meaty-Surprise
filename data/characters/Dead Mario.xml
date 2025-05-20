@@ -1,0 +1,6 @@
+<!DOCTYPE codename-engine-character>
+<character x="80" y="420" sprite="deadMario" scale="2" flipX="true" isPlayer="true" icon="marioRL" color="#189646" antialiasing="false" camy="50" gameOverChar="Dead Mario">
+	<anim name="deathConfirm" anim="real" x="0" y="0" fps="24" loop="false"/>
+	<anim name="deathLoop" anim="real" x="0" y="0" fps="24" loop="false"/>
+	<anim name="firstDeath" anim="real" x="0" y="0" fps="24" loop="false"/>
+</character>
