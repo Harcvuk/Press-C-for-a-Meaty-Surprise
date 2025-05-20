@@ -100,7 +100,7 @@ function create() {
 	}
 
 	//C
-	blackCover = new FunkinSprite(0,22).makeSolid(FlxG.width,FlxG.height,0xFF000000);
+	blackCover = new FunkinSprite(0,22).makeSolid(FlxG.width,FlxG.height*3,0xFF000000);
 	blackCover.visible = false;
 	blackCover.camera = camSRB;
 	add(blackCover);
@@ -119,6 +119,7 @@ function update() {
 	if (FlxG.keys.justPressed.C) {
 		inCmode = !inCmode;
 		for (i in [blackCover,blackCoverTwo]) i.visible = inCmode;
+		for (i in descriptiones) i.visible = !inCmode;
 		camChars.visible = !inCmode;
 		if (inCmode) {
 			cSound.play(true);
