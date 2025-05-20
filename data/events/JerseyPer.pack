@@ -1,0 +1,69 @@
+JerseyPer.hx________PACKSEP________//jerseys
+var jerseyOpponent = false;
+var jerseyPlayer = false;
+var jerseyLength = 16;
+var jerseySteps = [];
+
+function onEvent(e) {
+	if (e.event.name == 'JerseyPer') {
+		jerseyOpponent = e.event.params[2];
+		jerseyPlayer = e.event.params[3];
+		if (jerseyOpponent) origiDadX = dad.x;
+		if (jerseyPlayer) origiBfX = boyfriend.x;
+		if (jerseyOpponent || jerseyPlayer) {
+			jerseyLength = e.event.params[0];
+			jerseySteps = [];
+			for (step in e.event.params[1].split(",")) jerseySteps.push(Std.int(step));
+			trace(jerseySteps);
+		}
+	}
+}
+
+function stepHit(curStep) if (jerseyOpponent || jerseyPlayer) {
+	trace(curStep % jerseyLength);
+	if (jerseySteps.contains(curStep % jerseyLength)) jerseyIt();
+}
+
+var haha = 1;
+function jerseyIt() {
+		haha *= -1;
+		//trace("jer " + haha);
+		var offset = haha;
+
+		for (dads in cpu.characters) if (jerseyOpponent) {
+			FlxTween.cancelTweensOf(dads,["x"]);
+			var orig = dad.x;
+			dads.x += 50*offset;
+			FlxTween.tween(dads, {x: orig}, 0.2, {ease: FlxEase.quadOut});
+		}
+		for (players in player.characters) if (jerseyPlayer) {
+			FlxTween.cancelTweensOf(players,["x"]);
+			var orig = players.x;
+			players.x -= 50*offset;
+			FlxTween.tween(players, {x: orig}, 0.2, {ease: FlxEase.quadOut});
+		}
+	}
+________PACKSEP________{
+	"params": [
+		{
+			"name": "Jersey Length (number of steps until loop)",
+			"type": "Int(4,32,1)",
+			"defaultValue": 16
+		},
+		{
+			"name": "Jersey Steps (dont put higher than jersey length)",
+			"type": "String",
+			"defaultValue": "0,4,8,11,14"
+		},
+		{
+			"name": "Jersey Opponent",
+			"type": "Bool",
+			"defaultValue": true
+		},
+		{
+			"name": "Jersey Player",
+			"type": "Bool",
+			"defaultValue": true
+		}
+	]
+}________PACKSEP________iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAMBJREFUOI2VkzEOwyAMRR9RvFo9QJcuWbPlXjlJ78USZe2SpQeosqYSHSoqIECTPzAY/rPB2FCXq+yZ31Iyb+sQBVrpAXhvM6IWwOQADiA15yRqaXJZa+ZWep8diK+wK/lMBVlzmKmkJjWL2kNGrzYXXMYOUcvr6RA1pAkCmR1gWwdELcvYcbl+Wy1qw/8QdS5bgYeUTKHSNkaQI4oAZx8wAohaJmDiWPu8/N1KQ1ObleyBFHQK4JaxizZv98dfyAc0gj5F0yJFNwAAAABJRU5ErkJggg==
