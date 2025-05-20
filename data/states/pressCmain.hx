@@ -162,7 +162,7 @@ function update() {
 		if ((accept || FlxG.keys.justPressed.Y) && imageCounter == 0) {
 			randomMeatSound();
 			controlLock = true;
-			var quitScreen = new FunkinSprite(0,0,Paths.image(path+"GAMEQUIT"+(FlxG.random.bool(20) ? "ALT" : "")));
+			var quitScreen = new FunkinSprite(0,0,Paths.image(path+"GAMEQUIT"+(FlxG.random.bool(5) ? "ALT" : "")));
 			quitScreen.camera = camMenu;
 			camMenu.bgColor = 0xFF171717;
 			CoolUtil.cameraCenter(quitScreen,camMenu);

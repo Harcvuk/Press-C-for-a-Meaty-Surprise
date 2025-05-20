@@ -13,6 +13,7 @@ function create() {
 		CoolUtil.playMusic(Paths.music("freakyMenu"), true, 1, true, 150);
 		FlxG.sound.music.persist = true;
 	}
+	FlxG.sound.music.volume = 1;
 
 	//important to be first
 	var lockedSongs = ["my-new-cookings","wanna play real life","peakingtrial", "too-peak","tense"];
@@ -97,11 +98,38 @@ function create() {
 
 		songIcon.y -= curSelected*songIcon.height;
 	}
+
+	//C
+	blackCover = new FunkinSprite(0,22).makeSolid(FlxG.width,FlxG.height,0xFF000000);
+	blackCover.visible = false;
+	blackCover.camera = camSRB;
+	add(blackCover);
+
+	blackCoverTwo = new FunkinSprite(88,0).makeSolid(FlxG.width,20,0xFF000000);
+	blackCoverTwo.visible = false;
+	blackCoverTwo.camera = camSRB;
+	add(blackCoverTwo);
 }
 
 curSelected = 0;
 curDifficulty = 0;
+inCmode = false;
+var cSound = FlxG.sound.load(Paths.sound("C"));
 function update() {
+	if (FlxG.keys.justPressed.C) {
+		inCmode = !inCmode;
+		for (i in [blackCover,blackCoverTwo]) i.visible = inCmode;
+		camChars.visible = !inCmode;
+		if (inCmode) {
+			cSound.play(true);
+			FlxG.sound.music.volume = 0;
+		} else {
+			cSound.stop();
+			FlxG.sound.music.volume = 1;
+		}
+	}
+	if (inCmode) return;
+
 	if (controls.BACK || FlxG.mouse.justPressedRight) {
 		MusicBeatState.skipTransOut = MusicBeatState.skipTransIn = true;
 		FlxG.switchState(new MainMenuState());
@@ -117,10 +145,7 @@ function update() {
 		FlxG.switchState(new PlayState());
 	}
 
-	if (FlxG.keys.justPressed.SEVEN) {
-
-		FlxG.switchState(new Charter(songTable[curSelected].name, songTable[curSelected].difficulties[curDifficulty], true));
-	}
+	if (FlxG.keys.justPressed.SEVEN) FlxG.switchState(new Charter(songTable[curSelected].name, songTable[curSelected].difficulties[curDifficulty], true));
 }
 
 function changeSelection(amount) {
