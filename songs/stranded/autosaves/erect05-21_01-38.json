@@ -296,6 +296,9 @@
 	],
 	"strumLines": [
 		{
+			"keyCount": 4,
+			"strumScale": 1,
+			"position": "dad",
 			"notes": [
 				{
 					"id": 3,
@@ -1342,21 +1345,23 @@
 					"type": 0
 				}
 			],
+			"characters": [
+				"Jagger"
+			],
+			"type": 0,
 			"visible": true,
+			"strumSpacing": 1,
 			"strumPos": [
 				0,
 				50
 			],
-			"position": "dad",
-			"strumScale": 1,
-			"vocalsSuffix": "-Erect-harc",
 			"strumLinePos": 0.25,
-			"type": 0,
-			"characters": [
-				"Jag-Erect"
-			]
+			"vocalsSuffix": "-Erect-harc"
 		},
 		{
+			"keyCount": 4,
+			"strumScale": 1,
+			"position": "boyfriend",
 			"notes": [
 				{
 					"id": 2,
@@ -2553,19 +2558,18 @@
 					"type": 0
 				}
 			],
+			"characters": [
+				"Seezee"
+			],
+			"type": 1,
 			"visible": true,
+			"strumSpacing": 1,
 			"strumPos": [
 				0,
 				50
 			],
-			"position": "boyfriend",
-			"strumScale": 1,
-			"vocalsSuffix": "-Erect-sz",
 			"strumLinePos": 0.75,
-			"type": 1,
-			"characters": [
-				"SZ-Erect"
-			]
+			"vocalsSuffix": "-Erect-sz"
 		}
 	],
 	"codenameChart": true,
