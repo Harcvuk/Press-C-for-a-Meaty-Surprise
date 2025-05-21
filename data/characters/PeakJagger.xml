@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character sprite="PeakJagger" scale="2" flipX="true" isPlayer="true" icon="PeakJAG" color="#4EFF06">
+<character sprite="PeakJagger" scale="2" flipX="true" isPlayer="true" noteskin="PEAKNote" icon="PeakJAG" color="#4EFF06">
 	<anim name="idle" anim="peak idle" x="0" y="0" fps="10" loop="false"/>
 	<anim name="singUP" anim="peak up" x="0" y="0" fps="10" loop="false"/>
 	<anim name="singLEFT" anim="peak left" x="0" y="0" fps="10" loop="false"/>
