@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character antialiasing="true" sprite="Jagger-Erect" x="-300" y="160" scale="2" icon="Jag-Erect" color="#FF7200" isPlayer="false">
+	<anim x="0" loop="false" y="0" fps="10" anim="Jagger Standing" name="idle"/>
+	<anim x="0" loop="false" y="0" fps="10" anim="Jagger UP" name="singUP"/>
+	<anim x="0" loop="false" y="0" fps="10" anim="Jagger Taking the L" name="singLEFT"/>
+	<anim x="0" loop="false" y="0" fps="10" anim="Jagger Dat R" name="singRIGHT"/>
+	<anim x="0" loop="false" y="0" fps="10" anim="Jagger DOWN" name="singDOWN"/>
+</character>

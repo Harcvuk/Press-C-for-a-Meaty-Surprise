@@ -1,0 +1,12 @@
+<!DOCTYPE codename-engine-character>
+<character antialiasing="true" gameOverChar="SZ-dead" x="200" y="300" sprite="Seezee-Erect" scale="2" icon="SZ-Erect" flipX="true" color="#61FD22" isPlayer="true">
+	<anim x="0" loop="false" y="0" fps="10" anim="Jagger TheBop" name="idle"/>
+	<anim x="0" loop="false" y="0" fps="10" anim="Jagger Uey" name="singUP"/>
+	<anim x="0" loop="false" y="0" fps="10" anim="Jagger L Move" name="singLEFT"/>
+	<anim x="10" loop="false" y="10" fps="10" anim="Jagger vRoom" name="singRIGHT"/>
+	<anim x="0" loop="false" y="0" fps="10" anim="Jagger Doh" name="singDOWN"/>
+	<anim x="0" loop="false" y="0" fps="10" anim="Jagger UIM" name="singUPmiss"/>
+	<anim x="0" loop="false" y="0" fps="10" anim="Jagger LME" name="singLEFTmiss"/>
+	<anim x="0" loop="false" y="0" fps="10" anim="Jagger rHELP" name="singRIGHTmiss"/>
+	<anim x="0" loop="false" y="0" fps="10" anim="Jagger DMELTING" name="singDOWNmiss"/>
+</character>

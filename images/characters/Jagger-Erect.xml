@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Jagger-Erect.png">
+<SubTexture name="Jagger Standing0000" x="802" y="866" width="276" height="417" frameX="-185" frameY="-41" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger Standing0001" x="239" y="866" width="248" height="421" frameX="-194" frameY="-36" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger Standing0002" x="0" y="866" width="239" height="425" frameX="-199" frameY="-33" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger Standing0003" x="1016" y="0" width="225" height="427" frameX="-201" frameY="-31" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger Standing0004" x="1016" y="427" width="211" height="427" frameX="-205" frameY="-31" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger Dat R0000" x="607" y="435" width="332" height="428" frameX="-178" frameY="-28" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger Dat R0001" x="0" y="435" width="299" height="431" frameX="-184" frameY="-26" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger Dat R0002" x="1241" y="0" width="211" height="427" frameX="-205" frameY="-31" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger Taking the L0000" x="658" y="0" width="358" height="432" frameX="-77" frameY="-26" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger Taking the L0001" x="0" y="0" width="339" height="435" frameX="-114" frameY="-24" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger Taking the L0002" x="1241" y="0" width="211" height="427" frameX="-205" frameY="-31" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger UP0000" x="339" y="0" width="319" height="435" frameX="-134" frameY="-23" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger UP0001" x="299" y="435" width="308" height="431" frameX="-162" frameY="-27" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger UP0002" x="1241" y="0" width="211" height="427" frameX="-205" frameY="-31" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger DOWN0000" x="1078" y="866" width="317" height="375" frameX="-195" frameY="-82" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger DOWN0001" x="487" y="866" width="315" height="420" frameX="-184" frameY="-37" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger DOWN0002" x="1241" y="0" width="211" height="427" frameX="-205" frameY="-31" frameWidth="640" frameHeight="480" />
+</TextureAtlas>

@@ -12,8 +12,8 @@
 		"composer": "Harc"
 	},
 	"stepsPerBeat": 4,
-	"displayName": "Stranded",
-	"needsVoices": true,
+	"displayName": "Stranded (Erect)",
+	"needsVoices": false,
 	"beatsPerMeasure": 4,
-	"bpm": 200
+	"bpm": 115
 }

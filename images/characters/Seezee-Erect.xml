@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Seezee-Erect.png">
+<SubTexture name="Jagger TheBop0000" x="1351" y="868" width="280" height="430" frameX="-117" frameY="-28" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger TheBop0001" x="760" y="906" width="272" height="437" frameX="-136" frameY="-21" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger TheBop0002" x="496" y="906" width="264" height="438" frameX="-156" frameY="-19" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger TheBop0003" x="787" y="460" width="257" height="442" frameX="-177" frameY="-16" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger TheBop0004" x="0" y="906" width="248" height="439" frameX="-197" frameY="-19" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger vRoom0000" x="273" y="460" width="258" height="443" frameX="-263" frameY="-15" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger vRoom0001" x="1114" y="0" width="237" height="440" frameX="-263" frameY="-17" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger vRoom0002" x="248" y="906" width="248" height="439" frameX="-197" frameY="-19" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger L Move0000" x="1032" y="906" width="296" height="436" frameX="-108" frameY="-21" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger L Move0001" x="0" y="460" width="273" height="446" frameX="-150" frameY="-11" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger L Move0002" x="248" y="906" width="248" height="439" frameX="-197" frameY="-19" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger Uey0000" x="293" y="0" width="268" height="457" frameX="-215" frameY="-2" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger Uey0001" x="561" y="0" width="285" height="457" frameX="-190" frameY="-2" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger Uey0002" x="248" y="906" width="248" height="439" frameX="-197" frameY="-19" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger Doh0000" x="0" y="1345" width="295" height="402" frameX="-80" frameY="-55" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger Doh0001" x="1351" y="436" width="277" height="432" frameX="-121" frameY="-26" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger Doh0002" x="248" y="906" width="248" height="439" frameX="-197" frameY="-19" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger rHELP0000" x="531" y="460" width="256" height="443" frameX="-265" frameY="-15" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger rHELP0001" x="901" y="1345" width="315" height="392" frameX="-257" frameY="-66" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger LME0000" x="1351" y="0" width="296" height="436" frameX="-108" frameY="-21" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger LME0001" x="1647" y="0" width="292" height="416" frameX="-96" frameY="-41" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger UIM0000" x="846" y="0" width="268" height="457" frameX="-215" frameY="-2" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger UIM0001" x="0" y="0" width="293" height="460" frameX="-190" frameY="0" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger DMELTING0000" x="295" y="1345" width="297" height="402" frameX="-78" frameY="-55" frameWidth="640" frameHeight="480" />
+<SubTexture name="Jagger DMELTING0001" x="592" y="1345" width="309" height="399" frameX="-81" frameY="-59" frameWidth="640" frameHeight="480" />
+</TextureAtlas>
