@@ -1,0 +1,19 @@
+{
+	"opponentModeAllowed": true,
+	"difficulties": [
+		"Hard",
+		"Erect"
+	],
+	"icon": "Jagger",
+	"coopAllowed": true,
+	"name": "stranded",
+	"color": "#FF8200",
+	"customValues": {
+		"composer": "Harc"
+	},
+	"stepsPerBeat": 4,
+	"displayName": "Stranded (Erect)",
+	"needsVoices": false,
+	"beatsPerMeasure": 4,
+	"bpm": 115
+}
