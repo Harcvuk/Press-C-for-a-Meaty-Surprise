@@ -10,10 +10,10 @@ function onStrumCreation(e) {
 			e.strum.y += 10;
 		case "EYAD":
 			switch (e.strumID) {
-				case 0: e.strum.x += 11; e.strum.y += 3.5;
+				case 0: e.strum.x += 11; e.strum.y += 3.5 * (downscroll? -1 : 1);
 				case 1: e.strum.x += 4;
 				case 2: e.strum.x -= 3;
-				case 3: e.strum.x -= 11; e.strum.y += 4;
+				case 3: e.strum.x -= 11; e.strum.y += 4 * (downscroll? -1 : 1);
 			}
 	}
 }
