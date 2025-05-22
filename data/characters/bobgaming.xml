@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character x="-20" y="250" sprite="bobgaming" icon="bobgaming" color="#FFFFFF" antialiasing="true" holdTime="6.1">
+<character x="-20" y="250" sprite="bobgaming" icon="bobgaming" color="#FFFFFF" antialiasing="true" holdTime="6.1" noteskin="EYAD">
 	<anim name="idle" anim="bobgaming idle" x="0" y="0" fps="24" loop="false"/>
 	<anim name="singLEFT" anim="bobgaming left" x="-10" y="0" fps="24" loop="false"/>
 	<anim name="singRIGHT" anim="bobgaming right" x="10" y="0" fps="24" loop="false"/>
