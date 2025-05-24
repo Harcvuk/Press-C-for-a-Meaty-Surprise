@@ -12,7 +12,7 @@ var credits = [
 	{text:"mariofy: 3D-Modeler and Animator",color:0xFF33BB33},
 	{text:"Gumbalino: 3D-Modeler and Animator",color:0xFFAA33DD},
 	{text:"Hipix and Douyhe: were there (they couldnt do their things in time for v1)",color:0xFF0088FF},
-{text:"Kittycass: Composer (replace if she doesnt get it done in time)",color:0xFFCC8888},
+{text:"Kittycass: Composer (replace if she doesnt get it done in time)",color:0xFFFFBBBB},
 	{text:"Verwex: Birthday Bash invitation",color:0xFF9933EE},
 	{text:"Terionic: Code assistance",color:0xFF66EE44},
 	{text:"Happy Birthday Seezee!"}
