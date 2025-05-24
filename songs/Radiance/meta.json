@@ -1,0 +1,19 @@
+{
+	"beatsPerMeasure": 4,
+	"opponentModeAllowed": false,
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"bpm": 160,
+	"difficulties": [
+		"Hard"
+	],
+	"needsVoices": false,
+	"parsedColor": -16711681,
+	"displayName": "Radiance",
+	"icon": "bbo",
+	"name": "radiance",
+	"color": "#00FFFF",
+	"customValues": {
+		"composer": "Bitto"
+	}
+}

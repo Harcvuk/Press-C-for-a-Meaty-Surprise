@@ -1,0 +1,45 @@
+playAnim as an event.hx________PACKSEP________//this is worse than the one in the codename server just go use that one
+function onEvent(e) if (e.event.name == "playAnim as an event") {
+	var params = e.event.params;
+	var character = strumLines.members[params[0]].characters[params[1]]; //who
+	//trace(character.curCharacter,params);
+	character.playAnim(params[2],params[3],params[4],params[5],params[6]);
+}________PACKSEP________{
+	"params": [
+		{
+			"name": "Strum",
+			"type": "StrumLine",
+			"defValue": 0
+		},
+		{
+			"name": "Which character of the strum",
+			"type": "Int(0, 99, 1)",
+			"defValue": 0
+		},
+		{
+			"name": "Animation",
+			"type": "String",
+			"defaultValue": ""
+		},
+		{
+			"name": "Forced?",
+			"type": "Bool",
+			"defValue": false
+		},
+		{
+			"name": "Animation Context",
+			"type": "DropDown('DANCE','LOCK','SING','null')",
+			"defValue": "DANCE"
+		},
+		{
+			"name": "Reverse?",
+			"type": "Bool",
+			"defValue": false
+		},
+		{
+			"name": "Starting frame",
+			"type": "Int(0,999,1)",
+			"defValue": 0
+		}
+	]
+}________PACKSEP________iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJUExURQBw7Dy8/Pz8/DHQpd0AAAAJcEhZcwAADsMAAA7DAcdvqGQAAABMSURBVBjTbczRCUAxCEPRaydQJ6jZf8iXtr8voBwwSLRGmqD1gv4xD1s5F0vsg2agL5JcRhZRRlMV5WNHctKe88LFtf3R/aqUB+6CD51aCtFuLWjNAAAAAElFTkSuQmCC

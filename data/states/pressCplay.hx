@@ -21,7 +21,10 @@ function create() {
 
 	var playedUnlocks = 0;
 	for (s in ["my-new-cookings","wanna play real life","peakingtrial", "too-peak"]) if (FlxG.save.data.MeatyunlockedSongs.contains(s)) playedUnlocks++;
-	if (playedUnlocks == 4) songTable.push(songs[songs.length-1]);
+	if (playedUnlocks == 4) {
+		songTable.push(songs[songs.length-2]);
+		songTable.push(songs[songs.length-1]);
+	}
 
 	for(k=>s in songTable) if (s.name == Options.freeplayLastSong) curSelected = k;
 	for(k=>diff in songTable[curSelected]?.difficulties) if (diff == Options.freeplayLastDifficulty) curDifficulty = k;

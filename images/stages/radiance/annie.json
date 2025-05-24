@@ -1,0 +1,47 @@
+{ "frames": [
+   {
+    "filename": "NF0000",
+    "frame": { "x": 0, "y": 0, "w": 192, "h": 214 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 192, "h": 214 },
+    "sourceSize": { "w": 194, "h": 214 },
+    "duration": 166
+   },
+   {
+    "filename": "L0000",
+    "frame": { "x": 194, "y": 0, "w": 183, "h": 208 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 3, "y": 6, "w": 183, "h": 208 },
+    "sourceSize": { "w": 194, "h": 214 },
+    "duration": 166
+   },
+   {
+    "filename": "SF0000",
+    "frame": { "x": 0, "y": 0, "w": 192, "h": 214 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 192, "h": 214 },
+    "sourceSize": { "w": 194, "h": 214 },
+    "duration": 166
+   },
+   {
+    "filename": "R0000",
+    "frame": { "x": 379, "y": 0, "w": 186, "h": 208 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 8, "y": 6, "w": 186, "h": 208 },
+    "sourceSize": { "w": 194, "h": 214 },
+    "duration": 166
+   }
+ ],
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.3.8.1-x64",
+  "image": "annie.png",
+  "format": "I8",
+  "size": { "w": 565, "h": 214 },
+  "scale": "1"
+ }
+}
