@@ -16,7 +16,7 @@ function create() {
 	FlxG.sound.music.volume = 1;
 
 	//important to be first
-	var lockedSongs = ["my-new-cookings","wanna play real life","peakingtrial", "too-peak","tense"];
+	var lockedSongs = ["my-new-cookings","wanna play real life","peakingtrial", "too-peak","tense","radiance"];
 	for (song in songs) if (!lockedSongs.contains(song.name) || FlxG.save.data.MeatyunlockedSongs.contains(song.name)) songTable.push(song);
 
 	var playedUnlocks = 0;
