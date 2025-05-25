@@ -20,6 +20,6 @@ meat
 <h1>Made for the "Seezee 2025 Birthday Bash" Event</h1>
 
 <p>
-  <img src=".github/sbb_logo.png" alt="Seezee 2025 Birthday Bash logo" width="400"/>
+  <img src="https://github.com/Team-Reimagination/tweaked-to-the-grave/blob/main/.github/sbb_logo.png" alt="Seezee 2025 Birthday Bash logo" width="400"/>
 </p>
 
