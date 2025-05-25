@@ -14,3 +14,12 @@ it was meat. we were on meat it was a cookout and there was meat,
 meat
 
 ![meat](./images/meat/meats.png)
+
+
+<div align="center">
+<h1>Made for the "Seezee 2025 Birthday Bash" Event</h1>
+
+<p>
+  <img src=".github/sbb_logo.png" alt="Seezee 2025 Birthday Bash logo" width="400"/>
+</p>
+
