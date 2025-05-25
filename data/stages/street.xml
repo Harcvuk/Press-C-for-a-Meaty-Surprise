@@ -1,0 +1,22 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="1" folder="stages/">
+   	<sprite name="sky" x="-800" y="-400" sprite="street/ron_sky" scroll="0.1" />
+   	<sprite name="bigcloud" x="-800" y="-800" sprite="street/ron_clouds" scroll="0.1" />
+   	<sprite name="backcity" x="-800" y="-400" sprite="street/ron_cityback" scroll="0.2" />
+   	<sprite name="city" x="-800" y="-400" sprite="street/ron_city" scroll="0.25" />
+	<sprite name="backmountain" x="-800" y="-400" sprite="street/ron_mountainsback" scroll="0.3" />
+	<sprite name="mountain" x="-800" y="-400" sprite="street/ron_mountains" scroll="0.3" />
+	<sprite name="hill" x="-800" y="-400" sprite="street/ron_hillfront" scroll="0.4" />
+	<sprite name="street" x="-800" y="-400" sprite="street/ron_street" />
+   	<sprite name="skywasted" x="-800" y="-400" sprite="pissedStreet/wasted_sky" scroll="0.1" />
+	<solid name="rain3" y="50" x="-400" width="2200" height="1000" scroll="0.1" color="0"/>
+   	<sprite name="citywasted" x="-800" y="-400" sprite="pissedStreet/wasted_city" scroll="0.25"/>
+   	<sprite name="mountainswasted" x="-800" y="-400" sprite="pissedStreet/wasted_mountains" scroll="0.3"/>
+   	<sprite name="hillfrontwasted" x="-800" y="-400" sprite="pissedStreet/wasted_hillfront" scroll="0.3"/>
+	<solid name="rain2" y="50" x="-400" width="2200" height="1000" scroll="0.4" color="0"/>
+   	<sprite name="streetwasted" x="-800" y="-400" sprite="pissedStreet/wasted_street" />
+   	<girlfriend />
+   	<dad />
+   	<boyfriend />
+	<solid name="rain1" y="50" x="-400" width="2200" height="1000" scroll="1.7" color="0"/>
+</stage>

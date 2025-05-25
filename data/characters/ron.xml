@@ -1,0 +1,11 @@
+<!DOCTYPE codename-engine-character>
+<character x="-800" y="-300" sprite="ron" scale="0.5" camx="-317" camy="110" icon="ron" color="#FBE900" isGF="false">
+	<anim name="idle" anim="ron idle" x="0" y="0" fps="12" loop="true"/>
+	<anim name="singLEFT" anim="ron left" x="0" y="0" fps="8" loop="false"/>
+	<anim name="singDOWN" anim="ron down" x="0" y="0" fps="12" loop="false"/>
+	<anim name="singUP" anim="ron up" x="0" y="0" fps="12" loop="false"/>
+	<anim name="singRIGHT" anim="ron right" x="0" y="0" fps="12" loop="false"/>
+	<anim name="hey" anim="ron death" x="0" y="0" fps="16" loop="false"/>
+	<anim name="classic" anim="classic" x="-240" y="-355" fps="8" loop="false"/>
+</character>
+ 
