@@ -1,0 +1,13 @@
+<!DOCTYPE codename-engine-character>
+<character x="85" y="256" sprite="bbo" scale="2" antialiasing="false" camx="1" camy="50" icon="bbo" color="#F2F2F2" holdTime="6.1" noteskin="bboNotes">
+	<anim name="singLEFT" anim="left" x="0" y="0" fps="12" loop="false"/>
+	<anim name="singDOWN" anim="down" x="0" y="0" fps="12" loop="false"/>
+	<anim name="singUP" anim="up" x="0" y="0" fps="12" loop="false"/>
+	<anim name="singRIGHT" anim="right" x="0" y="0" fps="12" loop="false"/>
+	<anim name="singLEFTmiss" anim="missLeft" x="0" y="0" fps="12" loop="false"/>
+	<anim name="singDOWNmiss" anim="missDown" x="0" y="0" fps="12" loop="false"/>
+	<anim name="singUPmiss" anim="missUp" x="0" y="0" fps="12" loop="false"/>
+	<anim name="singRIGHTmiss" anim="missRight" x="0" y="0" fps="12" loop="false"/>
+	<anim name="danceLeft" anim="idleLeft" x="0" y="0" fps="12" loop="false"/>
+	<anim name="danceRight" anim="idleRight" x="0" y="0" fps="12" loop="false"/>
+</character>

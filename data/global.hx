@@ -1,3 +1,4 @@
+import Date;
 import funkin.backend.utils.WindowUtils;
 import funkin.backend.utils.DiscordUtil as Discord;
 import funkin.menus.credits.CreditsMain;
@@ -12,6 +13,8 @@ FlxG.save.data.MeatyunlockedSongs ??= [];
 
 static var fromIntro = true; //for seezee to skip the intro movement if not coming from the intro
 static var ultimate = false;
+
+var d = Date.now(); // Now.
 
 function new() {
 	ultimate = false;
@@ -31,7 +34,7 @@ function preStateSwitch() {
 			FlxG.game._requestedState = new ModState(redirectStates.get(redirectState));
 
 	var isSeezee = Sha256.encode(Discord?.user?.userId) == "dc793b1d9e78b66ad18637d9e176aadd09bf3ea96fa2dfc35553c493deda4615";
-	WindowUtils.winTitle = isSeezee ? "Press C for a Meaty Surprise!! - Happy Birthday Seezee!" : "Press C for a Meaty Surprise!!";
+	WindowUtils.winTitle = (d.getMonth() == 4 && d.getDate() == 25 && isSeezee) ? "Press C for a Meaty Surprise!! - Happy Birthday Seezee!" : "Press C for a Meaty Surprise!!";
 	window.setIcon(Image.fromBytes(Assets.getBytes("images/windowIcon.png")));
 
 	quitTexts = [
