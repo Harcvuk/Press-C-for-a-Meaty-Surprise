@@ -86,7 +86,8 @@ function preStateSwitch() {
 		"you should press c\nif you want to get to the password state",
 		"Are you stupid that's Pluto\nOOOOH",
 		"It was way more quitter than I thought",
-		"Meat"
+		"Meat",
+		"Is there an option to mol-"
 	];
 }
 
