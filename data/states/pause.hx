@@ -95,7 +95,7 @@ function update() {
 	if (controls.DOWN_P||controls.UP_P && curMenu == "main") changeSelection(controls.DOWN_P ? 1 : -1);
 	if (controls.ACCEPT || (curMenu != "main" && FlxG.keys.justPressed.Y)) switch (curMenu) {
 		case "main": choose();
-		case "title":
+		case "title": // lets add the button ok
 		if (PlayState.chartingMode && Charter.undos.unsaved) {
 			PlayState.instance.saveWarn(false);
 			return;
