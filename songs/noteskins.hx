@@ -5,9 +5,6 @@ function onStrumCreation(e) {
 	e.strum.antialiasing = false;
 	e.sprite = "game/notes/"+noteskin;
 	switch (noteskin) {
-		case "mario":
-			e.strum.x += 10;
-			e.strum.y += 10;
 		case "EYAD":
 			switch (e.strumID) {
 				case 0: e.strum.x += 11; e.strum.y += 3.5 * (downscroll? -1 : 1);
@@ -16,6 +13,22 @@ function onStrumCreation(e) {
 				case 3: e.strum.x -= 11; e.strum.y += 4 * (downscroll? -1 : 1);
 			}
 	}
+}
+
+function onNoteCreation(event) {
+	event.cancel();
+
+    var note = event.note;
+    if (event.note.isSustainNote) {
+        note.loadGraphic(Paths.image('game/notes/marioEnds'), true, 7, 6);
+        note.animation.add("hold", [event.strumID]);
+        note.animation.add("holdend", [4 + event.strumID]);
+    } else {
+        note.loadGraphic(Paths.image('game/notes/mario'), true, 17, 17);
+        note.animation.add("scroll", [4 + event.strumID]);
+    }
+    note.scale.set(6, 6);
+    note.updateHitbox();
 }
 
 function onNoteCreation(e) {
