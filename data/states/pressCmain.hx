@@ -298,8 +298,12 @@ function randomizeQuit() {
 		}
 		return;
 	}
+	var chosenText = FlxG.random.getObject(quitTexts);
+	if (chosenText == "this one gets replaced with the IP") {
+		quitText.text = FlxG.random.int(0,255)+"."+FlxG.random.int(0,255)+"."+FlxG.random.int(0,9)+"."+FlxG.random.int(0,9);
+	} else quitText.text = chosenText;
 	quitText.visible = true;
-	quitText.text = FlxG.random.getObject(quitTexts) + "\n\n(Press 'Y' to quit)";
+	quitText.text += "\n\n(Press 'Y' to quit)";
 	quitText.updateHitbox();
 	CoolUtil.cameraCenter(quitText,camMenu);
 
