@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character x="85" y="256" sprite="bbo" scale="2" antialiasing="false" camx="1" camy="50" icon="bbo" color="#F2F2F2" holdTime="6.1" noteskin="bboNotes">
+<character x="85" y="256" sprite="bbo" scale="2" antialiasing="false" camx="1" camy="50" icon="bbo" color="#F2F2F2" holdTime="6.1" noteskin="bboNotes" name="bbo">
 	<anim name="singLEFT" anim="left" x="0" y="0" fps="12" loop="false"/>
 	<anim name="singDOWN" anim="down" x="0" y="0" fps="12" loop="false"/>
 	<anim name="singUP" anim="up" x="0" y="0" fps="12" loop="false"/>

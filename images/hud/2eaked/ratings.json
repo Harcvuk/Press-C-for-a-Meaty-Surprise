@@ -1,0 +1,65 @@
+{ "frames": [
+   {
+    "filename": "awesome0000",
+    "frame": { "x": 0, "y": 0, "w": 211, "h": 62 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 1, "y": 13, "w": 211, "h": 62 },
+    "sourceSize": { "w": 213, "h": 89 },
+    "duration": 100
+   },
+   {
+    "filename": "good0000",
+    "frame": { "x": 213, "y": 0, "w": 211, "h": 62 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 1, "y": 13, "w": 211, "h": 62 },
+    "sourceSize": { "w": 213, "h": 89 },
+    "duration": 100
+   },
+   {
+    "filename": "bad0000",
+    "frame": { "x": 426, "y": 0, "w": 211, "h": 62 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 1, "y": 13, "w": 211, "h": 62 },
+    "sourceSize": { "w": 213, "h": 89 },
+    "duration": 100
+   },
+   {
+    "filename": "awful0000",
+    "frame": { "x": 0, "y": 64, "w": 211, "h": 62 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 1, "y": 13, "w": 211, "h": 62 },
+    "sourceSize": { "w": 213, "h": 89 },
+    "duration": 100
+   },
+   {
+    "filename": "miss0000",
+    "frame": { "x": 213, "y": 64, "w": 211, "h": 62 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 1, "y": 13, "w": 211, "h": 62 },
+    "sourceSize": { "w": 213, "h": 89 },
+    "duration": 100
+   },
+   {
+    "filename": "saddam0000",
+    "frame": { "x": 426, "y": 64, "w": 211, "h": 62 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 1, "y": 13, "w": 211, "h": 62 },
+    "sourceSize": { "w": 213, "h": 89 },
+    "duration": 100
+   }
+ ],
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.3.8.1-x64",
+  "image": "ratings.png",
+  "format": "I8",
+  "size": { "w": 637, "h": 126 },
+  "scale": "1"
+ }
+}
