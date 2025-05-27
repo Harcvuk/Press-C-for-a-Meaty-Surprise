@@ -4,8 +4,8 @@ imgPath = "HUD/2eaked/star"; //graphic ("HUD/2eaked/star" by default)
 memleaksound = "bumper"; //sound for "memory leak" ("bumper" by default)
 
 //-------------------------DON'T CHANGE ANYTHING PAST THIS LINE-------------------------//
-tueakedSickColor = FlxG.save.data.tueakedSickColor;
-tueakedSickType = FlxG.save.data.tueakedSickType;
+tueakedSickColor = FlxG.save.data?.tueakedSickColor ?? "char";
+tueakedSickType = FlxG.save.data?.tueakedSickType ?? "spiral";
 stars = []; //temp star storage
 spinSpeed = 5; // speed of the spiral animation
 
