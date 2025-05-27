@@ -14,13 +14,13 @@ function onEvent(e) {
 			jerseyLength = e.event.params[0];
 			jerseySteps = [];
 			for (step in e.event.params[1].split(",")) jerseySteps.push(Std.int(step));
-			trace(jerseySteps);
+			//trace(jerseySteps);
 		}
 	}
 }
 
 function stepHit(curStep) if (jerseyOpponent || jerseyPlayer) {
-	trace(curStep % jerseyLength);
+	//trace(curStep % jerseyLength);
 	if (jerseySteps.contains(curStep % jerseyLength)) jerseyIt();
 }
 

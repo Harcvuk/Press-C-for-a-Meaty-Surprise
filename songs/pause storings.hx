@@ -14,7 +14,7 @@ function postUpdate() {
 }
 
 static var maxSongCombo:Float = 0;
-function onNoteCreation(e) {
+function onPostNoteCreation(e) {
 	if (e.strumLineID != 1 || e.note.isSustainNote) return;
 	maxSongCombo++;
 	maxSongScore = maxSongCombo * 300;

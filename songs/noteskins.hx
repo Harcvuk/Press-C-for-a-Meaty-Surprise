@@ -2,7 +2,20 @@ function getNoteskin(ID) {return strumLines.members[ID].characters[0]?.xml?.get(
 
 function onStrumCreation(e) {
 	var noteskin = getNoteskin(e.player);
-	e.strum.antialiasing = false;
+	if (noteskin == "mario") {
+		e.cancel();
+
+		e.strum.antialiasing = false;
+		var strum = e.strum;
+		strum.loadGraphic(Paths.image('game/notes/mario'), true, 17, 17);
+		strum.animation.add("static", [e.strumID]);
+		strum.animation.add("pressed", [4 + e.strumID, 8 + e.strumID], 12, false);
+		strum.animation.add("confirm", [12 + e.strumID, 16 + e.strumID], 24, false);
+
+		strum.scale.set(6, 6);
+		strum.updateHitbox();
+		return;
+	}
 	e.sprite = "game/notes/"+noteskin;
 	switch (noteskin) {
 		case "EYAD":
@@ -15,24 +28,24 @@ function onStrumCreation(e) {
 	}
 }
 
-function onNoteCreation(event) {
-	event.cancel();
-
-    var note = event.note;
-    if (event.note.isSustainNote) {
-        note.loadGraphic(Paths.image('game/notes/marioEnds'), true, 7, 6);
-        note.animation.add("hold", [event.strumID]);
-        note.animation.add("holdend", [4 + event.strumID]);
-    } else {
-        note.loadGraphic(Paths.image('game/notes/mario'), true, 17, 17);
-        note.animation.add("scroll", [4 + event.strumID]);
-    }
-    note.scale.set(6, 6);
-    note.updateHitbox();
-}
-
 function onNoteCreation(e) {
 	var noteskin = getNoteskin(e.strumLineID);
+	if (noteskin == "mario") {
+		e.cancel();
+
+		var note = e.note;
+		if (e.note.isSustainNote) {
+			note.loadGraphic(Paths.image('game/notes/marioEnds'), true, 7, 6);
+			note.animation.add("hold", [e.strumID]);
+			note.animation.add("holdend", [4 + e.strumID]);
+		} else {
+			note.loadGraphic(Paths.image('game/notes/mario'), true, 17, 17);
+			note.animation.add("scroll", [4 + e.strumID]);
+		}
+		note.scale.set(6, 6);
+		note.updateHitbox();
+		return;
+	}
 	e.note.antialiasing = false;
 	e.noteSprite = "game/notes/"+noteskin;
 }
