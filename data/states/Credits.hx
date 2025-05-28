@@ -8,11 +8,13 @@ import haxe.crypto.Sha256;
 var credits = [
 	{text:"TechyHarcvuk: Director and Artist/Composer/etc. of his own songs",color:0xFFFF8000},
 	{text:"HeroEyad: Director and Programmer",color:0xFF00FFFF},
-	{text:"Bitto: Composer, Aritst, Programmer and Charter",color:0xFFFF0000},
+	{text:"Bitto: Composer, Artist, Programmer and Charter",color:0xFFFF0000},
 	{text:"mariofy: 3D-Modeler and Animator",color:0xFF33BB33},
 	{text:"Gumbalino: 3D-Modeler and Animator",color:0xFFAA33DD},
-	{text:"Hipix and Douyhe: were there (they couldnt do their things in time for v1)",color:0xFF0088FF},
-{text:"Kittycass: Composer",color:0xFFFFBBBB},
+	{text:"Seezee: 2eaked Webdude character sprites",color:0xFF22DD00},
+	{text:"Hipix: Artist and Animator",color:0xFFFFCC33},
+	{text:"douyhe: Composer",color:0xFF0088FF},
+	{text:"Kittycass: Composer, Charter",color:0xFFFFBBBB},
 	{text:"Verwex: Birthday Bash invitation",color:0xFF9933EE},
 	{text:"Terionic: Code assistance",color:0xFF66EE44},
 	{text:"Happy Birthday Seezee!"}
@@ -32,7 +34,7 @@ function create() {
 	FlxTween.tween(logo, {y:-35, angle:0, "scale.x":0.8, "scale.y":0.8}, 2, {ease: FlxEase.circOut});
 	add(logo);
 
-	var spacing = 40;
+	var spacing = 32;
 	for (i in 0...credits.length) {
 		var text = new FlxText(0, (FlxG.height + 100) + i * spacing, FlxG.width, credits[i].text).setFormat(Paths.font("sonic2.ttf"), 32, credits[i].color ?? 0xFFFFFF00, "center",Border.SHADOW,0xFF000000).screenCenter(0x01); // center horizontally
 		text.borderSize *= 2;
@@ -42,9 +44,10 @@ function create() {
 
 		FlxTween.tween(text, {y: (FlxG.height / 2 - (credits.length * spacing) / 2 + i * spacing)+110}, 1.5, {startDelay: i * 0.15, ease: FlxEase.expoOut});
 	}
-	creditTextSprites[credits.length-1].scale.set(2,2);
-	creditTextSprites[credits.length-1].updateHitbox();
-	creditTextSprites[credits.length-1].screenCenter(0x01);
+	var bsz = creditTextSprites[credits.length-1];
+	bsz.scale.set(2*bsz.scale.x,2*bsz.scale.y);
+	bsz.updateHitbox();
+	bsz.screenCenter(0x01);
 }
 
 var timings = 0.25;
