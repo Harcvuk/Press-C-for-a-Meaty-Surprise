@@ -2,6 +2,7 @@ import Date;
 import funkin.backend.utils.WindowUtils;
 import funkin.backend.utils.DiscordUtil as Discord;
 import funkin.menus.credits.CreditsMain;
+import funkin.backend.system.framerate.Framerate;
 import lime.graphics.Image;
 import haxe.crypto.Sha256;
 //dev stuff delete later
@@ -29,6 +30,7 @@ static var redirectStates:Map<Class<FlxState>, String> = [
 
 static var quitTexts = []; //importScript wasnt working for the pause screen so im putting it here
 function preStateSwitch() {
+	Framerate.debugMode = 0;
 	for (redirectState in redirectStates.keys())
 		if (Std.isOfType(FlxG.game._requestedState, redirectState))
 			FlxG.game._requestedState = new ModState(redirectStates.get(redirectState));
