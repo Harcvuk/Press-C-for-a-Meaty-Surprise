@@ -2,7 +2,7 @@
 <stage zoom="1" folder="stages/minecraft/">
 	<sprite name="bg" sprite="bg" x="-640" y="-360" scale="4.265" updateHitbox="true" antialiasing = "false"/>
 	<gf x="-126" y="-195"/>
-	<bf x="-176" y="-255" flip="false"/>
+	<bf x="-630" y="-415" flip="false"/>
 	<sprite name="fg" sprite="fg" x="-640" y="-360" scale="4.265" updateHitbox="true" antialiasing = "false"/>
 	<sprite name="sign" sprite="sign" x="652" y="49" scale="2.1325" updateHitbox="true" antialiasing = "false"/>
 	<sprite name="hand" sprite="hand" x="676" y="120" scale="4.265" updateHitbox="true" antialiasing = "false"/>
