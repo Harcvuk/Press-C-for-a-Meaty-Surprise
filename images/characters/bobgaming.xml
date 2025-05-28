@@ -1,28 +1,31 @@
-<?xml version='1.0' encoding='utf-8'?>
-<TextureAtlas imagePath="bobgaming.png">
-<SubTexture name="bobgaming up0000" x="677" y="0" width="342" height="542" frameX="-126" frameY="-31" frameWidth="640" frameHeight="640" />
-<SubTexture name="bobgaming up0001" x="339" y="0" width="338" height="556" frameX="-130" frameY="-17" frameWidth="640" frameHeight="640" />
-<SubTexture name="bobgaming up0002" x="0" y="0" width="339" height="573" frameX="-130" frameY="0" frameWidth="640" frameHeight="640" />
-<SubTexture name="bobgaming up0003" x="339" y="0" width="338" height="556" frameX="-130" frameY="-17" frameWidth="640" frameHeight="640" />
-<SubTexture name="bobgaming up0004" x="677" y="0" width="342" height="542" frameX="-126" frameY="-31" frameWidth="640" frameHeight="640" />
-<SubTexture name="bobgaming left0000" x="0" y="573" width="381" height="525" frameX="-80" frameY="-48" frameWidth="640" frameHeight="640" />
-<SubTexture name="bobgaming left0001" x="1019" y="0" width="406" height="527" frameX="-52" frameY="-46" frameWidth="640" frameHeight="640" />
-<SubTexture name="bobgaming left0002" x="0" y="573" width="381" height="525" frameX="-80" frameY="-48" frameWidth="640" frameHeight="640" />
-<SubTexture name="bobgaming left0003" x="381" y="573" width="362" height="525" frameX="-102" frameY="-48" frameWidth="640" frameHeight="640" />
-<SubTexture name="bobgaming down0000" x="1331" y="1098" width="338" height="471" frameX="-170" frameY="-102" frameWidth="640" frameHeight="640" />
-<SubTexture name="bobgaming down0001" x="1760" y="469" width="338" height="461" frameX="-173" frameY="-112" frameWidth="640" frameHeight="640" />
-<SubTexture name="bobgaming down0002" x="1331" y="1098" width="338" height="471" frameX="-170" frameY="-102" frameWidth="640" frameHeight="640" />
-<SubTexture name="bobgaming down0003" x="661" y="1098" width="334" height="499" frameX="-167" frameY="-74" frameWidth="640" frameHeight="640" />
-<SubTexture name="bobgaming right0000" x="0" y="1098" width="329" height="515" frameX="-167" frameY="-58" frameWidth="640" frameHeight="640" />
-<SubTexture name="bobgaming right0001" x="1425" y="517" width="329" height="516" frameX="-196" frameY="-57" frameWidth="640" frameHeight="640" />
-<SubTexture name="bobgaming right0002" x="0" y="1098" width="329" height="515" frameX="-167" frameY="-58" frameWidth="640" frameHeight="640" />
-<SubTexture name="bobgaming right0003" x="743" y="573" width="329" height="520" frameX="-145" frameY="-53" frameWidth="640" frameHeight="640" />
-<SubTexture name="bobgaming right0004" x="1072" y="573" width="335" height="517" frameX="-132" frameY="-55" frameWidth="640" frameHeight="640" />
-<SubTexture name="bobgaming idle0000" x="1425" y="0" width="335" height="517" frameX="-132" frameY="-55" frameWidth="640" frameHeight="640" />
-<SubTexture name="bobgaming idle0001" x="329" y="1098" width="332" height="502" frameX="-145" frameY="-70" frameWidth="640" frameHeight="640" />
-<SubTexture name="bobgaming idle0002" x="995" y="1098" width="336" height="485" frameX="-147" frameY="-87" frameWidth="640" frameHeight="640" />
-<SubTexture name="bobgaming idle0003" x="1760" y="0" width="339" height="469" frameX="-145" frameY="-103" frameWidth="640" frameHeight="640" />
-<SubTexture name="bobgaming idle0004" x="995" y="1098" width="336" height="485" frameX="-147" frameY="-87" frameWidth="640" frameHeight="640" />
-<SubTexture name="bobgaming idle0005" x="329" y="1098" width="332" height="502" frameX="-145" frameY="-70" frameWidth="640" frameHeight="640" />
-<SubTexture name="bobgaming idle0006" x="1425" y="0" width="335" height="517" frameX="-132" frameY="-55" frameWidth="640" frameHeight="640" />
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="bobgaming.png" width="3525" height="917" spritePadding="3" borderPadding="1">
+	<SubTexture name="bobgaming up0000" x="1842" y="1" width="342" height="542" frameX="-126" frameY="-31" frameWidth="342" frameHeight="573"/>
+	<SubTexture name="bobgaming up0001" x="1501" y="1" width="338" height="556" frameX="-130" frameY="-17" frameWidth="342" frameHeight="573"/>
+	<SubTexture name="bobgaming up0002" x="794" y="1" width="339" height="573" frameX="-130" frameY="0" frameWidth="342" frameHeight="573"/>
+	<SubTexture name="bobgaming up0003" x="1501" y="1" width="338" height="556" frameX="-130" frameY="-17" frameWidth="342" frameHeight="573"/>
+	<SubTexture name="bobgaming up0004" x="1842" y="1" width="342" height="542" frameX="-126" frameY="-31" frameWidth="342" frameHeight="573"/>
+	<SubTexture name="bobgaming left0000" x="410" y="1" width="381" height="525" frameX="-80" frameY="-48" frameWidth="406" frameHeight="527"/>
+	<SubTexture name="bobgaming left0001" x="1" y="1" width="406" height="527" frameX="-52" frameY="-46" frameWidth="406" frameHeight="527"/>
+	<SubTexture name="bobgaming left0002" x="410" y="1" width="381" height="525" frameX="-80" frameY="-48" frameWidth="406" frameHeight="527"/>
+	<SubTexture name="bobgaming left0003" x="1136" y="1" width="362" height="525" frameX="-102" frameY="-48" frameWidth="406" frameHeight="527"/>
+	<SubTexture name="bobgaming down0000" x="2014" y="577" width="471" height="338" rotated="true" frameX="-170" frameY="-102" frameWidth="338" frameHeight="499"/>
+	<SubTexture name="bobgaming down0001" x="2960" y="577" width="461" height="338" rotated="true" frameX="-173" frameY="-112" frameWidth="338" frameHeight="499"/>
+	<SubTexture name="bobgaming down0002" x="2014" y="577" width="471" height="338" rotated="true" frameX="-170" frameY="-102" frameWidth="338" frameHeight="499"/>
+	<SubTexture name="bobgaming down0003" x="519" y="577" width="499" height="334" rotated="true" frameX="-167" frameY="-74" frameWidth="338" frameHeight="499"/>
+	<SubTexture name="bobgaming right0000" x="1" y="577" width="515" height="329" rotated="true" frameX="-167" frameY="-58" frameWidth="335" frameHeight="520"/>
+	<SubTexture name="bobgaming right0001" x="3195" y="1" width="329" height="516" frameX="-196" frameY="-57" frameWidth="335" frameHeight="520"/>
+	<SubTexture name="bobgaming right0002" x="1" y="577" width="515" height="329" rotated="true" frameX="-167" frameY="-58" frameWidth="335" frameHeight="520"/>
+	<SubTexture name="bobgaming right0003" x="2863" y="1" width="329" height="520" frameX="-145" frameY="-53" frameWidth="335" frameHeight="520"/>
+	<SubTexture name="bobgaming right0004" x="2525" y="1" width="335" height="517" frameX="-132" frameY="-55" frameWidth="335" frameHeight="520"/>
+	<SubTexture name="bobgaming idle0000" x="2187" y="1" width="335" height="517" frameX="-132" frameY="-55" frameWidth="339" frameHeight="517"/>
+	<SubTexture name="bobgaming idle0001" x="1021" y="577" width="502" height="332" rotated="true" frameX="-145" frameY="-70" frameWidth="339" frameHeight="517"/>
+	<SubTexture name="bobgaming idle0002" x="1526" y="577" width="485" height="336" rotated="true" frameX="-147" frameY="-87" frameWidth="339" frameHeight="517"/>
+	<SubTexture name="bobgaming idle0003" x="2488" y="577" width="469" height="339" rotated="true" frameX="-145" frameY="-103" frameWidth="339" frameHeight="517"/>
+	<SubTexture name="bobgaming idle0004" x="1526" y="577" width="485" height="336" rotated="true" frameX="-147" frameY="-87" frameWidth="339" frameHeight="517"/>
+	<SubTexture name="bobgaming idle0005" x="1021" y="577" width="502" height="332" rotated="true" frameX="-145" frameY="-70" frameWidth="339" frameHeight="517"/>
+	<SubTexture name="bobgaming idle0006" x="2187" y="1" width="335" height="517" frameX="-132" frameY="-55" frameWidth="339" frameHeight="517"/>
 </TextureAtlas>
