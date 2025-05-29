@@ -145,7 +145,8 @@ function update() {
 	scoreText.text = scoreName + songScore; //no saving if botplay
 	scoreText.color = validScore ? -1 : 0xFF800000;
 
-	timerText.text = switch(FlxG.save.data.tueakedTimerType) {
+	var timerType = FlxG.save.data?.tueakedTimerType ?? "countUp";
+	timerText.text = switch(timerType) {
 		case "countUp": (songPos < 0 ? "0:00" : formatTime(songPos)) + " / "+ formatTime(instLength);
 		case "countDown": formatTime(instLength-songPos);
 		case "countLess": "";
