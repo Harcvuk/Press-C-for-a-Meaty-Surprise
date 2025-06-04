@@ -22,6 +22,7 @@ var credits = [
 
 var creditTextSprites = [];
 function create() {
+	Main.framerateSprite.codenameBuildField.text = originalCodenameBuildField;
 	FlxG.sound.music.volume = 1;
 	camCredits = new FlxCamera();
 	FlxG.cameras.add(camCredits);
@@ -82,7 +83,7 @@ function update(elapsed) {
 
 	if (FlxG.keys.justPressed.C && canC) {
 		canC = false;
-		Main.framerateSprite.codenameBuildField.text = "Cccccccc Cccccc " + cificator(Main.releaseCycle) + "\nCccccc " + cificator(engine.commit) + " (" + cificator(engine.hash) + ")";
+		Main.framerateSprite.codenameBuildField.text = cificator(originalCodenameBuildField);
 		var isSeezee = Sha256.encode(Discord?.user?.userId) == "dc793b1d9e78b66ad18637d9e176aadd09bf3ea96fa2dfc35553c493deda4615";
 		WindowUtils.winTitle = isSeezee ? "Ccccc C ccc c Ccccc Cccccccc!! - Ccccc Cccccccc Cccccc!" : "Ccccc C ccc c Ccccc Cccccccc!!";
 		logo.loadSprite(Paths.image("logoC94"));
@@ -123,7 +124,7 @@ function update(elapsed) {
 }
 
 function destroy() {
-	Main.framerateSprite.codenameBuildField.text = "Codename Engine " + Main.releaseCycle + "\nCommit " + engine.commit + " (" + engine.hash + ")";
+	Main.framerateSprite.codenameBuildField.text = originalCodenameBuildField;
 }
 
 function cificator(string) {
