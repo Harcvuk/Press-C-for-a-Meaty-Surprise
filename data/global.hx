@@ -16,10 +16,9 @@ static var ultimate = false;
 
 var d = Date.now(); // Now.
 
-static var originalCodenameBuildField = "";
+
 function new() {
 	ultimate = false;
-	originalCodenameBuildField = Main.framerateSprite.codenameBuildField.text;
 }
 
 static var redirectStates:Map<Class<FlxState>, String> = [
@@ -30,7 +29,10 @@ static var redirectStates:Map<Class<FlxState>, String> = [
 ];
 
 static var quitTexts = []; //importScript wasnt working for the pause screen so im putting it here
+static var originalCodenameBuildField = ""; //for when the mod is switched out of
 function preStateSwitch() {
+	if (originalCodenameBuildField == "") originalCodenameBuildField = Main.framerateSprite.codenameBuildField.text;
+
 	for (redirectState in redirectStates.keys())
 		if (Std.isOfType(FlxG.game._requestedState, redirectState))
 			FlxG.game._requestedState = new ModState(redirectStates.get(redirectState));
